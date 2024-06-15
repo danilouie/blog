@@ -1,0 +1,19 @@
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .prev-post,
+  .next-post {
+    width: 48%; /* Adjust width as needed */
+  }
+  
+  .prev-post {
+    text-align: left; /* Align "Previous" link to the left */
+  }
+  
+  .next-post {
+    text-align: right; /* Align "Next" link to the right */
+  }
+  

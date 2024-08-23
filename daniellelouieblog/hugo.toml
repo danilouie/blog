@@ -11,6 +11,12 @@ enableEmoji = true
 # Enable Disqus comments
 # shortname = "yourdiscussshortname"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 [markup.highlight]
 noClasses = false
 

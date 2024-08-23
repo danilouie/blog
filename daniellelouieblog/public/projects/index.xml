@@ -6,14 +6,21 @@
     <description>Recent content in Projects on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flood Risk in Houston</title>
+      <link>http://localhost:1313/projects/cyplan101/</link>
+      <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cyplan101/</guid>
+      <description>Language: R | Program: RStudio, Carto Authors: Danielle Louie, Kobe Bilstad&#xA;Visit the GitHub profile for more details.&#xA;Abstract Link to heading As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics.</description>
+    </item>
     <item>
       <title>2D Tile-Based World Exploration Engine</title>
       <link>http://localhost:1313/projects/cs61b/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/cs61b/</guid>
-      <description>Language Used: Java | Project 3 Git Link&#xA;Overview Link to heading The objective of this project was to build an interactive &amp;ldquo;game&amp;rdquo; with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles.</description>
+      <description>Language: Java | Program: IntelliJ | Project 3 Git Link Authors: Danielle Louie, Michelle Ngo&#xA;Overview Link to heading The objective of this project was to build an interactive &amp;ldquo;game&amp;rdquo; with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles.</description>
     </item>
   </channel>
 </rss>

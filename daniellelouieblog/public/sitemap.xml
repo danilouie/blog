@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-06-15T09:49:16-07:00</lastmod>
+    <loc>http://localhost:1313/projects/cyplan101/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/java/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-06-15T09:49:16-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
@@ -41,9 +53,6 @@
     <loc>http://localhost:1313/categories/syntax/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/test-post/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -57,12 +66,6 @@
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/cs61b/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/java/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2023-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>

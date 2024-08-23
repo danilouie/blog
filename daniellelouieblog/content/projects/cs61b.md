@@ -5,7 +5,8 @@ date = "2023-11-01"
 tags = ["Java"]
 +++
 
-**Language Used:** Java   |   [Project 3 Git Link](https://github.com/danilouie/CS61B-Projects/tree/main/proj3)
+**Language:** Java   |   **Program:** IntelliJ   |   [Project 3 Git Link](https://github.com/danilouie/CS61B-Projects/tree/main/proj3) 
+**Authors:** Danielle Louie, Michelle Ngo
 
 # Overview
 
@@ -57,4 +58,4 @@ In addition, we coded the game to use the keyboard control, "Y", to allow the us
 For projects that are as extensive as this, a **Design Document** is an extremely helpful way to build a framework for different objectives and keep track of your current progress. Before diving headfirst into coding, my partner and I first detailed out each objective of our project, as well as the steps that we were planning to take to accomplish these tasks. We even created a checklist to help us easily identify our progress in the midst of the comprehensive planning. In addition to being a helpful guide for our project, the Design Document also served as an effective tool for communication. In order to ensure that we were both on the same page, we each assumed responsibility to consistently update the document, allowing the document to actively reflect our progress and keep the both of us on the same page about each other's work. It also proved to be beneficial for debugging purposes.     
 
 ## Acknowledgements
-This project was conducted during the 2023 Fall Semester of CS61b at UC Berkeley. Feel free to browse through this [website](https://fa23.datastructur.es/materials/proj/proj3/) for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this [Git Repository](https://github.com/danilouie/CS61B-Projects).
+This project was conducted during the 2023 Fall Semester of CS61b at UC Berkeley. Feel free to browse through this <a href="https://fa23.datastructur.es/materials/proj/proj3/" target="_blank" rel="noopener noreferrer">website</a> for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this <a href="https://github.com/danilouie/CS61B-Projects" target="_blank" rel="noopener noreferrer">Git Repository</a>.

@@ -69,6 +69,8 @@ Despite Houston’s vulnerability to flooding as a coastal city, its storm sewer
 
 <iframe width="640px" height="360px" src="https://clausa.app.carto.com/map/895b54c3-1d18-44cd-8e4d-06dd48ac4c2d"></iframe>
 
+***Figure 2**:  The interactive map above can be toggled to show the relationship between floodways, severe floodpoints, and the sewer systems.*
+
 *<u>Pavements</u>*
 Pavement quality is measured according to the Pavement Conditions Index (PCI), where pavements are measured on a scale of 0 to 100, with 100 indicating a newly constructed road (Metropolitan Transportation Commission, 2021). Most roads aim to have an average PCI score of at least 70, indicating a “satisfactory” road that only needs minor maintenance, such as crack sealing or seal coating (City of Waseca, 2020). For our  research, we analyzed the material type and PCI scores of 73,289 roads in Houston.
 
@@ -101,14 +103,16 @@ The median income map displays similar patterns with more of the wealth concentr
 *<u>Topography and Elevation</u>*
 Below is a contour map of the Houston area with contours marking different elevations. Color coordination was chosen based on the varying elevations. This way, we could indicate which contour lines were at higher elevations (blue) and which ones were at lower elevations (yellow). 
 
-(insert figure 5 here)
+![elevation map](/images/cyplan101/elevation.png)
+***Figure 5**: Elevation contour map of the Greater Houston area (US Geological Survey, 2022).*
 
 We can see that southeastern portions of the city were not only closer to the gulf and other bodies of water, but they were more prone to flood risk as well, given the prevalence of yellow lines in that region. More interestingly, we can even deduce where Houston’s major waterways and rivers are by the dendritic patterns on its landscape. Another major feature is the notable separation of contour lines in the northwestern and southern portions of the city, creating favorable topological conditions for both agriculture and urban sprawl.
 One important aspect to note is that the range of altitudes does not vary much throughout the city. This range is only on the order of 200-300 feet, which is quite low relative to other cities in the US. In that case, although the scaling of this visualization is adjusted to bring out these topological differences, most of the city (even the higher portions) are still at risk of flooding to some degree.
 
 *<u>Land Use</u>*
 
-(insert figure 6 here)
+![land use map](/images/cyplan101/land_use.png)
+***Figure 6**: Land use map of Harris County, Texas (City of Houston, 2022).*
 
 This visual represents the land use across the city of Houston. While the dataset used contains more specific categorizations of these land uses, the data was grouped into ten different categories that outline zoning patterns within the city. 
 The most noticeable pattern is northern Houston’s abundance of single-family residential development (purple) and agricultural land (orange), especially in the northwest corner. Another key attribute of this is the concentration of industrial and commercial land in the southeastern portion of the city (both in shades of
@@ -118,7 +122,9 @@ One final characteristic worth mentioning is that Houston’s more distant subur
 *<u>Overlay of Elevation & Land Use Data</u>*
 A simultaneous application of both visualization layers provide a key comparison between urban development and topology for the city of Houston. The positive relation between industrial land and lower elevations is fairly straightforward to identify, indicating compounded flood danger for certain areas. Agricultural land use is generally seen in parts of the city that see more contour line separation, indicating flatter land. Meanwhile, several parks and open spaces (yellow) are located near riverfronts in downtown and suburban residential areas. 
 
-(insert figure 7 here)
+<iframe width="640px" height="360px" src="https://clausa.app.carto.com/map/892bd503-44b1-49fc-9b3e-d0b6680989f3"></iframe>
+
+***Figure 7**: The interactive map above overlays the elevation and land use maps, showing the relationship between the two features.*
 
 ## Discussion
 From our observations, we noticed correlations between flood vulnerability and low-income communities. Demographically, Hispanic, White, and African American communities were more prominent than other races in the southeastern regions of Houston, where the majority of low-income neighborhoods resided. These coastal regions are mainly used for industrial and commercial purposes, likely indicating higher concrete infrastructure. In addition, the low elevation allows for larger flooding of the river paths that flow from the ocean into Houston; unfortunately, there is little to no existing storm sewer infrastructure in these areas, which creates a high risk of severe flooding — as shown also by the severe floodpoints from Hurricane Harvey. It can be deduced from our data that low-income Hispanic, White, and African communities in Houston are more vulnerable to this severe flooding. Therefore, the urban design of Houston creates an environmental disparity stemming from marginalizing communities socioeconomically.

@@ -13,6 +13,8 @@
 {{ $csClass = "colorscheme-auto" }}
 {{ end }}
 
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
   {{ partial "float" . }}
   <main class="wrapper">

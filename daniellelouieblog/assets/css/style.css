@@ -17,3 +17,6 @@
     text-align: right; /* Align "Next" link to the right */
   }
   
+  .references {
+    font-size: 0.8em; /* Adjust this value to make the font smaller or larger */
+}

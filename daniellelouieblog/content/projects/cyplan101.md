@@ -118,10 +118,33 @@ As climate change continues to increase the frequency and intensity of storms, t
 
 ---
 
-# Sources Cited
-
----
-
 # Acknowledgements
 This project was conducted during the 2024 Summer Session of CYPLAN 101 at UC Berkeley.
 
+---
+
+# References
+
+1. Argüelles et al. (2022). The Impact of Hurricane Harvey. University of Houston. https://uh.edu/hobby/harvey/  
+2. Blackburn, J., & Borski, J. (2023, August 22). Assessing Houston’s Flood Vulnerability 6 Years After Harvey. Baker Institute. https://www.bakerinstitute.org/research/assessing-houstons-flood-vulnerability-6-years-after-harvey
+3. Borenstein, S., & Bajak, F. (2017, August 29). Houston Drainage Grid “so obsolete it’s just unbelievable.” CBC News. https://www.cbc.ca/news/world/houston-harvey-drainage-1.4267585 
+4. City of Houston. (2021, June 17). City of Houston Land Use. COHGIS Data Hub. https://cohgis-mycity.opendata.arcgis.com/datasets/coh-land-use/explore 
+5. ity of Houston. (2023, August). Disaster Recovery 2017 (DR17). Housing and Community Development Department. https://recovery.houstontx.gov/dr17/ 
+6. City of Waseca. (2020). Pavement Condition Index (PCI). Discover Waseca. https://www.ci.waseca.mn.us/engineering/pages/pavement-condition-index-pci
+Flores, A. B., Collins, T. W., Grineski
+7. S. E., & Chakraborty, J. (2020). Social vulnerability to Hurricane Harvey: Unmet needs and adverse event experiences in Greater Houston, Texas. International Journal of Disaster Risk Reduction, 46, 101521. https://doi.org/10.1016/j.ijdrr.2020.101521
+8. Fulton, W. (2022, August 29). Houston is still reckoning with the biggest lessons from Hurricane Harvey: Kinder Institute for Urban Research. Kinder Institute for Urban Research | Rice University. https://kinder.rice.edu/urbanedge/houston-still-reckoning-biggest-lessons-hurricane-harvey
+9. Harris County Engineering Department. (2018, July). Floodplain information. https://www.eng.hctx.net/Consultants/Floodplain-Management/Floodplain-Information
+10. Houston Police Department. Emergency 9-1-1 Police Non-Emergency. https://www.houstontx.gov/police/pdfs/brochures/english/turn_around_dont_drown.pdf
+11. How much rain causes flooding? (2017, August 24). ABC13 Houston. https://abc13.com/rain-rainfall-flooding-houston/2339080/
+12. Martinez, D. (2022). Climate Change Exacerbated Hurricane Harvey’s Flood Damage, Hitting Low-income and Latinx Neighborhoods Disproportionately Harder. photograph. Retrieved August 5, 2024, from https://www.lsu.edu/mediacenter/news/2022/08/climate-change-harvey.php. 
+13. Metropolitan Transportation Commission. (2021, March 17). Pavement Conditions Index (PCI).  https://mtc.ca.gov/operations/programs-projects/streets-roads-arterials/pavement-condition-index
+14. Mooney, C. (2018, January 8). Hurricane Harvey was year’s costliest U.S. disaster at $125 billion in damages. The Texas Tribune. https://www.texastribune.org/2018/01/08/hurricane-harvey-was-years-costliest-us-disaster-125-billion-damages/ 
+15. Mostafavi, A., Padgett, J., Dueñas-Osorio, L., Sutley, E., Norton, T., Lester, H., Wang, H., Dong, S., Sichani, M., Farahmand, H., Jimenez, E., Esmalian, A., Coleman, N., Dargin, J., Zhou, X., & Lee, C.-C. (2022, October 22). Hurricane Harvey Infrastructure Resilience Investigation. DesignSafe. https://www.designsafe-ci.org/data/browser/public/designsafe.storage.published/PRJ-3735 
+16. NASA Earth Observatory. (2024, May 22). Derecho Darkens Houston. https://earthobservatory.nasa.gov/images/152843/derecho-darkens-houston
+17. Project Recovery. (2017). Project Recovery Making a Difference for Harris County Residents.  Harrisrecovery.org. https://www.harrisrecovery.org/#:~:text=Project%20Recovery%20exists%20to%20assist
+18. Strong, S. (2022, August 25). Some Houstonians Still Struggling Five Years After Harvey. University of Houston. https://uh.edu/news-events/stories/2022-news-articles/august-2022/08252022-harvey-anniversary-flood.php#:~:text=The%20survey
+19. United States Census Bureau. (2020). All Households - Mean income (dollars). American Community Survey. https://data.census.gov/map/050XX00US48201$1400000/ACSST5Y2017/S1902/S1902_C03_001E?t=Income%20(Households,%20Families,%20Individuals)&y=2017&layer=VT_2017_140_00_PY_D1&loc=29.8345,-95.5757,z7.6388
+20. United States Census Bureau. (2020). Households - Median income (dollars). American Community Survey. https://data.census.gov/map/050XX00US48201$1400000/ACSST5Y2017/S1903/S1903_C03_001E?t=Income+%28Households%2C+Families%2C+Individuals%29&y=2017&layer=VT_2017_140_00_PY_D1&loc=29.6489%2C-95.3893%2Cz7.8318 
+21. United States Geological Survey. (2022, August 19). USGS NED 1/3 arc-second Contours for Houston W, Texas 20220819 1 x 1 degree Shapefile. National Geospatial Technical Operations Center. ScienceBase. https://www.sciencebase.gov/catalog/item/5cb16d2ee4b0c3b006574d24
+22. Whaley, K. (2020, August 11). New Study reveals nearly one third of Houston roads are in poor condition. ABC13 Houston. https://abc13.com/condition-of-houston-roads-new-study-quality-in-road-construction/6365235/ 

@@ -13,6 +13,16 @@ tags = ["R"]
 
 # Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability
 
+1. [Abstract](#Abstract)
+2. [Introduction](#Introduction)
+3. [Literature Review](#literature-review)
+4. [Methods](#Methods)
+5. [Results](#Results)
+6. [Discussion](#Discussion)
+7. [References](#References)
+
+---
+
 # Abstract
 As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics. When comparing the findings for each factor, we found that low-income Hispanic, White, and African American communities were more likely to face flood risks; these communities had higher numbers living in industrial and commercial regions along the coast, which are prone to severe flooding but face ineffective storm drainage due to prominent infrastructure made from impervious surfaces (concrete, asphalt, etc.). In addition, low-income communities live in neighborhoods that lack proper storm sewer drainage systems, exacerbating flash floods and dangerous flood points. We recommend that Houston improve its urban design equitably to decrease flood vulnerability and ensure the city's sustainability in the future. 
 
@@ -33,7 +43,7 @@ Our motivation for researching this topic comes from the varied nature of this i
 ***Image**: Harris County floods as seen from an aerial view taken on August 31, 2017 (Martinez, 2022).*
 
 
-## Literature Review
+## Literature Review {#literature-review}
 After Hurricane Harvey devastated Houston, a growing amount of attention was directed toward flood statistics. Different types of floods that struck the city were analyzed, and Houston and Harris County began to acknowledge the city’s weaknesses — including climate change, funding, and warning systems (Blackburn & Baker, 2023). The city government began establishing flood mitigation policies and supporting the construction of a new reservoir to increase preparedness against future storms (University of Houston, 2022). Environmental injustice was also brought to attention as several studies conducted found that people of color, people with disabilities, and people with existing health issues were disproportionately impacted by the hurricane (Flores et al., 2020). Studies analyzed the recovery rate of Houstonians to observe the varied recovery rates in different neighborhoods; five years after Hurricane Harvey, 81.6% of survey respondents were either completely or mostly recovered, leaving 29.4% of the respondents still struggling (Strong, 2022).  
 
 Furthermore, the destruction left in the wake of the cyclone had raised serious infrastructure concerns for the city of Houston to withstand future storms. The inundation of major interstate freeways and record water levels prompted investigations by the Infrastructure Resilience Division (IRD) and the American Society of Civil Engineers (ASCE) to document the lack of flood resilience of infrastructure with respect to heavy rainfall events (Mostafavi et al., 2022). The total estimated cost of damages caused by the storm hovers at around $125 billion, tied with Hurricane Katrina as the most expensive natural disaster in US history (Mooney, 2018). Despite this hefty price tag, Houston has seen almost no major infrastructure projects constructed in response to Hurricane Harvey (Fulton, 2022). This leaves ample room for discussion about contributing factors and urban planning solutions for Houston with respect to flood prevention.
@@ -145,7 +155,7 @@ As climate change continues to increase the frequency and intensity of storms, t
 ---
 
 # Acknowledgements
-This project was conducted during the 2024 Summer Session of CYPLAN 101 at UC Berkeley through the College of Environmental Design.
+This project was conducted with Kobe Bilstad during the 2024 Summer Session of CYPLAN 101 at UC Berkeley through the College of Environmental Design.
 
 ---
 

@@ -10,24 +10,32 @@ tags = ["Java"]
 
 ---
 
+# Outline
+1. [Overview](#Overview)
+2. [How it Works](#how-it-works)
+3. [Game Play](#game-play)
+4. [Video Tutorial](#video-tutorial)
+5. [Coding Process](#coding-process)
+6. [Takeaways](#Takeaways)
+
 # Overview
 
 The objective of this project was to build an interactive "game" with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles. 
 
-## How it works
+## How it Works {#how-it-works}
 
 For this project, my partner and I developed a dynamic main menu with functionality for generating random dungeon maps based off of user-input seeds. We implemented features for loading saved maps and facilitating a seamless exit from the game. We also incorporated interactive keypress controls and mouse functionality for movement, toggling map tools, and information display, which enhanced user engagement and overall gameplay experience. 
 
-## Game Play
+## Game Play {#game-play}
 
 The end-game condition is simple: water all the "grass" tiles into "flower" tiles to unlock the final door. Each map starts with 20 grass tiles and a "locked" door in randomly generated locations. The game ends once the all the grass tiles have grown into flowers, and the avatar travels onto the tile containing the now unlocked door.  
 
-## Video Tutorial
+## Video Tutorial {#video-tutorial}
 Below is a short tutorial of an example game play. 
 
 {{< video src="/video/cs61b_tutorial.mp4" >}}
 
-## Coding Process
+## Coding Process {#coding-process}
 
 The first goal in this project was world generation. The main objective of the map was that it had to be able to generate random rooms and hallways (with no dead ends), with every element reachable for exploration. In addition, the explorable parts of the map had to take up The map generation was prompted by a seed that the user would input, and the same seed should be able to generate the same map.
 
@@ -62,4 +70,4 @@ For projects that are as extensive as this, a **Design Document** is an extremel
 ---
 
 # Acknowledgements
-This project was conducted during the 2023 Fall Semester of CS61B at UC Berkeley through the College of Computing, Data Science, and Society. Feel free to browse through this <a href="https://fa23.datastructur.es/materials/proj/proj3/" target="_blank" rel="noopener noreferrer">website</a> for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this <a href="https://github.com/danilouie/CS61B-Projects" target="_blank" rel="noopener noreferrer">Git Repository</a>.
+This project was conducted with Michelle Ngo during the 2023 Fall Semester of CS61B at UC Berkeley through the College of Computing, Data Science, and Society. Feel free to browse through this <a href="https://fa23.datastructur.es/materials/proj/proj3/" target="_blank" rel="noopener noreferrer">website</a> for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this <a href="https://github.com/danilouie/CS61B-Projects" target="_blank" rel="noopener noreferrer">Git Repository</a>.

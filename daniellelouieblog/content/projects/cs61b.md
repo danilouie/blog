@@ -18,6 +18,8 @@ tags = ["Java"]
 5. [Coding Process](#coding-process)
 6. [Takeaways](#Takeaways)
 
+---
+ 
 # Overview
 
 The objective of this project was to build an interactive "game" with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles. 

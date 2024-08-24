@@ -11,16 +11,16 @@ tags = ["Java"]
 ---
 
 # Outline
-1. [Overview](#Overview)
+1. [Overview](#overview)
 2. [How it Works](#how-it-works)
 3. [Game Play](#game-play)
 4. [Video Tutorial](#video-tutorial)
 5. [Coding Process](#coding-process)
-6. [Takeaways](#Takeaways)
+6. [Takeaways](#takeaways)
 
 ---
  
-# Overview
+# Overview {#overview}
 
 The objective of this project was to build an interactive "game" with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles. 
 
@@ -65,7 +65,7 @@ In addition, we coded the game to use the keyboard control, "Y", to allow the us
 
 ![playable world](/images/cs61b/playable_map.png)
 
-## Takeaways
+## Takeaways {#takeaways}
 
 For projects that are as extensive as this, a **Design Document** is an extremely helpful way to build a framework for different objectives and keep track of your current progress. Before diving headfirst into coding, my partner and I first detailed out each objective of our project, as well as the steps that we were planning to take to accomplish these tasks. We even created a checklist to help us easily identify our progress in the midst of the comprehensive planning. In addition to being a helpful guide for our project, the Design Document also served as an effective tool for communication. In order to ensure that we were both on the same page, we each assumed responsibility to consistently update the document, allowing the document to actively reflect our progress and keep the both of us on the same page about each other's work. It also proved to be beneficial for debugging purposes.     
 

@@ -13,22 +13,23 @@ tags = ["R"]
 
 # Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability
 
-1. [Abstract](#Abstract)
-2. [Introduction](#Introduction)
+1. [Abstract](#abstract)
+2. [Introduction](#introduction)
 3. [Literature Review](#literature-review)
-4. [Methods](#Methods)
-5. [Results](#Results)
-6. [Discussion](#Discussion)
-7. [References](#References)
+4. [Methods](#methods)
+5. [Results](#results)
+6. [Discussion](#discussion)
+7. [Conclusion](#conclusion)
+8. [References](#references)
 
 ---
 
-# Abstract
+# Abstract {#abstract}
 As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics. When comparing the findings for each factor, we found that low-income Hispanic, White, and African American communities were more likely to face flood risks; these communities had higher numbers living in industrial and commercial regions along the coast, which are prone to severe flooding but face ineffective storm drainage due to prominent infrastructure made from impervious surfaces (concrete, asphalt, etc.). In addition, low-income communities live in neighborhoods that lack proper storm sewer drainage systems, exacerbating flash floods and dangerous flood points. We recommend that Houston improve its urban design equitably to decrease flood vulnerability and ensure the city's sustainability in the future. 
 
 ---
 
-## Introduction
+## Introduction {#introduction}
 Similar to many other low-lying municipalities in the United States, the city of Houston, Texas has encountered significant flood risk for much of its history. However, these concerns were substantially heightened following the impact of Hurricane Harvey in August of 2017. The category four storm had brought tremendous amounts of precipitation and damage to southeastern Texas, especially the Houston metropolitan area. In the aftermath, large portions of the city experienced severe flooding that impacted residential areas and transportation infrastructure for multiple weeks. 
 We aim to establish a potential link between the flooding caused by Hurricane Harvey and the role of infrastructure and urban design in exacerbating the effects of climate change. Specifically, we attempt to identify factors governing Houston’s flood risk including but not limited to: precipitation patterns, pavement and road conditions, efficiency of drainage systems, topography, land use, and geographic distribution of household income. In efforts to combine these factors together, we analyze how the city of Houston could not only be severely impacted by future events such as the 2017 floods, but also how vulnerability to natural disasters may drive economic and social inequality from an urban planning perspective. 
 
@@ -48,7 +49,7 @@ After Hurricane Harvey devastated Houston, a growing amount of attention was dir
 
 Furthermore, the destruction left in the wake of the cyclone had raised serious infrastructure concerns for the city of Houston to withstand future storms. The inundation of major interstate freeways and record water levels prompted investigations by the Infrastructure Resilience Division (IRD) and the American Society of Civil Engineers (ASCE) to document the lack of flood resilience of infrastructure with respect to heavy rainfall events (Mostafavi et al., 2022). The total estimated cost of damages caused by the storm hovers at around $125 billion, tied with Hurricane Katrina as the most expensive natural disaster in US history (Mooney, 2018). Despite this hefty price tag, Houston has seen almost no major infrastructure projects constructed in response to Hurricane Harvey (Fulton, 2022). This leaves ample room for discussion about contributing factors and urban planning solutions for Houston with respect to flood prevention.
 
-## Methods
+## Methods {#methods}
 To conduct holistic research about Houston’s flood vulnerability, we analyzed six urban components in Houston to understand the reasons behind its proneness to flooding and to examine the interplay between various contributing factors, highlighting the unsustainability of Houston's infrastructure in managing flood risks.
 1. ***Precipitation***: precipitation patterns were examined for Houston across multiple years to examine how rainfall in 2017 compared to other years. In the context of flooding, our group specifically looked at spikes in weather data graphs that indicate storms or major rainfall events.
 2. ***Storm sewer systems***: using GIS software, we mapped out the main flood points, storm sewer systems, and floodways to evaluate the effectiveness of Houston’s drainage infrastructure. 
@@ -59,7 +60,7 @@ Pavements: with relevance to Houston’s high concentration of impervious surfac
 
 The data and findings for these six sources are discussed in detail in the subsequent ‘Results’ section. One key feature of our methods is that much of the data has been compiled and visualized in order to highlight noteworthy patterns; however, we concede that there are potentially other factors that may not be included in this analysis as well. 
 
-## Results
+## Results {#results}
 *<u>Precipitation</u>*
 To understand the influence of weather on floods in Houston, we analyzed daily precipitation patterns from 2017 to 2023 and calculated the mean amount in inches for each year. 
 
@@ -136,7 +137,7 @@ A simultaneous application of both visualization layers provide a key comparison
 
 ***Figure 7**: The interactive map above overlays the elevation and land use maps, showing the relationship between the two features.*
 
-## Discussion
+## Discussion {#discussion}
 From our observations, we noticed correlations between flood vulnerability and low-income communities. Demographically, Hispanic, White, and African American communities were more prominent than other races in the southeastern regions of Houston, where the majority of low-income neighborhoods resided. These coastal regions are mainly used for industrial and commercial purposes, likely indicating higher concrete infrastructure. In addition, the low elevation allows for larger flooding of the river paths that flow from the ocean into Houston; unfortunately, there is little to no existing storm sewer infrastructure in these areas, which creates a high risk of severe flooding — as shown also by the severe floodpoints from Hurricane Harvey. It can be deduced from our data that low-income Hispanic, White, and African communities in Houston are more vulnerable to this severe flooding. Therefore, the urban design of Houston creates an environmental disparity stemming from marginalizing communities socioeconomically.
 
 Moreover, the geography of Houston has also raised the probability of unwelcome floods due to the city’s low elevation. Even more alarming is the significant overlap between industrial land uses and low-lying plains that are adjacent to the city’s waterways. It is our concern that the concentration of these industrial zones in more flood-prone areas will lower Houston’s overall resilience toward future hurricanes. However, it is crucial to observe that much of Houston’s land area contains natural floodplains as well. The presence of flat, undeveloped land is therefore inherently designed to inundate — even when communities that aren’t infrastructurally designed to mirror this behavior are built next to or within these areas (Harris County Engineering Department, 2018). These flatter plots of land without a natural waterway outlet nor access to a man-made drainage system would therefore pose a risk to urban development in the area. Using income demographics we obtained from ACS, we can determine that susceptibility to floods are indeed occupying similar areas. Relative to downtown, these targeted low-income neighborhoods lie to the immediate northeast and the far south portions of Harris County (see Figures 4 & 7). In general, these overlaps have nonetheless shaped our analysis and added nuance to our understanding of flood risk across the city. 
@@ -145,7 +146,7 @@ A key limitation to our data would likely be the scope of information collected.
 
 In terms of the city’s recovery path, programs such as Project Recovery (Project Recovery, 2017) and Disaster Recovery 2017 (City of Houston, 2023) have helped galvanize the process of building resilience in neighborhoods devastated by Hurricane Harvey. However, current programs fail to identify the need for special attention towards marginalized communities that were disproportionately impacted and face more struggles in recovery. Future developments of these recovery programs should identify and address vulnerable communities to better understand how to help communities that require different resources and solutions for future resilience against climate change. 
 
-## Conclusion
+## Conclusion {#conclusion}
 The findings of this paper underscore the vital need for targeted improvements in Houston's urban infrastructure to address flood vulnerability, particularly in low-income communities disproportionately affected by severe flooding. The analysis of precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics reveals a complex interplay of factors contributing to flood risk. It is evident that communities with insufficient storm drainage infrastructure and significant exposure to impervious surfaces are at heightened risk during extreme weather events.
 
 To mitigate these risks and enhance the city's resilience, Houston must prioritize equitable urban planning and invest in sustainable infrastructure solutions. This includes upgrading storm sewer systems, implementing green infrastructure practices, and revising land use policies to reduce the concentration of vulnerable populations in high-risk areas. By addressing these challenges holistically, Houston will not only reduce flood risks by relying less on impervious surfaces, but the city would also promote social equity and environmental sustainability.
@@ -154,12 +155,7 @@ As climate change continues to increase the frequency and intensity of storms, t
 
 ---
 
-# Acknowledgements
-This project was conducted with Kobe Bilstad during the 2024 Summer Session of CYPLAN 101 at UC Berkeley through the College of Environmental Design.
-
----
-
-# References
+# References {#references}
 
 1. Argüelles et al. (2022). The Impact of Hurricane Harvey. University of Houston. https://uh.edu/hobby/harvey/  
 2. Blackburn, J., & Borski, J. (2023, August 22). Assessing Houston’s Flood Vulnerability 6 Years After Harvey. Baker Institute. https://www.bakerinstitute.org/research/assessing-houstons-flood-vulnerability-6-years-after-harvey
@@ -184,3 +180,8 @@ Flores, A. B., Collins, T. W., Grineski
 20. United States Census Bureau. (2020). Households - Median income (dollars). American Community Survey. https://data.census.gov/map/050XX00US48201$1400000/ACSST5Y2017/S1903/S1903_C03_001E?t=Income+%28Households%2C+Families%2C+Individuals%29&y=2017&layer=VT_2017_140_00_PY_D1&loc=29.6489%2C-95.3893%2Cz7.8318 
 21. United States Geological Survey. (2022, August 19). USGS NED 1/3 arc-second Contours for Houston W, Texas 20220819 1 x 1 degree Shapefile. National Geospatial Technical Operations Center. ScienceBase. https://www.sciencebase.gov/catalog/item/5cb16d2ee4b0c3b006574d24
 22. Whaley, K. (2020, August 11). New Study reveals nearly one third of Houston roads are in poor condition. ABC13 Houston. https://abc13.com/condition-of-houston-roads-new-study-quality-in-road-construction/6365235/ 
+
+---
+
+# Acknowledgements
+This project was conducted with Kobe Bilstad during the 2024 Summer Session of CYPLAN 101 at UC Berkeley through the College of Environmental Design.

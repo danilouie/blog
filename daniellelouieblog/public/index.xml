@@ -13,7 +13,7 @@
       <link>http://localhost:1313/projects/cyplan101/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/cyplan101/</guid>
-      <description>Language: R | Program: RStudio, Carto Authors: Danielle Louie, Kobe Bilstad&#xA;Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability Link to heading Abstract Introduction Literature Review Methods Results Discussion References Abstract Link to heading As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics.</description>
+      <description>Language: R | Program: RStudio, Carto Authors: Danielle Louie, Kobe Bilstad&#xA;Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability Link to heading Abstract Introduction Literature Review Methods Results Discussion Conclusion References Abstract Link to heading As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics.</description>
     </item>
     <item>
       <title>About</title>
@@ -42,6 +42,13 @@
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/cs61b/</guid>
       <description>Language: Java | Program: IntelliJ | Project 3 Git Link Authors: Danielle Louie, Michelle Ngo&#xA;Outline Link to heading Overview How it Works Game Play Video Tutorial Coding Process Takeaways Overview Link to heading The objective of this project was to build an interactive &amp;ldquo;game&amp;rdquo; with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley!</description>
+    </item>
+    <item>
+      <title>Tree Coverage in Los Angeles</title>
+      <link>http://localhost:1313/projects/latrees/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/latrees/</guid>
+      <description>Program: ArcGIS Pro Authors: Danielle Louie, Michelle Ngo, Magali Ruer&#xA;Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees to ensure a sustainable environment.</description>
     </item>
     <item>
       <title>Contact</title>

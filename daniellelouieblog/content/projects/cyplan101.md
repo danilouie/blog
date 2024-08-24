@@ -1,14 +1,17 @@
 +++
 title = "Flood Risk in Houston"
+subtitle = "Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability"
 author = ["Danielle Louie", "Kobe Bilstad"]
-date = "2024-06-17"
-tags = ["Java"]
+date = "2024-08-08"
+tags = ["R"]
 +++
 
 **Language:** R   |   **Program:** RStudio, Carto
 **Authors:** Danielle Louie, Kobe Bilstad
 
-Visit the <a href="https://github.com/danilouie/CS61B-Projects/tree/main/proj3" target="_blank" rel="noopener noreferrer">GitHub profile</a> for more details.
+---
+
+# Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability
 
 # Abstract
 As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics. When comparing the findings for each factor, we found that low-income Hispanic, White, and African American communities were more likely to face flood risks; these communities had higher numbers living in industrial and commercial regions along the coast, which are prone to severe flooding but face ineffective storm drainage due to prominent infrastructure made from impervious surfaces (concrete, asphalt, etc.). In addition, low-income communities live in neighborhoods that lack proper storm sewer drainage systems, exacerbating flash floods and dangerous flood points. We recommend that Houston improve its urban design equitably to decrease flood vulnerability and ensure the city's sustainability in the future. 
@@ -21,8 +24,17 @@ We aim to establish a potential link between the flooding caused by Hurricane Ha
 
 Our motivation for researching this topic comes from the varied nature of this issue — in other words, its pertinence to climate science, urban data analytics, and social justice. By understanding the lessons from Hurricane Harvey and its effect on Houston city planning, we hope to inform future infrastructure planning efforts that prioritize both economic growth and environmental sustainability, ensuring that cities like Houston are better prepared to face the challenges of climate change and extreme weather.
 
+<!-- ![houston flooded martinezs](/images/cyplan101/martinez_image.png) 
+<figcaption class="image-caption">
+    <strong>Image:</strong> Harris County floods as seen from an aerial view taken on August 31, 2017 (Martinez, 2022).
+</figcaption> -->
+
+![houston flooded martinezs](/images/cyplan101/martinez_image.png)
+***Image**: Harris County floods as seen from an aerial view taken on August 31, 2017 (Martinez, 2022).*
+
+
 ## Literature Review
-After Hurricane Harvey devastated Houston, a growing amount of attention was directed toward flood statistics. Different types of floods that struck the city were analyzed, and Houston and Harris County began to acknowledge the city’s weaknesses — including climate change, funding, and warning systems (Blackburn & Baker, 2023). The city government began establishing flood mitigation policies and supporting the construction of a new reservoir to increase preparedness against future storms (University of Houston, 2022). Environmental injustice was also brought to attention as several studies conducted found that people of color, people with disabilities, and people with existing health issues were disproportionately impacted by the hurricane (Flores et al., (2020). Studies analyzed the recovery rate of Houstonians to observe the varied recovery rates in different neighborhoods; five years after Hurricane Harvey, 81.6% of survey respondents were either completely or mostly recovered, leaving 29.4% of the respondents still struggling (Strong, 2022).  
+After Hurricane Harvey devastated Houston, a growing amount of attention was directed toward flood statistics. Different types of floods that struck the city were analyzed, and Houston and Harris County began to acknowledge the city’s weaknesses — including climate change, funding, and warning systems (Blackburn & Baker, 2023). The city government began establishing flood mitigation policies and supporting the construction of a new reservoir to increase preparedness against future storms (University of Houston, 2022). Environmental injustice was also brought to attention as several studies conducted found that people of color, people with disabilities, and people with existing health issues were disproportionately impacted by the hurricane (Flores et al., 2020). Studies analyzed the recovery rate of Houstonians to observe the varied recovery rates in different neighborhoods; five years after Hurricane Harvey, 81.6% of survey respondents were either completely or mostly recovered, leaving 29.4% of the respondents still struggling (Strong, 2022).  
 
 Furthermore, the destruction left in the wake of the cyclone had raised serious infrastructure concerns for the city of Houston to withstand future storms. The inundation of major interstate freeways and record water levels prompted investigations by the Infrastructure Resilience Division (IRD) and the American Society of Civil Engineers (ASCE) to document the lack of flood resilience of infrastructure with respect to heavy rainfall events (Mostafavi et al., 2022). The total estimated cost of damages caused by the storm hovers at around $125 billion, tied with Hurricane Katrina as the most expensive natural disaster in US history (Mooney, 2018). Despite this hefty price tag, Houston has seen almost no major infrastructure projects constructed in response to Hurricane Harvey (Fulton, 2022). This leaves ample room for discussion about contributing factors and urban planning solutions for Houston with respect to flood prevention.
 
@@ -41,42 +53,50 @@ The data and findings for these six sources are discussed in detail in the subse
 *<u>Precipitation</u>*
 To understand the influence of weather on floods in Houston, we analyzed daily precipitation patterns from 2017 to 2023 and calculated the mean amount in inches for each year. 
 
-(add figure 1a here)
+![precipitation graphs](/images/cyplan101/precipitation_graphs.png)
+***Figure 1a**: In the seven line graphs above, there were noticeable spikes in 2017 and 2020. The line graph for 2021 also showed more continuous rainfall throughout the year compared to other years.*
 
 The spike in the 2017 graph represents the timeframe when Hurricane Harvey hit (August 17 to September 2), and the spike in 2020 represents when Tropical Storm Beta hit (September 17 to September 23). In addition, 2021 faced a lot of rainfall throughout the year due to Hurricane Nicholas, leading it to have the third-highest annual average precipitation within the seven years depicted.
 
-(add figure 1b here)
+
+![overlaid precipitation graph](/images/cyplan101/2017_to_2023_lineplot.png)
+***Figure 1b**: The graph above depicts the seven years overlaid on a single plot, demonstrating the severity of torrential rain that occurred in 2017 and 2020.*
 
 According to the City of Houston, Houston is a coastal city prone to flooding all year round (Houston Police Department, n.d). Due to its complex yet intensely used road infrastructure, the urban design comprises many impervious surfaces throughout the city. In fact, it only takes “2 inches in an hour [to] flood streets” (ABC13 Houston, 2017); it can be inferred that Houston’s streets are vulnerable to small amounts of rain and lack the infrastructure to drain flood water effectively. Torrential rain renders storm sewer systems obsolete as water pools faster than they can drain, creating dangerous flash floods on both main roads and neighborhood streets. As climate change increases the intensity of storms, Houston needs to reshape its urban design to accommodate higher levels of precipitation. In 2024, Houston has already experienced a derecho (series of windstorms and thunderstorms) in mid-May, as observed by NASA (NASA Earth Observatory, 2024). Currently, Houston is facing Hurricane Beryl, with combinations of torrential rain, storm surges, tornadoes, and high wind speeds, exacerbating flood risks in the city. 
 
 *<u>Storm Sewer Systems</u>*
-Despite Houston’s vulnerability to flooding as a coastal city, its storm sewer system has essentially been deemed “obsolete” (Borenstein & Bajak, 2017). For our research, we focused on comparing the location of storm sewers in 2017 to the high flood points that Hurricane Harvey caused. The map below shows a portion of a larger map that depicts a total of 574 severe floodpoints and 529 storm sewers. Severe flooding occurred more often in major floodway paths, especially closer to the coast. Additionally, several storm sewer systems exist where there are no floodways, and many that are located near major floodways appear to have minimal infrastructure (as shown by their space occupancy). The evidence of multiple severe floodpoints at or past storm sewer systems indicates that the existing storm sewers likely overflowed, signifying ineffective draining and poor design; these conditions can also lead to more disastrous impacts that spill past main floodpaths due to sudden movement of large quantities of water, commonly in the form of flash floods. 
+Despite Houston’s vulnerability to flooding as a coastal city, its storm sewer system has essentially been deemed “obsolete” (Borenstein & Bajak, 2017). For our research, we focused on comparing the location of storm sewers in 2017 to the high flood points that Hurricane Harvey caused. The <a href="https://clausa.app.carto.com/map/895b54c3-1d18-44cd-8e4d-06dd48ac4c2d" target="_blank" rel="noopener noreferrer">interactive map</a> below shows a portion of a larger map that depicts a total of 574 severe floodpoints and 529 storm sewers. Severe flooding occurred more often in major floodway paths, especially closer to the coast. Additionally, several storm sewer systems exist where there are no floodways, and many that are located near major floodways appear to have minimal infrastructure (as shown by their space occupancy). The evidence of multiple severe floodpoints at or past storm sewer systems indicates that the existing storm sewers likely overflowed, signifying ineffective draining and poor design; these conditions can also lead to more disastrous impacts that spill past main floodpaths due to sudden movement of large quantities of water, commonly in the form of flash floods. 
 
-(insert carto map here)
+<iframe width="640px" height="360px" src="https://clausa.app.carto.com/map/895b54c3-1d18-44cd-8e4d-06dd48ac4c2d"></iframe>
 
 *<u>Pavements</u>*
 Pavement quality is measured according to the Pavement Conditions Index (PCI), where pavements are measured on a scale of 0 to 100, with 100 indicating a newly constructed road (Metropolitan Transportation Commission, 2021). Most roads aim to have an average PCI score of at least 70, indicating a “satisfactory” road that only needs minor maintenance, such as crack sealing or seal coating (City of Waseca, 2020). For our  research, we analyzed the material type and PCI scores of 73,289 roads in Houston.
 
-(insert figure 3a here())
+![pci chart](/images/cyplan101/PCI_Chart.png)
+***Figure 3a**: The chart above shows the different ratings of pavement condition based on the interval of PCI scores that a road receives.*
 
 All roads observed were made from one of two types of concrete: Asphalt Concrete (AC) or Portland Cement Concrete (PCC). A main difference between the two materials is their corrosion failure mode; AC is prone to sunlight damage (which weakens asphalt by causing faster oxidation), whereas PCC is vulnerable once water and salt seep into its steel reinforcements. AC roads are also considered more flexible while PCC roads have more rigid infrastructure. Houston has 39,681 PCC roads, slightly more than the 33,608 AC roads in the city, to support heavy vehicle usage; however, this also means that the majority of Houston roads are more susceptible to corrosion by water intrusion. In addition, due to the intensity of storms, AC roads are also easily damaged from the constant impact of precipitation on top of vehicle burden. 
 
-(insert figure 3b here)
+![pavement condition and types](/images/cyplan101/condition_type.png)
+***Figure 3b**: The bar graph above depicts the distribution of PCI scores for all 73,289 roads, as well as the ratio of road types for each interval.*
 
 As depicted above, the graph is skewed left with most roads in fair or better condition, and the average PCI score of all roads was 71.8394 (satisfactory). However, 15.2% (11,151 roads) had a PCI score of 55 (poor) or below, and 39.4% (28,898 roads) scored below satisfactory. Of these roads, 52.5% of AC roads (17,658 out of 33608 AC roads) and 28.3% of PCC roads (11,240 out of 39681 PCC roads) were below satisfactory standards. This indicates that over a third of the roads require significant reconstruction. In fact, in 2020, Houston was ranked 22nd for worst roads across the United States (ABC13 Houston, 2020).
 
 *<u>Income Demographics</u>*
 The following data was produced using ACS (American Community Survey). The subdivisions for each region were by census tract. An important side note: requests to use GeoJSON files to upload this spatial data in GIS have been denied. While the data may be public, certain forms of downloading may be restricted due to its sensitivity. 
 
-(insert figure 4a here)
+![mean income](/images/cyplan101/mean_income.png)
+***Figure 4a**: Mean incomes for Harris County by census tract (US Census Bureau, 2020).*
 
 Shown above are the mean income of households for the Houston area. Census tracts within Harris County were chosen, as a large portion of the metropolitan area falls nicely within the county lines for statistical review. Upon inspection, more of the wealth is concentrated to the north and western portions of the city, however, distant suburbs in general make up a higher income profile as a whole. The immediate southeast of downtown is shown to be situated in the lowest income bracket, indicating the higher presence of poverty in Houston’s inner city.
 
-(insert figure 4b here)
+![median income](/images/cyplan101/median_income.png)
+***Figure 4b**: Median incomes for Harris County by census tract (US Census Bureau, 2020).*
 
 The median income map displays similar patterns with more of the wealth concentrated in the north and west suburbs. However, there is a slightly higher median income in the more distant suburbs, especially to the northwest of the county. The signs of a lower-income inner city follow a similar outline to the previous mean income map. Geographically, this poorer region is located closer to bodies of water, likely making up some of the swampier sections of Houston. Below are some of the median incomes by race:
 
-(insert figure 4c here)
+![median income for different races](/images/cyplan101/different_races.png)
+***Figure 4c**: Median incomes for each race in Harris County by census tract (US Census Bureau, 2020).*
 
 *<u>Topography and Elevation</u>*
 Below is a contour map of the Houston area with contours marking different elevations. Color coordination was chosen based on the varying elevations. This way, we could indicate which contour lines were at higher elevations (blue) and which ones were at lower elevations (yellow). 
@@ -119,7 +139,7 @@ As climate change continues to increase the frequency and intensity of storms, t
 ---
 
 # Acknowledgements
-This project was conducted during the 2024 Summer Session of CYPLAN 101 at UC Berkeley.
+This project was conducted during the 2024 Summer Session of CYPLAN 101 at UC Berkeley through the College of Environmental Design.
 
 ---
 

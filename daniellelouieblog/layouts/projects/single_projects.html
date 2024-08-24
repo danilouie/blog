@@ -9,8 +9,17 @@
           <h1 class="title">
             <a class="title-link" href="{{ .Permalink | safeURL }}">
               {{ .Title }}
-            </a>
+            </a>  
           </h1>
+        <!-- The subtitle section should be outside the h1 for the title -->
+          <div class="project-subtitle">
+            {{ if .Params.subtitle }}
+              <h2 class="subtitle">
+                {{ .Params.subtitle }}
+              </h2>
+            {{ end }}
+          </div>
+          <!-- subtitle ends here --> 
         </div>
         <div class="project-meta">
           <div class="date">

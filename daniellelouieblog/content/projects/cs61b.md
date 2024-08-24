@@ -8,6 +8,8 @@ tags = ["Java"]
 **Language:** Java   |   **Program:** IntelliJ   |   [Project 3 Git Link](https://github.com/danilouie/CS61B-Projects/tree/main/proj3) 
 **Authors:** Danielle Louie, Michelle Ngo
 
+---
+
 # Overview
 
 The objective of this project was to build an interactive "game" with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles. 
@@ -60,4 +62,4 @@ For projects that are as extensive as this, a **Design Document** is an extremel
 ---
 
 # Acknowledgements
-This project was conducted during the 2023 Fall Semester of CS61B at UC Berkeley. Feel free to browse through this <a href="https://fa23.datastructur.es/materials/proj/proj3/" target="_blank" rel="noopener noreferrer">website</a> for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this <a href="https://github.com/danilouie/CS61B-Projects" target="_blank" rel="noopener noreferrer">Git Repository</a>.
+This project was conducted during the 2023 Fall Semester of CS61B at UC Berkeley through the College of Computing, Data Science, and Society. Feel free to browse through this <a href="https://fa23.datastructur.es/materials/proj/proj3/" target="_blank" rel="noopener noreferrer">website</a> for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this <a href="https://github.com/danilouie/CS61B-Projects" target="_blank" rel="noopener noreferrer">Git Repository</a>.

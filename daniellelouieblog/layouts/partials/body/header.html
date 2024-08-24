@@ -4,6 +4,9 @@
     <a class="navigation-title" href="{{ absLangURL "" }}">
       {{ .Title }}
     </a>
+    {{ if .Params.subtitle }}
+    <span class="navigation-subtitle">{{ .Params.subtitle }}</span>
+    {{ end }}
     {{ end }}
     {{ if or .Site.Menus.main hugo.IsMultilingual }}
       <input type="checkbox" id="menu-toggle" />

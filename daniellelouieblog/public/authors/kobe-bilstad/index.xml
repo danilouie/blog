@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kobe Bilstad on Home</title>
+    <link>http://localhost:1313/authors/kobe-bilstad/</link>
+    <description>Recent content in Kobe Bilstad on Home</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/kobe-bilstad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flood Risk in Houston</title>
+      <link>http://localhost:1313/projects/cyplan101/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cyplan101/</guid>
+      <description>Outline Link to heading Abstract Introduction Literature Review Methods Results Discussion Conclusion References Abstract Link to heading As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics. When comparing the findings for each factor, we found that low-income Hispanic, White, and African American communities were more likely to face flood risks; these communities had higher numbers living in industrial and commercial regions along the coast, which are prone to severe flooding but face ineffective storm drainage due to prominent infrastructure made from impervious surfaces (concrete, asphalt, etc.</description>
+    </item>
+  </channel>
+</rss>

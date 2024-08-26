@@ -2,17 +2,26 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-  <section class="container post">
+  <section class="container project">
     <article>
       <header>
-        <div class="post-title">
+        <div class="project-title">
           <h1 class="title">
             <a class="title-link" href="{{ .Permalink | safeURL }}">
               {{ .Title }}
-            </a>
+            </a>  
           </h1>
+        <!-- The subtitle section should be outside the h1 for the title -->
+          <div class="project-subtitle">
+            {{ if .Params.subtitle }}
+              <h2 class="subtitle">
+                {{ .Params.subtitle }}
+              </h2>
+            {{ end }}
+          </div>
+          <!-- subtitle ends here --> ````````````
         </div>
-        <div class="post-meta">
+        <div class="project-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fa-solid fa-calendar" aria-hidden="true"></i>
@@ -31,7 +40,7 @@
         </div>
       </header>
 
-      <div class="post-content">
+      <div class="project-content">
         {{ if .Params.featuredImage }}
           <img src="{{ .Params.featuredImage | relURL }}" alt="Featured image"/>
         {{ end }}
@@ -40,22 +49,22 @@
 
 
       <footer>
-        {{ partial "posts/series.html" . }}
-        {{ partial "posts/disqus.html" . }}
-        {{ partial "posts/commento.html" . }}
-        {{ partial "posts/utterances.html" . }}
-        {{ partial "posts/giscus.html" . }}
-        {{ partial "posts/mastodon.html" . }}
-        {{ partial "posts/telegram.html" . }}
-        {{ partial "posts/cusdis.html" . }}
+        {{ partial "projects/series.html" . }}
+        {{ partial "projects/disqus.html" . }}
+        {{ partial "projects/commento.html" . }}
+        {{ partial "projects/utterances.html" . }}
+        {{ partial "projects/giscus.html" . }}
+        {{ partial "projects/mastodon.html" . }}
+        {{ partial "projects/telegram.html" . }}
+        {{ partial "projects/cusdis.html" . }}
 
         <div class="navigation-links">
-          <div class="prev-post">
+          <div class="prev-project">
             {{ if .Prev }}
               <a href="{{ .Prev.Permalink }}">Previous: {{ .Prev.Title }}</a>
             {{ end }}
           </div>
-          <div class="next-post">
+          <div class="next-project">
             {{ if .Next }}
               <a href="{{ .Next.Permalink }}">Next: {{ .Next.Title }}</a>
             {{ end }}
@@ -65,6 +74,6 @@
       </footer>
     </article>
 
-    {{ partial "posts/math.html" . }}
+    {{ partial "projects/math.html" . }}
   </section>
 {{ end }}

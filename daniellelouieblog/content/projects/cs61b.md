@@ -1,12 +1,13 @@
 +++
 title = "2D Tile-Based World Exploration Engine"
-author = ["Danielle Louie", "Michelle Ngo"]
+subtitle = " "
+authors = ["Danielle Louie", "Michelle Ngo"]
 date = "2023-11-01"
-tags = ["Java"]
+categories = ["Java", "IntelliJ"]
+eexternalLink = "https://github.com/danilouie/CS61B-Projects/tree/main/proj3"
 +++
 
-**Language:** Java   |   **Program:** IntelliJ   |   [Project 3 Git Link](https://github.com/danilouie/CS61B-Projects/tree/main/proj3) 
-**Authors:** Danielle Louie, Michelle Ngo
+Here is the [Project 3 Git Link](https://github.com/danilouie/CS61B-Projects/tree/main/proj3). 
 
 ---
 

@@ -71,7 +71,11 @@
     <loc>http://localhost:1313/tags/java/</loc>
     <lastmod>2023-11-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/arcgis-pro/</loc>
+    <lastmod>2022-12-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/latrees/</loc>
+    <lastmod>2022-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url>

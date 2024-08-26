@@ -1,17 +1,14 @@
 +++
 title = "Flood Risk in Houston"
 subtitle = "Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability"
-author = ["Danielle Louie", "Kobe Bilstad"]
+authors = ["Danielle Louie", "Kobe Bilstad"]
 date = "2024-08-08"
-tags = ["R"]
+categories = ["R", "RStudio", "Carto"]
 +++
-
-**Language:** R   |   **Program:** RStudio, Carto
-**Authors:** Danielle Louie, Kobe Bilstad
 
 ---
 
-# Analyzing Urban Design Factors and Infrastructure Contributing to Vulnerability
+# Outline
 
 1. [Abstract](#abstract)
 2. [Introduction](#introduction)

@@ -58,7 +58,7 @@ Pavements: with relevance to Houston’s high concentration of impervious surfac
 The data and findings for these six sources are discussed in detail in the subsequent ‘Results’ section. One key feature of our methods is that much of the data has been compiled and visualized in order to highlight noteworthy patterns; however, we concede that there are potentially other factors that may not be included in this analysis as well. 
 
 ## Results {#results}
-*<u>Precipitation</u>*
+###### *<u>Precipitation</u>*
 To understand the influence of weather on floods in Houston, we analyzed daily precipitation patterns from 2017 to 2023 and calculated the mean amount in inches for each year. 
 
 ![precipitation graphs](/images/cyplan101/precipitation_graphs.png)
@@ -72,14 +72,14 @@ The spike in the 2017 graph represents the timeframe when Hurricane Harvey hit (
 
 According to the City of Houston, Houston is a coastal city prone to flooding all year round (Houston Police Department, n.d). Due to its complex yet intensely used road infrastructure, the urban design comprises many impervious surfaces throughout the city. In fact, it only takes “2 inches in an hour [to] flood streets” (ABC13 Houston, 2017); it can be inferred that Houston’s streets are vulnerable to small amounts of rain and lack the infrastructure to drain flood water effectively. Torrential rain renders storm sewer systems obsolete as water pools faster than they can drain, creating dangerous flash floods on both main roads and neighborhood streets. As climate change increases the intensity of storms, Houston needs to reshape its urban design to accommodate higher levels of precipitation. In 2024, Houston has already experienced a derecho (series of windstorms and thunderstorms) in mid-May, as observed by NASA (NASA Earth Observatory, 2024). Currently, Houston is facing Hurricane Beryl, with combinations of torrential rain, storm surges, tornadoes, and high wind speeds, exacerbating flood risks in the city. 
 
-*<u>Storm Sewer Systems</u>*
+###### *<u>Storm Sewer Systems</u>*
 Despite Houston’s vulnerability to flooding as a coastal city, its storm sewer system has essentially been deemed “obsolete” (Borenstein & Bajak, 2017). For our research, we focused on comparing the location of storm sewers in 2017 to the high flood points that Hurricane Harvey caused. The <a href="https://clausa.app.carto.com/map/895b54c3-1d18-44cd-8e4d-06dd48ac4c2d" target="_blank" rel="noopener noreferrer">interactive map</a> below shows a portion of a larger map that depicts a total of 574 severe floodpoints and 529 storm sewers. Severe flooding occurred more often in major floodway paths, especially closer to the coast. Additionally, several storm sewer systems exist where there are no floodways, and many that are located near major floodways appear to have minimal infrastructure (as shown by their space occupancy). The evidence of multiple severe floodpoints at or past storm sewer systems indicates that the existing storm sewers likely overflowed, signifying ineffective draining and poor design; these conditions can also lead to more disastrous impacts that spill past main floodpaths due to sudden movement of large quantities of water, commonly in the form of flash floods. 
 
 <iframe width="640px" height="360px" src="https://clausa.app.carto.com/map/895b54c3-1d18-44cd-8e4d-06dd48ac4c2d"></iframe>
 
 ***Figure 2**:  The interactive map above can be toggled to show the relationship between floodways, severe floodpoints, and the sewer systems.*
 
-*<u>Pavements</u>*
+###### *<u>Pavements</u>*
 Pavement quality is measured according to the Pavement Conditions Index (PCI), where pavements are measured on a scale of 0 to 100, with 100 indicating a newly constructed road (Metropolitan Transportation Commission, 2021). Most roads aim to have an average PCI score of at least 70, indicating a “satisfactory” road that only needs minor maintenance, such as crack sealing or seal coating (City of Waseca, 2020). For our  research, we analyzed the material type and PCI scores of 73,289 roads in Houston.
 
 ![pci chart](/images/cyplan101/PCI_Chart.png)
@@ -92,7 +92,7 @@ All roads observed were made from one of two types of concrete: Asphalt Concrete
 
 As depicted above, the graph is skewed left with most roads in fair or better condition, and the average PCI score of all roads was 71.8394 (satisfactory). However, 15.2% (11,151 roads) had a PCI score of 55 (poor) or below, and 39.4% (28,898 roads) scored below satisfactory. Of these roads, 52.5% of AC roads (17,658 out of 33608 AC roads) and 28.3% of PCC roads (11,240 out of 39681 PCC roads) were below satisfactory standards. This indicates that over a third of the roads require significant reconstruction. In fact, in 2020, Houston was ranked 22nd for worst roads across the United States (ABC13 Houston, 2020).
 
-*<u>Income Demographics</u>*
+###### *<u>Income Demographics</u>*
 The following data was produced using ACS (American Community Survey). The subdivisions for each region were by census tract. An important side note: requests to use GeoJSON files to upload this spatial data in GIS have been denied. While the data may be public, certain forms of downloading may be restricted due to its sensitivity. 
 
 ![mean income](/images/cyplan101/mean_income.png)
@@ -108,7 +108,7 @@ The median income map displays similar patterns with more of the wealth concentr
 ![median income for different races](/images/cyplan101/different_races.png)
 ***Figure 4c**: Median incomes for each race in Harris County by census tract (US Census Bureau, 2020).*
 
-*<u>Topography and Elevation</u>*
+###### *<u>Topography and Elevation</u>*
 Below is a contour map of the Houston area with contours marking different elevations. Color coordination was chosen based on the varying elevations. This way, we could indicate which contour lines were at higher elevations (blue) and which ones were at lower elevations (yellow). 
 
 ![elevation map](/images/cyplan101/elevation.png)
@@ -117,7 +117,7 @@ Below is a contour map of the Houston area with contours marking different eleva
 We can see that southeastern portions of the city were not only closer to the gulf and other bodies of water, but they were more prone to flood risk as well, given the prevalence of yellow lines in that region. More interestingly, we can even deduce where Houston’s major waterways and rivers are by the dendritic patterns on its landscape. Another major feature is the notable separation of contour lines in the northwestern and southern portions of the city, creating favorable topological conditions for both agriculture and urban sprawl.
 One important aspect to note is that the range of altitudes does not vary much throughout the city. This range is only on the order of 200-300 feet, which is quite low relative to other cities in the US. In that case, although the scaling of this visualization is adjusted to bring out these topological differences, most of the city (even the higher portions) are still at risk of flooding to some degree.
 
-*<u>Land Use</u>*
+###### *<u>Land Use</u>*
 
 ![land use map](/images/cyplan101/land_use.png)
 ***Figure 6**: Land use map of Harris County, Texas (City of Houston, 2022).*

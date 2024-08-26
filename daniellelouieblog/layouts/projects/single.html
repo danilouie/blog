@@ -60,17 +60,22 @@
 
         <div class="navigation-links">
           <div class="prev-project">
-            {{ if .Prev }}
-              <a href="{{ .Prev.Permalink }}">Previous: {{ .Prev.Title }}</a>
+            {{ $prev := .PrevInSection }}
+            {{ if $prev }}
+              <a href="{{ $prev.Permalink }}">Previous: {{ $prev.Title }}</a>
+            {{ else }}
+              <span>Previous: None</span>
             {{ end }}
           </div>
           <div class="next-project">
-            {{ if .Next }}
-              <a href="{{ .Next.Permalink }}">Next: {{ .Next.Title }}</a>
+            {{ $next := .NextInSection }}
+            {{ if $next }}
+              <a href="{{ $next.Permalink }}">Next: {{ $next.Title }}</a>
+            {{ else }}
+              <span>Next: None</span>
             {{ end }}
           </div>
         </div>
-
       </footer>
     </article>
 

@@ -173,7 +173,7 @@ Outline Link to heading Overview How it Works Game Play Video Tutorial Coding Pr
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              4-minute read
+              5-minute read
             </span>
           </div>
           <div class="authors">
@@ -256,8 +256,26 @@ Outline Link to heading Overview How it Works Game Play Video Tutorial Coding Pr
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
+<h4 id="world-generation">
+  World Generation
+  <a class="heading-link" href="#world-generation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
 <p>The first goal in this project was world generation. The main objective of the map was that it had to be able to generate random rooms and hallways (with no dead ends), with every element reachable for exploration. In addition, the explorable parts of the map had to take up The map generation was prompted by a seed that the user would input, and the same seed should be able to generate the same map.</p>
 <p><img alt="map example" src="/images/cs61b/map.png"></p>
+<p>My partner and I first focused on making sure that we were able to generate random rooms consistently (making sure that they were different for different seeds, and exactly the same for the same seeds). We then made sure that each rooms would generate two &ldquo;doors&rdquo;, which were indicators for where a hallway could connect to.</p>
+<p><img alt="room example" src="/images/cs61b/rooms.png"></p>
+<p>Our last step in world generation was to create the hallways. Similar to the room generation, we coded for hallways to randomly generate (within a width of 1 tile). The code involved ensuring that all the &ldquo;doors&rdquo; for each room were connected; simultaneously, we prevented doors of the same room to be connected, as well ensuring that all rooms were connected as one overall map.</p>
+<p><img alt="hallway example" src="/images/cs61b/hallways.png"></p>
+<h4 id="main-menu">
+  Main Menu
+  <a class="heading-link" href="#main-menu">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
 <p>Once the dungeons consistently generating, the next step was to create a Main Menu. The Main Menu would present three options to the user at the beginning of the game:</p>
 <ul>
 <li>Creating a new world, which the user would then be prompted to provide a seed.</li>
@@ -316,16 +334,17 @@ Outline Link to heading Overview How it Works Game Play Video Tutorial Coding Pr
         <div class="navigation-links">
           <div class="prev-project">
             
+            
               <a href="http://localhost:1313/projects/latrees/">Previous: Tree Coverage in Los Angeles</a>
             
           </div>
           <div class="next-project">
             
-              <a href="http://localhost:1313/posts/tutorial-test/">Next: Testing Post</a>
+            
+              <a href="http://localhost:1313/projects/cyplan101/">Next: Flood Risk in Houston</a>
             
           </div>
         </div>
-
       </footer>
     </article>
 

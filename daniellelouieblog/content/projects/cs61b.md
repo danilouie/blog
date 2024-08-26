@@ -40,9 +40,21 @@ Below is a short tutorial of an example game play.
 
 ## Coding Process {#coding-process}
 
+#### World Generation
+
 The first goal in this project was world generation. The main objective of the map was that it had to be able to generate random rooms and hallways (with no dead ends), with every element reachable for exploration. In addition, the explorable parts of the map had to take up The map generation was prompted by a seed that the user would input, and the same seed should be able to generate the same map.
 
 ![map example](/images/cs61b/map.png)
+
+My partner and I first focused on making sure that we were able to generate random rooms consistently (making sure that they were different for different seeds, and exactly the same for the same seeds). We then made sure that each rooms would generate two "doors", which were indicators for where a hallway could connect to.
+
+![room example](/images/cs61b/rooms.png)
+
+Our last step in world generation was to create the hallways. Similar to the room generation, we coded for hallways to randomly generate (within a width of 1 tile). The code involved ensuring that all the "doors" for each room were connected; simultaneously, we prevented doors of the same room to be connected, as well ensuring that all rooms were connected as one overall map. 
+
+![hallway example](/images/cs61b/hallways.png)
+
+#### Main Menu
 
 Once the dungeons consistently generating, the next step was to create a Main Menu. The Main Menu would present three options to the user at the beginning of the game:
 - Creating a new world, which the user would then be prompted to provide a seed.

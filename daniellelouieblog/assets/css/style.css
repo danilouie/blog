@@ -38,3 +38,10 @@
     font-weight: bold; /* Bold the word */
 }
 
+.separator {
+    margin-left: 3rem;  /* Increase the space before the separator */
+    margin-right: 3rem; /* Increase the space after the separator */
+
+}
+
+/* these currently don't really work */

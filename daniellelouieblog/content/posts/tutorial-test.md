@@ -1,14 +1,14 @@
 +++
 authors = ["Danielle Louie"]
 title = "Testing Post"
-date = "2024-06-15"
+date = "2024-08-26"
 description = "Using this post to test out all the things I can add"
 tags = [
-    "hugo",
-    "test post"
+    "Keyboard Shortcuts"
 ]
 categories = [
-    "theme demo",
+    "Tutorial",
+    "Python"
 ]
 series = ["Theme Demo"]
 +++

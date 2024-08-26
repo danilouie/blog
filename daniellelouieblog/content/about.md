@@ -13,4 +13,7 @@ Currently, I am a Data Scientist intern at the Eric and Wendy Schmidt Center for
 
 I am also a Production Manager Intern for <a href="https://climatebreak.org" target="_blank" rel="noopener noreferrer">Climate Break</a>, podcast production under the Center for Law, Energy & the Environment (CLEE) at UC Berkeley. I manage a team of 20+ student volunteers, delegating tasks, leading meetings, and ensuring that the pipeline flows efficiently. I have also helped to produce several of these episodes, so feel free to check them out!
 
+## My Website
+This site is a fun, personal project for me to continuously practice my coding skills, present my projects, and share my knowledge with an interested community! If you would like to interactive with my content more in-depth, feel free to browse through this <a href="https://github.com/danilouie/blog/tree/main/daniellelouieblog" target="_blank" rel="noopener noreferrer">Git Repository</a>.
+
 ![bottle being hit on head](/images/bottle_meme.jpg)

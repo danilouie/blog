@@ -2,9 +2,9 @@
 authors = ["Danielle Louie"]
 title = "Testing Post"
 date = "2024-08-26"
-description = "Using this post to test out all the things I can add"
+description = "Ideally, this post contains an introduction to the basics of coding in Jupyter Notebook using python."
 tags = [
-    "Keyboard Shortcuts"
+    "Jupyter Notebook"
 ]
 categories = [
     "Tutorial",
@@ -15,5 +15,8 @@ series = ["Theme Demo"]
 
 ## Ideas
 
-- next and back page buttons
-- link images and playable videos 
+testing creating python cell below
+
+```python
+def hello_world():
+    print("Hello, World!")

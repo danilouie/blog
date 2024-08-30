@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jupyter Notebook on Home</title>
+    <link>http://localhost:1313/tags/jupyter-notebook/</link>
+    <description>Recent content in Jupyter Notebook on Home</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/jupyter-notebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Post</title>
+      <link>http://localhost:1313/posts/tutorial-test/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tutorial-test/</guid>
+      <description> Ideas Link to heading </description>
+    </item>
+  </channel>
+</rss>

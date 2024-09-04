@@ -1,7 +1,7 @@
 +++
 authors = ["Danielle Louie"]
 title = "Interactive Visualizations: Checkboxes"
-date = "2024-09-10"
+date = "2024-08-26"
 description = "This post contains a short tutorial on how to add interactive checkboxes into your visualization!"
 tags = [
     "Pandas", "Interactivity", "Checkboxes"

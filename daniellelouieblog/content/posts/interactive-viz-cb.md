@@ -16,7 +16,9 @@ series = ["Tutorials"]
 1. [Introduction](#introduction)
 2. [Library Imports](#library-imports)
 3. [Example DataFrame](#ex-df)
-4. [Implementing Interactivity](#interactivity)
+4. [Initiating Interactivity](#initiate)
+5. [Updating the Plot](#update-plot)
+6. [Creating the Plot](#create-plot)
 ---
 
 # Introduction {#introduction}
@@ -46,16 +48,18 @@ random_birds = np.random.choice(bird_species, 100)
 df = pd.DataFrame(random_birds, columns=['Bird Species'])
 df
 ```
-# Implementing Interactivity {#interactivity}
+# Initiating Interactivity {#initiate}
 Next, let's write dive into the main part of this tutorial: building interactivity. 
 
 Let's first initiate the plot interactivity with:
+
 ```python
 # Initiate interactivity
 plt.ion()
 ```
 
 In order to show both our plot and checkboxes, let's create two widgets. Let's call the widget for the plot "output", and the widget for the checkbox "checkbox". Replace **df['Bird Species']** with the column of your DataFrame that you would like your plot to categorize.
+
 ```python
 # Create an output widget to capture the plot output
 output = widgets.Output()
@@ -64,7 +68,9 @@ output = widgets.Output()
 checkboxes = [widgets.Checkbox(value=True, description=boxes, indent=False) for boxes in sorted(df['Bird Species'].unique())]
 ```
 
+# Updating the Plot {#update-plot}
 Next, we're going to create **function** that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I'll name my function **update_countplot**. 
+
 ```python
 # Define the update function
 def update_countplot(*args):
@@ -82,3 +88,69 @@ def update_countplot(*args)
         # Create a figure and axes for plotting each time 
         fig, ax = plt.subplots(figsize=(20, 12))
 ```
+
+Next, we want to make sure that the plot only shows the checkboxes that the user has selected. In that case, the function should check through all the boxes, and then output a filtered DataFrame that only contains the categories that reflect the boxes the user checked. If you are creating your own variables, make sure that you do not accidentally reassign variables that were used prior!
+
+```python
+def update_countplot(*args)
+    with output:
+        # Clear the previous plot
+        output.clear_output(wait=True) 
+        # Create a figure and axes for plotting each time 
+        fig, ax = plt.subplots(figsize=(20, 12))
+        # Filter data based on selected species
+        selected_box = [cb.description for cb in checkboxes if cb.value]
+        filtered_df = df[df['Bird Species'].isin(selected_box)]
+```
+
+# Creating the Plot {#create-plot}
+Our next steps are to create the plot within the function we created above. We cannot write the plot outside the function because it would not properly update with respect to user input. This concept is similar to defining a variable after we have already run the function, rendering it useless. 
+
+As mentioned above, I will be creating a countplot to represent my data. The code to create the countplot is probably one that you have seen many times, but let's take a refresher! I will be using seaborn, with the palette 'Paired', but feel free to use matplotlib and whatever palette you are more comfortable with.
+
+```python
+plot = sns.countplot(ax=ax, data=filtered_df, x='Bird Species', palette='Paired')
+```
+
+I'll also be including some code to clean up our plot. This includes adding labels for the axes, adding a title, and formatting the labels so they are legible. Remember, it is always good practice to include these details in your graph - it helps readers understand the information you are trying to portray through a single visualization!
+
+```python
+# Graph details
+plt.xlabel('Bird Species', fontsize=20, weight='bold', labelpad=20)
+plt.ylabel('Count', fontsize=20, weight='bold', labelpad=20)
+plt.title('Bird Species Count', fontsize = 35, weight='bold')    
+plt.xticks(rotation=90)
+```
+
+Lastly, we want to show our plot!
+
+```python
+plt.show()
+```
+
+Altogether, our update function should look like this: 
+
+```python
+# Define the update function
+def update_countplot(*args):
+    with output:
+        # Clear the previous plot
+        output.clear_output(wait=True) 
+        # Create a figure and axes for plotting each time 
+        fig, ax = plt.subplots(figsize=(20, 12))
+        # Filter data based on selected species
+        selected_box = [cb.description for cb in checkboxes if cb.value]
+        filtered_df = df[df['Bird Species'].isin(selected_box)]
+
+        # Plot 
+        plot = sns.countplot(ax=ax, data=filtered_df, x='Bird Species', palette='Paired')
+            
+        # Graph details
+        plt.xlabel('Bird Species', fontsize=20, weight='bold', labelpad=20)
+        plt.ylabel('Count', fontsize=20, weight='bold', labelpad=20)
+        plt.title('Bird Species Count', fontsize = 35, weight='bold')    
+        plt.xticks(rotation=90)
+        plt.show()
+```
+
+Double-check your indentations and code format!

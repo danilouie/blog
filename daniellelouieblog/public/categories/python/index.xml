@@ -9,11 +9,11 @@
     <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Testing Post</title>
-      <link>http://localhost:1313/posts/tutorial-test/</link>
+      <title>Interactive Visualizations: Checkboxes</title>
+      <link>http://localhost:1313/posts/interactive-viz-cb/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tutorial-test/</guid>
-      <description>Coding Basics with Python Link to heading This tutorial is designed to provide fundamental knowledge to coding using Python. It contains some of what I think are the best practices to develop early on. No prior knowledge is needed before this tutorial!&#xA;Outline Link to heading Introduction (#Introduction) Introduction Link to heading Before coding, it is usually best practice to start with importing libraries. Libraries consist of tools that coders use</description>
+      <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
+      <description>Outline Link to heading Introduction Library Imports Introduction Link to heading This short tutorial focuses on how to add checkboxes into visualizations and build user-interactivity. The goal of this tutorial is to provide you with guidance on how to build a plot that can update data in real-time based on user-input through checkboxes.&#xA;Before following along this tutorial, make sure you have Python installed. If you do not have Python downloaded, you can look here and determine the version you need.</description>
     </item>
   </channel>
 </rss>

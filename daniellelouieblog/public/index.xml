@@ -6,8 +6,15 @@
     <description>Recent content on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interactive Visualizations: Checkboxes</title>
+      <link>http://localhost:1313/posts/interactive-viz-cb/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
+      <description>Outline Link to heading Introduction Library Imports Introduction Link to heading This short tutorial focuses on how to add checkboxes into visualizations and build user-interactivity. The goal of this tutorial is to provide you with guidance on how to build a plot that can update data in real-time based on user-input through checkboxes.&#xA;Before following along this tutorial, make sure you have Python installed. If you do not have Python downloaded, you can look here and determine the version you need.</description>
+    </item>
     <item>
       <title>Flood Risk in Houston</title>
       <link>http://localhost:1313/projects/cyplan101/</link>

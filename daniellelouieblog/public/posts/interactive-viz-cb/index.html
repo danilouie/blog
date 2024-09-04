@@ -165,7 +165,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              2-minute read
+              3-minute read
             </span>
           </div>
           <div class="authors">
@@ -244,7 +244,8 @@ Feel free to type it out yourself, or copy the code down below.</p>
   </a>
 </h1>
 <p>Let&rsquo;s create an example DataFrame for our visualization. Checkboxes especially helpful for large DataFrames that contain a lot of categories. With interactive checkboxes, we can improve the visibility of our plot by controlling the amount of data that we see (based on their categories); we can also select different data to visualize comparisons for analysis. You may use the example DataFrame I created below, build your own, or implement it to your existing code.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">bird_species</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Eagle&#39;</span><span class="p">,</span> <span class="s1">&#39;Parrot&#39;</span><span class="p">,</span> <span class="s1">&#39;Owl&#39;</span><span class="p">,</span> <span class="s1">&#39;Penguin&#39;</span><span class="p">,</span> <span class="s1">&#39;Swan&#39;</span><span class="p">]</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Example DataFrame with Bird Species</span>
+</span></span><span class="line"><span class="cl"><span class="n">bird_species</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Eagle&#39;</span><span class="p">,</span> <span class="s1">&#39;Parrot&#39;</span><span class="p">,</span> <span class="s1">&#39;Owl&#39;</span><span class="p">,</span> <span class="s1">&#39;Penguin&#39;</span><span class="p">,</span> <span class="s1">&#39;Swan&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="n">random_birds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">bird_species</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">random_birds</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">df</span>
@@ -255,7 +256,8 @@ Feel free to type it out yourself, or copy the code down below.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Next, let&rsquo;s write some code to build the interactivity. We have to first initiate the interactivity with:</p>
+<p>Next, let&rsquo;s write dive into the main part of this tutorial: building interactivity.</p>
+<p>Let&rsquo;s first initiate the plot interactivity with:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Initiate interactivity</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
 </span></span></code></pre></div><p>In order to show both our plot and checkboxes, let&rsquo;s create two widgets. Let&rsquo;s call the widget for the plot &ldquo;output&rdquo;, and the widget for the checkbox &ldquo;checkbox&rdquo;. Replace <strong>df[&lsquo;Bird Species&rsquo;]</strong> with the column of your DataFrame that you would like your plot to categorize.</p>
@@ -264,6 +266,17 @@ Feel free to type it out yourself, or copy the code down below.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Create a checkbox for each species</span>
 </span></span><span class="line"><span class="cl"><span class="n">checkboxes</span> <span class="o">=</span> <span class="p">[</span><span class="n">widgets</span><span class="o">.</span><span class="n">Checkbox</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">boxes</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">for</span> <span class="n">boxes</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())]</span>
+</span></span></code></pre></div><p>Next, we&rsquo;re going to create <strong>function</strong> that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I&rsquo;ll name my function <strong>update_countplot</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Define the update function</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_countplot</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+</span></span></code></pre></div><p>We want the function to take in the &lsquo;args&rsquo; parameter because we want the function to accept an arbitrary number of positional arguments. When handling widget events, such as checkbox changes, the user may pass additional arguments that are not necessarily sed by the plot. With &lsquo;args&rsquo; as the argument passed into the function, we can ensure that the function will be able to handle the additional arguments without running into an error.</p>
+<p>Now, in order for the plot to update with each user input, we need to first clear the previous plot. Let&rsquo;s also set the figure dimensions to esnure clarity and ease of visibility for our plot.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_countplot</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">output</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Clear the previous plot</span>
+</span></span><span class="line"><span class="cl">        <span class="n">output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">        <span class="c1"># Create a figure and axes for plotting each time </span>
+</span></span><span class="line"><span class="cl">        <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
 </span></span></code></pre></div>
       </div>
 
@@ -291,7 +304,7 @@ Feel free to type it out yourself, or copy the code down below.</p>
         
           
             <li>
-              <a href="/posts/tutorial-test/">Interactive Visualizations: Checkboxes</a>
+              <a href="/posts/tutorial-test/">Tutorial Test</a>
             </li>
           
         

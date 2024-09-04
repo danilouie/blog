@@ -40,24 +40,45 @@ import ipywidgets as widgets
 Let's create an example DataFrame for our visualization. Checkboxes especially helpful for large DataFrames that contain a lot of categories. With interactive checkboxes, we can improve the visibility of our plot by controlling the amount of data that we see (based on their categories); we can also select different data to visualize comparisons for analysis. You may use the example DataFrame I created below, build your own, or implement it to your existing code. 
 
 ```python
+# Example DataFrame with Bird Species
 bird_species = ['Eagle', 'Parrot', 'Owl', 'Penguin', 'Swan']
 random_birds = np.random.choice(bird_species, 100)
 df = pd.DataFrame(random_birds, columns=['Bird Species'])
 df
 ```
 # Implementing Interactivity {#interactivity}
-Next, let's write some code to build the interactivity. We have to first initiate the interactivity with:
+Next, let's write dive into the main part of this tutorial: building interactivity. 
+
+Let's first initiate the plot interactivity with:
 ```python
 # Initiate interactivity
 plt.ion()
 ```
+
 In order to show both our plot and checkboxes, let's create two widgets. Let's call the widget for the plot "output", and the widget for the checkbox "checkbox". Replace **df['Bird Species']** with the column of your DataFrame that you would like your plot to categorize.
-
-
 ```python
 # Create an output widget to capture the plot output
 output = widgets.Output()
 
 # Create a checkbox for each species
 checkboxes = [widgets.Checkbox(value=True, description=boxes, indent=False) for boxes in sorted(df['Bird Species'].unique())]
+```
+
+Next, we're going to create **function** that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I'll name my function **update_countplot**. 
+```python
+# Define the update function
+def update_countplot(*args):
+```
+We want the function to take in the 'args' parameter because we want the function to accept an arbitrary number of positional arguments. When handling widget events, such as checkbox changes, the user may pass additional arguments that are not necessarily sed by the plot. With 'args' as the argument passed into the function, we can ensure that the function will be able to handle the additional arguments without running into an error.
+
+
+Now, in order for the plot to update with each user input, we need to first clear the previous plot. Let's also set the figure dimensions to esnure clarity and ease of visibility for our plot. 
+
+```python
+def update_countplot(*args)
+    with output:
+        # Clear the previous plot
+        output.clear_output(wait=True) 
+        # Create a figure and axes for plotting each time 
+        fig, ax = plt.subplots(figsize=(20, 12))
 ```

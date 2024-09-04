@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/tutorial-test/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/tutorial-test/</guid>
-      <description> Ideas Link to heading testing creating python cell below&#xA;def hello_world(): print(&amp;#34;Hello, World!&amp;#34;) </description>
+      <description>Coding Basics with Python Link to heading This tutorial is designed to provide fundamental knowledge to coding using Python. It contains some of what I think are the best practices to develop early on. No prior knowledge is needed before this tutorial!&#xA;Outline Link to heading Introduction (#Introduction) Introduction Link to heading Before coding, it is usually best practice to start with importing libraries. Libraries consist of tools that coders use</description>
     </item>
     <item>
       <title>Flood Risk in Houston</title>
@@ -48,7 +48,7 @@
       <link>http://localhost:1313/projects/latrees/</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/latrees/</guid>
-      <description>Program: ArcGIS Pro Authors: Danielle Louie, Michelle Ngo, Magali Ruer&#xA;Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.</description>
+      <description>Program: ArcGIS Pro Authors: Danielle Louie, Michelle Ngo, Magali Ruer&#xA;Outline Link to heading Overview Method Maps Suitability Analysis Vulnerability NDVI Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.</description>
     </item>
     <item>
       <title>Contact</title>

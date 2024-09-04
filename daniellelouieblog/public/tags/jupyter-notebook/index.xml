@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/tutorial-test/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/tutorial-test/</guid>
-      <description> Ideas Link to heading </description>
+      <description>Coding Basics with Python Link to heading This tutorial is designed to provide fundamental knowledge to coding using Python. It contains some of what I think are the best practices to develop early on. No prior knowledge is needed before this tutorial!&#xA;Outline Link to heading Introduction (#Introduction) Introduction Link to heading Before coding, it is usually best practice to start with importing libraries. Libraries consist of tools that coders use</description>
     </item>
   </channel>
 </rss>

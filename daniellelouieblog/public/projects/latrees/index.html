@@ -14,7 +14,7 @@
 
 <meta name="author" content="Danielle Louie">
 <meta name="description" content="Program: ArcGIS Pro Authors: Danielle Louie, Michelle Ngo, Magali Ruer
-Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.">
+Outline Link to heading Overview Method Maps Suitability Analysis Vulnerability NDVI Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.">
 <meta name="keywords" content="blog,developer,personal">
 <meta name="fediverse:creator" content="" />
 
@@ -22,13 +22,13 @@ Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tree Coverage in the City of Los Angeles">
   <meta name="twitter:description" content="Program: ArcGIS Pro Authors: Danielle Louie, Michelle Ngo, Magali Ruer
-Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.">
+Outline Link to heading Overview Method Maps Suitability Analysis Vulnerability NDVI Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.">
 
 <meta property="og:url" content="http://localhost:1313/projects/latrees/">
   <meta property="og:site_name" content="Home">
   <meta property="og:title" content="Tree Coverage in the City of Los Angeles">
   <meta property="og:description" content="Program: ArcGIS Pro Authors: Danielle Louie, Michelle Ngo, Magali Ruer
-Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.">
+Outline Link to heading Overview Method Maps Suitability Analysis Vulnerability NDVI Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projects">
@@ -198,12 +198,18 @@ Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview 
   </a>
 </h1>
 <ol>
-<li><a href="#Overview" >Overview</a></li>
-<li><a href="#Method" >Method</a></li>
-<li><a href="#Maps" >Maps</a></li>
-<li><a href="#Conclusion" >Conclusion</a></li>
-<li><a href="#Poster" >Poster</a></li>
-<li><a href="#Sources" >Sources</a></li>
+<li><a href="#overview" >Overview</a></li>
+<li><a href="#method" >Method</a></li>
+<li><a href="#maps" >Maps</a>
+<ul>
+<li><a href="#suitability-analysis" >Suitability Analysis</a></li>
+<li><a href="#vulnerability" >Vulnerability</a></li>
+<li><a href="#ndvi" >NDVI</a></li>
+</ul>
+</li>
+<li><a href="#conclusion" >Conclusion</a></li>
+<li><a href="#poster" >Poster</a></li>
+<li><a href="#sources" >Sources</a></li>
 </ol>
 <hr>
 <h1 id="overview">
@@ -222,34 +228,34 @@ Outline Link to heading Overview Method Maps Conclusion Poster Sources Overview 
   </a>
 </h1>
 <p>While conducting our research, we each developed <strong>Analysis Maps</strong> to draw out the processes we planned to take to create our desired maps. The processes included importing specific libraries, identifying categories that data belongs to, and specific techniques to manipulate data visualization.</p>
-<h1 id="maps">
-  Maps
-  <a class="heading-link" href="#maps">
+<h1 id="maps-maps">
+  Maps {maps}
+  <a class="heading-link" href="#maps-maps">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
 <p>A total of three maps were made: Suitability Analysis Map, Library Service Areas and Vulnerability Map, and an NDVI/Ecostress Map.</p>
-<h5 id="u-suitability-analysis-map-by-danielle-louieu">
+<h5 id="suitability-analysis">
   <em><u> Suitability Analysis Map (By Danielle Louie)</u></em>
-  <a class="heading-link" href="#u-suitability-analysis-map-by-danielle-louieu">
+  <a class="heading-link" href="#suitability-analysis">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h5>
 <p>The Suitability Analysis Map identified three opportunities and constraints in Los Angeles for planting trees. Opportunities were viewed as characteristics of areas that were in need of trees and were able to sustain them; this project focused on areas with high concentrations of liquefication, air pollution, and existing hydrology. On the other hand, constraints were characteristics that decreased the need for trees or were inhabitable to plant them; we focused on existing open space and parks, hazardous waste, and methane producing landfills.</p>
 <p>Each category had its data weighed, overlaid, and then combined into one main map that showed the ranges from most to least suitable based on the combined weights of opportunity and constraints in Los Angeles.</p>
-<h5 id="u-library-service-areas-and-vulnerability-by-michelle-ngo-u">
+<h5 id="vulnerability">
   <em><u> Library Service Areas and Vulnerability (By Michelle Ngo) </u></em>
-  <a class="heading-link" href="#u-library-service-areas-and-vulnerability-by-michelle-ngo-u">
+  <a class="heading-link" href="#vulnerability">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h5>
 <p>This Network Analysis Map was used to identify areas in the City of Los Angeles that were in need of shade equity. Areas that faced extreme, high temperatures, had high levels of unsheltered populations, and were distant from libraries were identified as more vulnerable communities. The most vulnerable communities can be represented by the darkest shade of red mapped.</p>
-<h5 id="u-normalized-difference-vegetation-index-ndvi-by-magali-rueru">
+<h5 id="ndvi">
   <em><u> Normalized Difference Vegetation Index (NDVI) (By Magali Ruer)</u></em>
-  <a class="heading-link" href="#u-normalized-difference-vegetation-index-ndvi-by-magali-rueru">
+  <a class="heading-link" href="#ndvi">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>

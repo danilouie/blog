@@ -19,6 +19,8 @@ series = ["Tutorials"]
 4. [Initiating Interactivity](#initiate)
 5. [Updating the Plot](#update-plot)
 6. [Creating the Plot](#create-plot)
+7. [Displaying the Widgets](#display)
+8. [Takeaways](#takeaways)
 ---
 
 # Introduction {#introduction}
@@ -51,7 +53,7 @@ df
 # Initiating Interactivity {#initiate}
 Next, let's write dive into the main part of this tutorial: building interactivity. 
 
-Let's first initiate the plot interactivity with:
+Let's first initiate the plot interactivity in a new code cell with:
 
 ```python
 # Initiate interactivity
@@ -69,7 +71,7 @@ checkboxes = [widgets.Checkbox(value=True, description=boxes, indent=False) for 
 ```
 
 # Updating the Plot {#update-plot}
-Next, we're going to create **function** that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I'll name my function **update_countplot**. 
+Next, we're going to create **function** that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I'll name my function **update_countplot**. I recommend creating a new code cell for this function.
 
 ```python
 # Define the update function
@@ -154,3 +156,55 @@ def update_countplot(*args):
 ```
 
 Double-check your indentations and code format!
+
+# Displaying the Widgets {#display}
+Our last steps are to make sure that our checkboxes are linked to our update function, and that our widgets are properly shown. Let's handle these tasks one by one. 
+
+First, let's link the checkboxes to our update function. This ensures that however the user interacts with the checkboxes (checking or unchecking boxes) is accurately represented by the data portrayed in our plot. In a new code cell, implement the code below.
+
+```python
+# Link checkboxes to the update function
+for cb in checkboxes: 
+    cb.observe(update_countplot, 'value')
+```
+
+Widgets are like containers of data. We want to ensure that all our checkboxes are neatly shown vertically in a widget. In the code below, I add some formatting to adjust the container to best fit my figure size. I recommend playing around with the formatting to see what each argument affects (length, width, spacing, etc.). Don't worry if the number of checkboxes visually exceeds your figure size. The widgets library automatically implements a scroll bar so the user has access to all of the data. 
+
+```python
+# Group checkboxes in a vertical box
+checkboxes_container = widgets.VBox(children=checkboxes, layout=widgets.Layout(overflow='auto', height='650px', width='auto', margin='20px 0 0 30px'))
+``` 
+
+Ideally, I would like the checkboxes to be placed to the right of my countplot. To do this, I will organize my "output" widget (which contains my countplot), and my "checkboxes" widget side-by-side in a giant widget box. 
+
+```python
+# Use HBox to place the output widget and checkboxes side by side
+ui = widgets.HBox([output, checkboxes_container])
+```
+
+Altogether, this code cell should look like: 
+
+```python
+# Link checkboxes to the update function
+for cb in checkboxes: 
+    cb.observe(update_countplot, 'value')
+
+# Group checkboxes in a vertical box
+checkboxes_container = widgets.VBox(children=checkboxes, layout=widgets.Layout(overflow='auto', height='650px', width='auto', margin='20px 0 0 30px'))
+
+# Use HBox to place the output widget and checkboxes side by side
+ui = widgets.HBox([output, checkboxes_container])
+```
+
+Finally, let's display all of our hard work! Simply create a new code cell and write: 
+
+```python
+# Display the UI
+display(ui)
+
+# Update the countplot on each input/run
+update_countplot()
+```
+
+# Takeaways {#takeaways}
+Congratulations! You have hopefully created a fully functioning interactive visualization with checkboxes. Feel free to tinker around with the code to see what other customizations you can add. There are many resources that include the variety of widget interactions that can be implemented with ipywidgets, so I recommend browsing through them and experimenting!

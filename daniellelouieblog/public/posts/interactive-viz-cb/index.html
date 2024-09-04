@@ -165,7 +165,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              5-minute read
+              7-minute read
             </span>
           </div>
           <div class="authors">
@@ -213,6 +213,8 @@
 <li><a href="#initiate" >Initiating Interactivity</a></li>
 <li><a href="#update-plot" >Updating the Plot</a></li>
 <li><a href="#create-plot" >Creating the Plot</a></li>
+<li><a href="#display" >Displaying the Widgets</a></li>
+<li><a href="#takeaways" >Takeaways</a></li>
 </ol>
 <hr>
 <h1 id="introduction">
@@ -259,7 +261,7 @@ Feel free to type it out yourself, or copy the code down below.</p>
   </a>
 </h1>
 <p>Next, let&rsquo;s write dive into the main part of this tutorial: building interactivity.</p>
-<p>Let&rsquo;s first initiate the plot interactivity with:</p>
+<p>Let&rsquo;s first initiate the plot interactivity in a new code cell with:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Initiate interactivity</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
 </span></span></code></pre></div><p>In order to show both our plot and checkboxes, let&rsquo;s create two widgets. Let&rsquo;s call the widget for the plot &ldquo;output&rdquo;, and the widget for the checkbox &ldquo;checkbox&rdquo;. Replace <strong>df[&lsquo;Bird Species&rsquo;]</strong> with the column of your DataFrame that you would like your plot to categorize.</p>
@@ -275,7 +277,7 @@ Feel free to type it out yourself, or copy the code down below.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Next, we&rsquo;re going to create <strong>function</strong> that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I&rsquo;ll name my function <strong>update_countplot</strong>.</p>
+<p>Next, we&rsquo;re going to create <strong>function</strong> that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I&rsquo;ll name my function <strong>update_countplot</strong>. I recommend creating a new code cell for this function.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Define the update function</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_countplot</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
 </span></span></code></pre></div><p>We want the function to take in the &lsquo;args&rsquo; parameter because we want the function to accept an arbitrary number of positional arguments. When handling widget events, such as checkbox changes, the user may pass additional arguments that are not necessarily sed by the plot. With &lsquo;args&rsquo; as the argument passed into the function, we can ensure that the function will be able to handle the additional arguments without running into an error.</p>
@@ -336,6 +338,48 @@ Feel free to type it out yourself, or copy the code down below.</p>
 </span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></span></code></pre></div><p>Double-check your indentations and code format!</p>
+<h1 id="display">
+  Displaying the Widgets
+  <a class="heading-link" href="#display">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Our last steps are to make sure that our checkboxes are linked to our update function, and that our widgets are properly shown. Let&rsquo;s handle these tasks one by one.</p>
+<p>First, let&rsquo;s link the checkboxes to our update function. This ensures that however the user interacts with the checkboxes (checking or unchecking boxes) is accurately represented by the data portrayed in our plot. In a new code cell, implement the code below.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Link checkboxes to the update function</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">cb</span> <span class="ow">in</span> <span class="n">checkboxes</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">cb</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_countplot</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Widgets are like containers of data. We want to ensure that all our checkboxes are neatly shown vertically in a widget. In the code below, I add some formatting to adjust the container to best fit my figure size. I recommend playing around with the formatting to see what each argument affects (length, width, spacing, etc.). Don&rsquo;t worry if the number of checkboxes visually exceeds your figure size. The widgets library automatically implements a scroll bar so the user has access to all of the data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Group checkboxes in a vertical box</span>
+</span></span><span class="line"><span class="cl"><span class="n">checkboxes_container</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="n">checkboxes</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">overflow</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;650px&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="s1">&#39;20px 0 0 30px&#39;</span><span class="p">))</span>
+</span></span></code></pre></div><p>Ideally, I would like the checkboxes to be placed to the right of my countplot. To do this, I will organize my &ldquo;output&rdquo; widget (which contains my countplot), and my &ldquo;checkboxes&rdquo; widget side-by-side in a giant widget box.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Use HBox to place the output widget and checkboxes side by side</span>
+</span></span><span class="line"><span class="cl"><span class="n">ui</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">output</span><span class="p">,</span> <span class="n">checkboxes_container</span><span class="p">])</span>
+</span></span></code></pre></div><p>Altogether, this code cell should look like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Link checkboxes to the update function</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">cb</span> <span class="ow">in</span> <span class="n">checkboxes</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">cb</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_countplot</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Group checkboxes in a vertical box</span>
+</span></span><span class="line"><span class="cl"><span class="n">checkboxes_container</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="n">checkboxes</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">overflow</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;650px&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="s1">&#39;20px 0 0 30px&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Use HBox to place the output widget and checkboxes side by side</span>
+</span></span><span class="line"><span class="cl"><span class="n">ui</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">output</span><span class="p">,</span> <span class="n">checkboxes_container</span><span class="p">])</span>
+</span></span></code></pre></div><p>Finally, let&rsquo;s display all of our hard work! Simply create a new code cell and write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Display the UI</span>
+</span></span><span class="line"><span class="cl"><span class="n">display</span><span class="p">(</span><span class="n">ui</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Update the countplot on each input/run</span>
+</span></span><span class="line"><span class="cl"><span class="n">update_countplot</span><span class="p">()</span>
+</span></span></code></pre></div><h1 id="takeaways">
+  Takeaways
+  <a class="heading-link" href="#takeaways">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Congratulations! You have hopefully created a fully functioning interactive visualization with checkboxes. Feel free to tinker around with the code to see what other customizations you can add. There are many resources that include the variety of widget interactions that can be implemented with ipywidgets, so I recommend browsing through them and experimenting!</p>
 
       </div>
 

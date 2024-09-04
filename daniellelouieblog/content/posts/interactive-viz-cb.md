@@ -211,7 +211,7 @@ update_countplot()
 ```
 
 # Complete Code {#complete-code}
-Below shows all the code.
+Below shows all the code separated into different code cells by my recommendation.
 
 ```python
 import pandas as pd

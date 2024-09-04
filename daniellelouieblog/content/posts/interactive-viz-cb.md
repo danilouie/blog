@@ -208,3 +208,5 @@ update_countplot()
 
 # Takeaways {#takeaways}
 Congratulations! You have hopefully created a fully functioning interactive visualization with checkboxes. Feel free to tinker around with the code to see what other customizations you can add. There are many resources that include the variety of widget interactions that can be implemented with ipywidgets, so I recommend browsing through them and experimenting!
+
+---

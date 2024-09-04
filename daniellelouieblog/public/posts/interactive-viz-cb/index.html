@@ -165,7 +165,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              7-minute read
+              8-minute read
             </span>
           </div>
           <div class="authors">
@@ -214,6 +214,7 @@
 <li><a href="#update-plot" >Updating the Plot</a></li>
 <li><a href="#create-plot" >Creating the Plot</a></li>
 <li><a href="#display" >Displaying the Widgets</a></li>
+<li><a href="#complete-code" >Complete Code</a></li>
 <li><a href="#takeaways" >Takeaways</a></li>
 </ol>
 <hr>
@@ -265,7 +266,10 @@ Feel free to type it out yourself, or copy the code down below.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Initiate interactivity</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
 </span></span></code></pre></div><p>In order to show both our plot and checkboxes, let&rsquo;s create two widgets. Let&rsquo;s call the widget for the plot &ldquo;output&rdquo;, and the widget for the checkbox &ldquo;checkbox&rdquo;. Replace <strong>df[&lsquo;Bird Species&rsquo;]</strong> with the column of your DataFrame that you would like your plot to categorize.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Create an output widget to capture the plot output</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Initiate interactivity</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create an output widget to capture the plot output</span>
 </span></span><span class="line"><span class="cl"><span class="n">output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Create a checkbox for each species</span>
@@ -368,6 +372,66 @@ Feel free to type it out yourself, or copy the code down below.</p>
 </span></span><span class="line"><span class="cl"><span class="n">ui</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">output</span><span class="p">,</span> <span class="n">checkboxes_container</span><span class="p">])</span>
 </span></span></code></pre></div><p>Finally, let&rsquo;s display all of our hard work! Simply create a new code cell and write:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Display the UI</span>
+</span></span><span class="line"><span class="cl"><span class="n">display</span><span class="p">(</span><span class="n">ui</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Update the countplot on each input/run</span>
+</span></span><span class="line"><span class="cl"><span class="n">update_countplot</span><span class="p">()</span>
+</span></span></code></pre></div><h1 id="complete-code">
+  Complete Code
+  <a class="heading-link" href="#complete-code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Below shows all the code.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Example DataFrame with Bird Species</span>
+</span></span><span class="line"><span class="cl"><span class="n">bird_species</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Eagle&#39;</span><span class="p">,</span> <span class="s1">&#39;Parrot&#39;</span><span class="p">,</span> <span class="s1">&#39;Owl&#39;</span><span class="p">,</span> <span class="s1">&#39;Penguin&#39;</span><span class="p">,</span> <span class="s1">&#39;Swan&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">random_birds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">bird_species</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">random_birds</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Initiate interactivity</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create an output widget to capture the plot output</span>
+</span></span><span class="line"><span class="cl"><span class="n">output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create a checkbox for each species</span>
+</span></span><span class="line"><span class="cl"><span class="n">checkboxes</span> <span class="o">=</span> <span class="p">[</span><span class="n">widgets</span><span class="o">.</span><span class="n">Checkbox</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">boxes</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">for</span> <span class="n">boxes</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Define the update function</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_countplot</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">output</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Clear the previous plot</span>
+</span></span><span class="line"><span class="cl">        <span class="n">output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">        <span class="c1"># Create a figure and axes for plotting each time </span>
+</span></span><span class="line"><span class="cl">        <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Filter data based on selected species</span>
+</span></span><span class="line"><span class="cl">        <span class="n">selected_box</span> <span class="o">=</span> <span class="p">[</span><span class="n">cb</span><span class="o">.</span><span class="n">description</span> <span class="k">for</span> <span class="n">cb</span> <span class="ow">in</span> <span class="n">checkboxes</span> <span class="k">if</span> <span class="n">cb</span><span class="o">.</span><span class="n">value</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">selected_box</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Plot </span>
+</span></span><span class="line"><span class="cl">        <span class="n">plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">filtered_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Paired&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">        <span class="c1"># Graph details</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Bird Species Count&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">35</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>    
+</span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Link checkboxes to the update function</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">cb</span> <span class="ow">in</span> <span class="n">checkboxes</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">cb</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_countplot</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Group checkboxes in a vertical box</span>
+</span></span><span class="line"><span class="cl"><span class="n">checkboxes_container</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="n">checkboxes</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">overflow</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;650px&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="s1">&#39;20px 0 0 30px&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Use HBox to place the output widget and checkboxes side by side</span>
+</span></span><span class="line"><span class="cl"><span class="n">ui</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">output</span><span class="p">,</span> <span class="n">checkboxes_container</span><span class="p">])</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Display the UI</span>
 </span></span><span class="line"><span class="cl"><span class="n">display</span><span class="p">(</span><span class="n">ui</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Update the countplot on each input/run</span>

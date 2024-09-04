@@ -20,7 +20,8 @@ series = ["Tutorials"]
 5. [Updating the Plot](#update-plot)
 6. [Creating the Plot](#create-plot)
 7. [Displaying the Widgets](#display)
-8. [Takeaways](#takeaways)
+8. [Complete Code](#complete-code)
+9. [Takeaways](#takeaways)
 ---
 
 # Introduction {#introduction}
@@ -63,6 +64,9 @@ plt.ion()
 In order to show both our plot and checkboxes, let's create two widgets. Let's call the widget for the plot "output", and the widget for the checkbox "checkbox". Replace **df['Bird Species']** with the column of your DataFrame that you would like your plot to categorize.
 
 ```python
+# Initiate interactivity
+plt.ion()
+
 # Create an output widget to capture the plot output
 output = widgets.Output()
 
@@ -198,6 +202,75 @@ ui = widgets.HBox([output, checkboxes_container])
 
 Finally, let's display all of our hard work! Simply create a new code cell and write: 
 
+```python
+# Display the UI
+display(ui)
+
+# Update the countplot on each input/run
+update_countplot()
+```
+
+# Complete Code {#complete-code}
+Below shows all the code.
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt 
+import seaborn as sns
+import ipywidgets as widgets
+```
+```python
+# Example DataFrame with Bird Species
+bird_species = ['Eagle', 'Parrot', 'Owl', 'Penguin', 'Swan']
+random_birds = np.random.choice(bird_species, 100)
+df = pd.DataFrame(random_birds, columns=['Bird Species'])
+df
+```
+```python
+# Initiate interactivity
+plt.ion()
+
+# Create an output widget to capture the plot output
+output = widgets.Output()
+
+# Create a checkbox for each species
+checkboxes = [widgets.Checkbox(value=True, description=boxes, indent=False) for boxes in sorted(df['Bird Species'].unique())]
+```
+
+```python
+# Define the update function
+def update_countplot(*args):
+    with output:
+        # Clear the previous plot
+        output.clear_output(wait=True) 
+        # Create a figure and axes for plotting each time 
+        fig, ax = plt.subplots(figsize=(20, 12))
+        # Filter data based on selected species
+        selected_box = [cb.description for cb in checkboxes if cb.value]
+        filtered_df = df[df['Bird Species'].isin(selected_box)]
+
+        # Plot 
+        plot = sns.countplot(ax=ax, data=filtered_df, x='Bird Species', palette='Paired')
+            
+        # Graph details
+        plt.xlabel('Bird Species', fontsize=20, weight='bold', labelpad=20)
+        plt.ylabel('Count', fontsize=20, weight='bold', labelpad=20)
+        plt.title('Bird Species Count', fontsize = 35, weight='bold')    
+        plt.xticks(rotation=90)
+        plt.show()
+```
+```python
+# Link checkboxes to the update function
+for cb in checkboxes: 
+    cb.observe(update_countplot, 'value')
+
+# Group checkboxes in a vertical box
+checkboxes_container = widgets.VBox(children=checkboxes, layout=widgets.Layout(overflow='auto', height='650px', width='auto', margin='20px 0 0 30px'))
+
+# Use HBox to place the output widget and checkboxes side by side
+ui = widgets.HBox([output, checkboxes_container])
+```
 ```python
 # Display the UI
 display(ui)

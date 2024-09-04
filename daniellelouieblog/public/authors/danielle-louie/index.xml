@@ -6,15 +6,8 @@
     <description>Recent content in Danielle Louie on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/authors/danielle-louie/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Testing Post</title>
-      <link>http://localhost:1313/posts/tutorial-test/</link>
-      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tutorial-test/</guid>
-      <description>Coding Basics with Python Link to heading This tutorial is designed to provide fundamental knowledge to coding using Python. It contains some of what I think are the best practices to develop early on. No prior knowledge is needed before this tutorial!&#xA;Outline Link to heading Introduction (#Introduction) Introduction Link to heading Before coding, it is usually best practice to start with importing libraries. Libraries consist of tools that coders use</description>
-    </item>
     <item>
       <title>Flood Risk in Houston</title>
       <link>http://localhost:1313/projects/cyplan101/</link>

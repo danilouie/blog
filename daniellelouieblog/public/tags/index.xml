@@ -6,15 +6,8 @@
     <description>Recent content in Tags on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Jupyter Notebook</title>
-      <link>http://localhost:1313/tags/jupyter-notebook/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jupyter-notebook/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Emoji</title>
       <link>http://localhost:1313/tags/emoji/</link>

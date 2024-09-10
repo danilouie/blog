@@ -251,7 +251,7 @@ def update_countplot(*args):
         filtered_df = df[df['Bird Species'].isin(selected_box)]
 
         # Plot 
-        plot = sns.countplot(ax=ax, data=filtered_df, x='Bird Species', palette='Paired')
+        plot = sns.countplot(ax=ax, data=filtered_df, x='Bird Species', palette='Paired', hue="Bird Species")
             
         # Graph details
         plt.xlabel('Bird Species', fontsize=20, weight='bold', labelpad=20)

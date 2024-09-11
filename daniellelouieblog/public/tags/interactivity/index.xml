@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/interactive-viz-cb/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
-      <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading This short tutorial focuses on how to add checkboxes into visualizations and build user-interactivity using ipywidgets. The goal of this tutorial is to provide you with guidance on how to build a plot that can update data in real-time based on user-input through checkboxes.</description>
+      <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading Welcome to my tutorial series on building interactive visualizations! This series was inspired by my own experiences, and I wanted to be able to compile my knowledge in a shareable platform as a means to continue educating myself and provide an accessible resource for others.</description>
     </item>
   </channel>
 </rss>

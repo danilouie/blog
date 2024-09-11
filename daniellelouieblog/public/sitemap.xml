@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/authors/</loc>
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,9 +20,6 @@
     <loc>http://localhost:1313/authors/danielle-louie/</loc>
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/interactive-viz-cb/</loc>
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -24,9 +27,6 @@
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pandas/</loc>
-    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/python/</loc>
@@ -68,30 +68,6 @@
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-06-15T09:49:16-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emoji/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/emoji-support/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/authors/lone-coder/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/syntax/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/theme-demo/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/theme-demo/</loc>
-    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/projects/cs61b/</loc>
     <lastmod>2023-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -103,9 +79,6 @@
   </url><url>
     <loc>http://localhost:1313/authors/michelle-ngo/</loc>
     <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/tutorial-test/</loc>
-    <lastmod>2023-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/arcgis-pro/</loc>
     <lastmod>2022-12-09T00:00:00+00:00</lastmod>

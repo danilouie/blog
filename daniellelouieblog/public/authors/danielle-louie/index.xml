@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/interactive-viz-cb/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
-      <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading This short tutorial focuses on how to add checkboxes into visualizations and build user-interactivity using ipywidgets. The goal of this tutorial is to provide you with guidance on how to build a plot that can update data in real-time based on user-input through checkboxes.</description>
+      <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading Welcome to my tutorial series on building interactive visualizations! This series was inspired by my own experiences, and I wanted to be able to compile my knowledge in a shareable platform as a means to continue educating myself and provide an accessible resource for others.</description>
     </item>
     <item>
       <title>Flood Risk in Houston</title>
@@ -28,13 +28,6 @@
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/cs61b/</guid>
       <description>Here is the Project 3 Git Link.&#xA;Outline Link to heading Overview How it Works Game Play Video Tutorial Coding Process Takeaways Overview Link to heading The objective of this project was to build an interactive &amp;ldquo;game&amp;rdquo; with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles.</description>
-    </item>
-    <item>
-      <title>Tutorial Test</title>
-      <link>http://localhost:1313/posts/tutorial-test/</link>
-      <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tutorial-test/</guid>
-      <description> Outline Link to heading Introduction Library Imports Introduction Link to heading test post&#xA;```python def hello_world(): print(&amp;#34;Hello, World!&amp;#34;) </description>
     </item>
   </channel>
 </rss>

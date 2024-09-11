@@ -214,8 +214,6 @@ update_countplot()
 # Final Visualization
 Once you run all the code, you should be able to produce and interact with a bar graph as demonstrated by the video below.
 
-{{< video src="/video/cb_tutorial.mp4" >}}
-
 # Complete Code {#complete-code}
 Below shows all the code separated into different code cells by my recommendation.
 

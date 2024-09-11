@@ -29,7 +29,7 @@ The objective of this project was to determine areas in Los Angeles in need of t
 # Method {#method}
 While conducting our research, we each developed **Analysis Maps** to draw out the processes we planned to take to create our desired maps. The processes included importing specific libraries, identifying categories that data belongs to, and specific techniques to manipulate data visualization.
 
-# Maps {maps}
+# Maps {#maps}
 A total of three maps were made: Suitability Analysis Map, Library Service Areas and Vulnerability Map, and an NDVI/Ecostress Map.
 
 ##### *<u> Suitability Analysis Map (By Danielle Louie)</u>* {##suitability-analysis}

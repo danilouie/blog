@@ -1,7 +1,7 @@
 +++
 authors = ["Lone Coder"]
 title = "Emoji Support"
-date = "2024-06-15"
+date = "2025-06-15"
 description = "Guide to emoji usage in Hugo"
 tags = [
     "hugo",
@@ -14,6 +14,8 @@ categories = [
 ]
 series = ["Theme Demo"]
 +++
+
+<!-- put date in future so that it doesn't show this page when I try to publish the web-->
 
 Emoji can be enabled in a Hugo project in a number of ways.
 

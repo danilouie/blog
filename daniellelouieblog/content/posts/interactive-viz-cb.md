@@ -20,8 +20,9 @@ series = ["Tutorials"]
 5. [Updating the Plot](#update-plot)
 6. [Creating the Plot](#create-plot)
 7. [Displaying the Widgets](#display)
-8. [Complete Code](#complete-code)
-9. [Takeaways](#takeaways)
+8. [Final Visualization](#final-viz)
+9. [Complete Code](#complete-code)
+10. [Takeaways](#takeaways)
 ---
 
 # Introduction {#introduction}
@@ -210,6 +211,11 @@ display(ui)
 update_countplot()
 ```
 
+# Final Visualization
+Once you run all the code, you should be able to produce and interact with a bar graph as demonstrated by the video below.
+
+{{< video src="/video/cb_tutorial.mp4" >}}
+
 # Complete Code {#complete-code}
 Below shows all the code separated into different code cells by my recommendation.
 
@@ -280,6 +286,6 @@ update_countplot()
 ```
 
 # Takeaways {#takeaways}
-Congratulations! You have hopefully created a fully functioning interactive visualization with checkboxes. Feel free to tinker around with the code to see what other customizations you can add. There are many resources that include the variety of widget interactions that can be implemented with ipywidgets, so I recommend browsing through them and experimenting!
+Congratulations! You have created a fully functioning interactive visualization with checkboxes. Feel free to tinker around with the code to see what other customizations you can add. There are many resources that include the variety of widget interactions that can be implemented with ipywidgets, so I recommend browsing through them and experimenting!
 
 ---

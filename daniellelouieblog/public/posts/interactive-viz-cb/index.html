@@ -214,6 +214,7 @@
 <li><a href="#update-plot" >Updating the Plot</a></li>
 <li><a href="#create-plot" >Creating the Plot</a></li>
 <li><a href="#display" >Displaying the Widgets</a></li>
+<li><a href="#final-viz" >Final Visualization</a></li>
 <li><a href="#complete-code" >Complete Code</a></li>
 <li><a href="#takeaways" >Takeaways</a></li>
 </ol>
@@ -376,7 +377,20 @@ Feel free to type it out yourself, or copy the code down below.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Update the countplot on each input/run</span>
 </span></span><span class="line"><span class="cl"><span class="n">update_countplot</span><span class="p">()</span>
-</span></span></code></pre></div><h1 id="complete-code">
+</span></span></code></pre></div><h1 id="final-visualization">
+  Final Visualization
+  <a class="heading-link" href="#final-visualization">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Once you run all the code, you should be able to produce and interact with a bar graph as demonstrated by the video below.</p>
+<video controls width="100%">
+  <source src="/video/cb_tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h1 id="complete-code">
   Complete Code
   <a class="heading-link" href="#complete-code">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -414,7 +428,7 @@ Feel free to type it out yourself, or copy the code down below.</p>
 </span></span><span class="line"><span class="cl">        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">selected_box</span><span class="p">)]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="c1"># Plot </span>
-</span></span><span class="line"><span class="cl">        <span class="n">plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">filtered_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Paired&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">filtered_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Paired&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&#34;Bird Species&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            
 </span></span><span class="line"><span class="cl">        <span class="c1"># Graph details</span>
 </span></span><span class="line"><span class="cl">        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Bird Species&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -443,7 +457,7 @@ Feel free to type it out yourself, or copy the code down below.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Congratulations! You have hopefully created a fully functioning interactive visualization with checkboxes. Feel free to tinker around with the code to see what other customizations you can add. There are many resources that include the variety of widget interactions that can be implemented with ipywidgets, so I recommend browsing through them and experimenting!</p>
+<p>Congratulations! You have created a fully functioning interactive visualization with checkboxes. Feel free to tinker around with the code to see what other customizations you can add. There are many resources that include the variety of widget interactions that can be implemented with ipywidgets, so I recommend browsing through them and experimenting!</p>
 <hr>
 
       </div>

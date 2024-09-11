@@ -26,9 +26,11 @@ series = ["Tutorials"]
 ---
 
 # Introduction {#introduction}
-This short tutorial focuses on how to add checkboxes into visualizations and build user-interactivity using ipywidgets. The goal of this tutorial is to provide you with guidance on how to build a plot that can update data in real-time based on user-input through checkboxes. 
+Welcome to my tutorial series on building interactive visualizations! This series was inspired by my own experiences, and I wanted to be able to compile my knowledge in a shareable platform as a means to continue educating myself and provide an accessible resource for others. 
 
-Before following along this tutorial, make sure you have Python installed. If you do not have Python downloaded, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> and determine the version you need. 
+This short tutorial focuses on how to add checkboxes into visualizations and build user-interactivity using ipywidgets. The goal of this tutorial is to provide you with guidance on how to build a plot that can update data in real-time based on user-input through checkboxes.
+
+Before following along this tutorial, make sure you have Python installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. I also recommend that you have a basic understanding of Python as this tutorial does not cover fundamentals for how to code.
 
 # Library Imports {#library-imports}
 To begin writing out our code, let's first import some important libraries: pandas, matplotlib, seaborn, and ipywidgets. You have likely seen the first four to code and create visualizations in Python or Jupyter Notebooks. The last one, **ipywidgets**, is what will help us to build interactivity.
@@ -43,7 +45,7 @@ import ipywidgets as widgets
 ```
 
 # Example DataFrame {#ex-df}
-Let's create an example DataFrame for our visualization. Checkboxes especially helpful for large DataFrames that contain a lot of categories. With interactive checkboxes, we can improve the visibility of our plot by controlling the amount of data that we see (based on their categories); we can also select different data to visualize comparisons for analysis. You may use the example DataFrame I created below, build your own, or implement it to your existing code. 
+Let's create an example DataFrame for our visualization. Checkboxes are especially helpful for large DataFrames that contain a lot of categories. With interactive checkboxes, we can improve the visibility of our plot by controlling the amount of data that we see (based on their categories); we can also select different data to visualize comparisons for analysis. You may use the example DataFrame I created below, build your own, or implement it to your existing code. 
 
 ```python
 # Example DataFrame with Bird Species
@@ -76,7 +78,7 @@ checkboxes = [widgets.Checkbox(value=True, description=boxes, indent=False) for 
 ```
 
 # Updating the Plot {#update-plot}
-Next, we're going to create **function** that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I'll name my function **update_countplot**. I recommend creating a new code cell for this function.
+Next, we're going to create a **function** that allows us to update the plot in real-time based on user input. For this tutorial, I will be creating a countplot, so I'll name my function **update_countplot**. I recommend creating a new code cell for this function.
 
 ```python
 # Define the update function
@@ -85,7 +87,7 @@ def update_countplot(*args):
 We want the function to take in the 'args' parameter because we want the function to accept an arbitrary number of positional arguments. When handling widget events, such as checkbox changes, the user may pass additional arguments that are not necessarily sed by the plot. With 'args' as the argument passed into the function, we can ensure that the function will be able to handle the additional arguments without running into an error.
 
 
-Now, in order for the plot to update with each user input, we need to first clear the previous plot. Let's also set the figure dimensions to esnure clarity and ease of visibility for our plot. 
+Now, in order for the plot to update with each user input (aka, plotting new data), we need to be able to clear whatever the previous plot was. Let's also set the figure dimensions to ensure clarity and ease of visibility for our plot. 
 
 ```python
 def update_countplot(*args)
@@ -129,7 +131,7 @@ plt.title('Bird Species Count', fontsize = 35, weight='bold')
 plt.xticks(rotation=90)
 ```
 
-Lastly, we want to show our plot!
+Lastly, we want to show our plot.
 
 ```python
 plt.show()
@@ -173,7 +175,7 @@ for cb in checkboxes:
     cb.observe(update_countplot, 'value')
 ```
 
-Widgets are like containers of data. We want to ensure that all our checkboxes are neatly shown vertically in a widget. In the code below, I add some formatting to adjust the container to best fit my figure size. I recommend playing around with the formatting to see what each argument affects (length, width, spacing, etc.). Don't worry if the number of checkboxes visually exceeds your figure size. The widgets library automatically implements a scroll bar so the user has access to all of the data. 
+Widgets are like containers of data. We want to make sure that all of our checkboxes are neatly shown vertically in a widget. In the code below, I add some formatting to adjust the container to best fit my figure size. I recommend playing around with the formatting to see what each argument affects (length, width, spacing, etc.). Don't worry if the number of checkboxes visually exceeds your figure size. The widgets library automatically implements a scroll bar so the user has access to all of the data. 
 
 ```python
 # Group checkboxes in a vertical box

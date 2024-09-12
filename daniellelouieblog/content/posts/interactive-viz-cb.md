@@ -32,6 +32,7 @@ Welcome to my tutorial series on building interactive visualizations! This serie
 
 This short tutorial focuses on how to add checkboxes into visualizations and build user-interactivity using ipywidgets. The goal of this tutorial is to provide you with guidance on how to build a plot that can update data in real-time based on user-input through checkboxes.
 
+***<u>Notice</u>***
 Before following along this tutorial, make sure you have Python installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. I also recommend that you have a basic understanding of Python as this tutorial does not cover fundamentals for how to code.
 
 # Library Imports {#library-imports}

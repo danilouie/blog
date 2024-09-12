@@ -47,7 +47,12 @@ This blog is meant to share vocabulary that I have learned over the course of my
 
 # Indigenous Stewardship {#indig-steward}
 
-**Indigenous Sovereignty**: the right of Indigenous communities to manage their own affairs, and for any decision involving Indigenous data to be made with their participation and consent.
+**CARE Principles**: defined in 2020 for <a href="https://www.gida-global.org/s/dsj-1158_carroll.pdf" target="_blank" rel="noopener noreferrer">Indigenous Data Governance</a>.
+
+- **C**ollective Benefit: data facilitates equitable benefit, innovation, and inclusion. 
+- **A**uthority to Control: Indigenous communities have full control over their data and are empowered.
+- **R**esponsibility: data should support and respect Indigenous data.
+- **E**thics: prioritize Indigenous rights and well being in all stages when using data.
 
 **Data Decolonization**: the process of removing Western ideas and influences in data practices, particularly for Indigenous communities to have full ownership and control over their own data. It is important to acknowledge and understand historical influences of colonialism in order to determine the best practices for decolonization.
 
@@ -57,11 +62,9 @@ This blog is meant to share vocabulary that I have learned over the course of my
 - **I**nteroperable: ability for data to be used by different systems while producing the same results.
 - **R**eusable: data is useful for other potential users (with correct permissions and licensing).
 
-**CARE Principles**: defined in 2020 for <a href="https://www.gida-global.org/s/dsj-1158_carroll.pdf" target="_blank" rel="noopener noreferrer">Indigenous Data Governance</a>.
+**Indigenous Sovereignty**: the right of Indigenous communities to manage their own affairs, and for any decision involving Indigenous data to be made with their participation and consent.
 
-- **C**ollective Benefit: data facilitates equitable benefit, innovation, and inclusion. 
-- **A**uthority to Control: Indigenous communities have full control over their data and are empowered.
-- **R**esponsibility: data should support and respect Indigenous data.
-- **E**thics: prioritize Indigenous rights and well being in all stages when using data.
+**Landback**: the movement by Indigenous people to reclaim their ancestral lands.
+
 
 

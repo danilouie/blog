@@ -13,10 +13,12 @@ series = ["Tutorials"]
 +++
 
 <!-- put date in future so that it doesn't show this page when I try to publish the web-->
+---
 
 ## Outline
 1. [Introduction](#introduction)
 2. [Library Imports](#library-imports)
+
 ---
 
 # Introduction {#introduction}

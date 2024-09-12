@@ -7,7 +7,7 @@ tags = [
     "Data Sovereignty", "Indigenous"
 ]
 categories = [
-    "Terminology", "Data Sovereignty"
+    "Terminology"
 ]
 series = ["Terminology"]
 +++
@@ -52,16 +52,16 @@ This blog is meant to share vocabulary that I have learned over the course of my
 **Data Decolonization**: the process of removing Western ideas and influences in data practices, particularly for Indigenous communities to have full ownership and control over their own data. It is important to acknowledge and understand historical influences of colonialism in order to determine the best practices for decolonization.
 
 **FAIR Principles**: defined in 2016 in <a href="https://www.nature.com/articles/sdata201618" target="_blank" rel="noopener noreferrer">Scientific Data</a>.
-- **F**indability:
-- **A**ccesibility:
-- **I**nteroperability:
-- **R**eusability:
+- **F**indable: data is uniquely and persistently identifiable
+- **A**ccesible: can be obtained by machines and humans
+- **I**nteroperable: ability for data to be used by different systems while producing the same results.
+- **R**eusable: data is useful for other potential users (with correct permissions and licensing).
 
 **CARE Principles**: defined in 2020 for <a href="https://www.gida-global.org/s/dsj-1158_carroll.pdf" target="_blank" rel="noopener noreferrer">Indigenous Data Governance</a>.
 
-- **C**ollective Benefit:
-- **A**uthority to Control:
-- **R**esponsibility:
-- **E**thics:
+- **C**ollective Benefit: data facilitates equitable benefit, innovation, and inclusion. 
+- **A**uthority to Control: Indigenous communities have full control over their data and are empowered.
+- **R**esponsibility: data should support and respect Indigenous data.
+- **E**thics: prioritize Indigenous rights and well being in all stages when using data.
 
 

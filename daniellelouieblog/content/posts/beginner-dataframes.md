@@ -26,7 +26,6 @@ Dataframes, data structures that are very similar to tables, are key elements in
 Before following this tutorial, make sure you have Python installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. I also recommend that you have a basic understanding of Python as this tutorial does not cover fundamentals for how to code.
 
 test post
-```
 
 ```python
 def hello_world():

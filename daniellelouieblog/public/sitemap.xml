@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
@@ -20,13 +20,19 @@
     <loc>http://localhost:1313/tags/data-sovereignty/</loc>
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/data-sovereignty/</loc>
-    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/data-sov-terms/</loc>
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/dataframes/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/indigenous/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pandas/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/python/</loc>
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
@@ -41,6 +47,15 @@
     <loc>http://localhost:1313/categories/terminology/</loc>
     <lastmod>2024-09-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/tutorial/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/tutorials/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/beginner-dataframes/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/checkboxes/</loc>
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -48,18 +63,6 @@
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/interactivity/</loc>
-    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/pandas/</loc>
-    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/python/</loc>
-    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/tutorial/</loc>
-    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/tutorials/</loc>
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/visualizations/</loc>

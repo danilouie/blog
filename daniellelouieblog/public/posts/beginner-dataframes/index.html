@@ -29,8 +29,8 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-09-11T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-09-11T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-09-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-12T00:00:00+00:00">
     <meta property="article:tag" content="Pandas">
       <meta property="og:see_also" content="http://localhost:1313/posts/interactive-viz-cb/">
 
@@ -157,13 +157,13 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2024-09-11T00:00:00Z">
-                September 11, 2024
+              <time datetime="2024-09-12T00:00:00Z">
+                September 12, 2024
               </time>
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              One-minute read
+              6-minute read
             </span>
           </div>
           <div class="authors">
@@ -199,7 +199,14 @@
 </h2>
 <ol>
 <li><a href="#introduction" >Introduction</a></li>
-<li><a href="#library-imports" >Library Imports</a></li>
+<li><a href="#read-df" >Reading a Dataframe</a></li>
+<li><a href="#view" >Viewing Elements</a>
+<ul>
+<li><a href="#head-tail" >Head and Tail</a></li>
+<li><a href="#iloc-loc" >iloc and loc</a></li>
+</ul>
+</li>
+<li><a href="#create-col" >Creating Columns</a></li>
 </ol>
 <hr>
 <h1 id="introduction">
@@ -209,13 +216,125 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, or even for producing visualizations. The following tutorial aims to provide a basic overview of useful functions when working with dataframes.</p>
+<p>Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations. The following tutorial aims to provide a basic overview of useful functions when working with dataframes.</p>
+<p>It is completely normal to be googling functions and their usage, no matter what fluency you have in coding! There are so many methods towards the same solutions, so it is good practice to continously learn about all the coding possibilities, and then determining which ones you like best. I write this tutorial in hopes that I can compile some of the most common practices in one page and aid you in improving your coding efficiency!</p>
 <p><em><strong><u>Notice</u></strong></em>
-Before following this tutorial, make sure you have Python installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. I also recommend that you have a basic understanding of Python as this tutorial does not cover fundamentals for how to code.</p>
-<p>test post</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
-</span></span></code></pre></div>
+Before following this tutorial, make sure you have Python and a source code editor (such as VSCode or Atom) installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. I also recommend that you have a basic understanding of Python as this tutorial does not cover fundamentals for how to code.</p>
+<h1 id="read-df">
+  Reading a Dataframe
+  <a class="heading-link" href="#read-df">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>As always, let&rsquo;s start our code by importing important libraries. The most important one that we need to import will be Pandas.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</span></span></code></pre></div><p>Now, let&rsquo;s <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html" target="_blank" rel="noopener noreferrer">create a dataframe</a>. There are many ways to create a dataframe, as shown by the link above. However, arguably, many dataframes that you will be working with in class or in a job will be imported (usually as a .csv file); this is because dataframes are meant for working with large amounts of data, and coding a dataframe from scratch would be too tedious.</p>
+<p>For this tutorial, I have created a <a href="https://github.com/danilouie/blog/blob/main/files/minecraft_wood.csv" target="_blank" rel="noopener noreferrer">downloadedable dataframe</a> for you to practice with! However, feel free to practice coding a simple dataframe if you want to try!</p>
+<p>To open up the csv file as a dataframe in your source code editor, type:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># df is the variable we are assigning the dataframe to in this example</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># File path tells your computer where the csv is stored. </span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;FIlE PATH TO CSV&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># An example of how the filepath may look like</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;/Users/daniellelouie/Documents/minecraft_wood_.csv&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Print out the a view of the dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span>
+</span></span></code></pre></div><p>Make sure you change the filepath to wherever you stored the dataframe. For Mac users, an easy way to get your file path is to first locate it in your computer, right click on the document, press the &ldquo;option&rdquo; key, and click the option &ldquo;Copy ___ as Pathname&rdquo;. If you are using Windows, you can click on the bar that may show something like &ldquo;This PC &gt; Documents&hellip;&rdquo;, and then copy the filepath revealed.</p>
+<h1 id="view">
+  Viewing Elements
+  <a class="heading-link" href="#view">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>As you may have noticed, there are a lot of rows in this dataframe, and simply typing out &ldquo;df&rdquo; only shows the first several and last several rows. The &ldquo;&hellip;&rdquo; indicates that there are rows not visible.</p>
+<p><img alt="minecraft wood raw" src="/images/dataframe_tutorial/minecraft_block_df.png"></p>
+<p>You can see the total number of rows and columns at the bottom of the dataframe. In this case, we have 61 rows and 2 columns.</p>
+<h6 id="head-tail">
+  Head and Tail
+  <a class="heading-link" href="#head-tail">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>The function <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.head.html" target="_blank" rel="noopener noreferrer">head</a> shows us the first 5 rows by default.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><p>On the other hand, the function <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html" target="_blank" rel="noopener noreferrer">tail</a> shows us the last 5 rows by default.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</span></span></code></pre></div><p>If we wanted to specify how many rows we wanted to see for either function, we just have to input the number of rows we want to see as an argument. For instance, let&rsquo;s say that we want to see the first 10 rows of the dataframe:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></span></code></pre></div><p>Or, if we want to see the last 15 rows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</span></span></code></pre></div><h6 id="iloc-loc">
+  iloc and loc
+  <a class="heading-link" href="#iloc-loc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>We can also use the functions <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html" target="_blank" rel="noopener noreferrer">iloc</a> and <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html" target="_blank" rel="noopener noreferrer">loc</a> to extract information from dataframes. These functions return the information we want as a <strong>Series</strong>, which is a one-dimensional array of data.</p>
+<p>The function <strong>iloc</strong> uses numerical indices to identify the row and column of the data we want to call. Let&rsquo;s see some examples.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Print out the 1st row of the dataframe as a Series</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Remember that the indices starts from 0!</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Print out the 37th row of the dataframe as a Series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">36</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Print out the item in the 7th row and 1st column </span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Print out the item in the 28th row and 2nd column </span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">27</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</span></span></code></pre></div><p>We can <em>splice</em> data by specifying the row and column indices we want. Splicing can return either a dataframe or a series.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Return up to (not including) the 8th row of the dataframe -&gt; returns a dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Return up to (not including) the 8th row in the first column -&gt; returns a series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Return up to (not including) the 2nd column of the dataframe -&gt; returns a dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Return all rows in the first column -&gt; returns a series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+</span></span></code></pre></div><p>We can also generate the same outcomes using <strong>loc</strong>. The main difference is the <strong>loc</strong> uses the names of columns as an argument instead of their indices; it still uses indices for rows. Let&rsquo;s see how we would write the code above using <strong>loc</strong> instead.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Print out the 1st row of the dataframe as a Series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Print out the 37th row of the dataframe as a Series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">36</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Print out the item in the 7th row and 1st column </span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Print out the item in the 28th row and 2nd column</span>
+</span></span></code></pre></div><p>We can also splice data with <strong>loc</strong>!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Return up to (not including) the 8th row of the dataframe -&gt; returns a dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Return up to (not including) the 8th row in the first column -&gt; returns a series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Return up to (not including) the 2nd column of the dataframe -&gt; returns a dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Return all rows in the first column -&gt; returns a series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="s1">&#39;Name&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><p>Ultimately, it comes down to personal preference for which one you want to use. Sometimes, it may be more intuitive to use indices, while other times, we may remember the column names better - there is no right or wrong choice!</p>
+<h1 id="create-col">
+  Creating Columns
+  <a class="heading-link" href="#create-col">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+
       </div>
 
 
@@ -266,13 +385,13 @@ Before following this tutorial, make sure you have Python installed. If you do n
           <div class="prev-post">
             
             
-              <a href="http://localhost:1313/posts/interactive-viz-cb/">Previous: Interactive Visualizations: Checkboxes</a>
+              <a href="http://localhost:1313/posts/data-sov-terms/">Previous: Data Sovereignty Terminology</a>
             
           </div>
           <div class="next-post">
             
             
-              <a href="http://localhost:1313/posts/data-sov-terms/">Next: Data Sovereignty Terminology</a>
+              <span>Next: None</span>
             
           </div>
         </div>

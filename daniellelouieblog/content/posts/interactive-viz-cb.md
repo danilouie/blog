@@ -216,7 +216,7 @@ display(ui)
 update_countplot()
 ```
 
-# Final Visualization
+# Final Visualization {#final-viz}
 Once you run all the code, you should be able to produce and interact with a bar graph as demonstrated by the video below.
 
 {{< video src="/video/cb_tutorial.mp4" >}}

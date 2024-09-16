@@ -20,21 +20,23 @@ series = ["Tutorials"]
 3. [Viewing Elements](#view)
     - [Head and Tail](#head-tail)
     - [iloc and loc](#iloc-loc)
+    - [Data Types](#data-type)
 4. [Creating Columns](#create-col)
+5. 
 
 ---
 
 # Introduction {#introduction}
 Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations. The following tutorial aims to provide a basic overview of useful functions when working with dataframes.
 
-It is completely normal to be googling functions and their usage, no matter what fluency you have in coding! There are so many methods towards the same solutions, so it is good practice to continously learn about all the coding possibilities, and then determining which ones you like best. I write this tutorial in hopes that I can compile some of the most common practices in one page and aid you in improving your coding efficiency! 
+It is completely normal to be googling functions and their usage, no matter what fluency you have in coding! There are so many methods towards the same solutions, so it is good practice to continously learn about all the coding possibilities, and then determining which ones you like best. I write this tutorial in hopes that I can compile some of the most common practices in one page and aid you in improving your coding efficiency! I will also link useful webpages if you are interested in learning more about any of the topics covered.
 
 
 ***<u>Notice</u>***
-Before following this tutorial, make sure you have Python and a source code editor (such as VSCode or Atom) installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. I also recommend that you have a basic understanding of Python as this tutorial does not cover fundamentals for how to code.
+Before following this tutorial, make sure you have Python and a source code editor (such as VSCode or Atom) installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. 
 
 # Reading a Dataframe {#read-df}
-As always, let's start our code by importing important libraries. The most important one that we need to import will be Pandas. 
+Let's start our code by importing important **libraries**. Libraries contain prewritten code that serve as tools for tasks that coders often have to reuse. The most important one that we need to import will be Pandas. 
 
 ```python
 import pandas as pd
@@ -165,4 +167,31 @@ df.iloc[:, 'Name']
 
 Ultimately, it comes down to personal preference for which one you want to use. Sometimes, it may be more intuitive to use indices, while other times, we may remember the column names better - there is no right or wrong choice!
 
+
+##### Data Types {#data-type}
+Dataframes can contain many different <a href="https://www.geeksforgeeks.org/python-data-types/" target="_blank" rel="noopener noreferrer">data types</a> such as **strings**, **integers**,  **floats** or **booleans**. In short, **strings** are sequences of characters, like a word, phrase, or sentence; **integers** are numbers without decimal points; **floats** are numbers with decimal points; **booleans** are binary depictions of True or False values, usually depicted with 1 (True) and 0 (False).
+
+To see what kind of data type our dataframe contains, we can use a function called **type()**.
+
+```python
+# Determine the type of data in the first column by extracting one object
+type(df.iloc[0][0])
+```
+
+Running the above code should result in an output "str", which indicates that the datatype we observed is a string! Since our dataframe does not contain any other datatypes, let's practice using this function with simple data. 
+
+```python
+# The following code should print out "int" for "integer"
+type(1)
+
+# The following code should print out "float" 
+type(3.14)
+
+# The following code should print out "bool" for "boolean"
+type(False)
+```
+
 # Creating Columns {#create-col}
+Let's take a look at our data table again. That's quite a lot of different types of wooden minecraft blocks! What if we want to look at the specific type of wood that each block is made of?
+
+We can create a new column in the dataframe that extracts the our wanted data (the specific type of wood) from the first column.  

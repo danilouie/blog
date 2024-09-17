@@ -21,8 +21,10 @@ series = ["Tutorials"]
     - [Head and Tail](#head-tail)
     - [iloc and loc](#iloc-loc)
     - [Data Types](#data-type)
-4. [Creating Columns](#create-col)
-5. 
+4. [Columns](#col)
+    - [Creating Columns](#create-col)
+    - [Dropping Columns](#drop-col)
+5. [Grouping Data](#group)
 
 ---
 
@@ -101,7 +103,7 @@ df.tail(15)
 
 We can also use the functions <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html" target="_blank" rel="noopener noreferrer">iloc</a> and <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html" target="_blank" rel="noopener noreferrer">loc</a> to extract information from dataframes. These functions return the information we want as a **Series**, which is a one-dimensional array of data. 
 
-The function **iloc** uses numerical indices to identify the row and column of the data we want to call. Let's see some examples. 
+The function **iloc()** uses numerical indices to identify the row and column of the data we want to call. Let's see some examples. 
 
 ```python
 # Print out the 1st row of the dataframe as a Series
@@ -134,7 +136,7 @@ df.iloc[:, :1]
 df.iloc[:, 0]
 ```
 
-We can also generate the same outcomes using **loc**. The main difference is the **loc** uses the names of columns as an argument instead of their indices; it still uses indices for rows. Let's see how we would write the code above using **loc** instead. 
+We can also generate the same outcomes using **loc()**. The main difference is the **loc** uses the names of columns as an argument instead of their indices; it still uses indices for rows. Let's see how we would write the code above using **loc** instead. 
 
 ```python
 # Print out the 1st row of the dataframe as a Series
@@ -167,8 +169,7 @@ df.iloc[:, 'Name']
 
 Ultimately, it comes down to personal preference for which one you want to use. Sometimes, it may be more intuitive to use indices, while other times, we may remember the column names better - there is no right or wrong choice!
 
-
-##### Data Types {#data-type}
+###### Data Types {#data-type}
 Dataframes can contain many different <a href="https://www.geeksforgeeks.org/python-data-types/" target="_blank" rel="noopener noreferrer">data types</a> such as **strings**, **integers**,  **floats** or **booleans**. In short, **strings** are sequences of characters, like a word, phrase, or sentence; **integers** are numbers without decimal points; **floats** are numbers with decimal points; **booleans** are binary depictions of True or False values, usually depicted with 1 (True) and 0 (False).
 
 To see what kind of data type our dataframe contains, we can use a function called **type()**.
@@ -191,7 +192,100 @@ type(3.14)
 type(False)
 ```
 
-# Creating Columns {#create-col}
+# Columns {#col}
+Many times, we want to manipulate the columns in dataframe to organize our data. Some examples can involve adding columns of new, important information, or deleting columns to rid unnecessary data. The following section will demonstrate how to create and drop a column.  
+
+###### Creating Columns {#create-col}
 Let's take a look at our data table again. That's quite a lot of different types of wooden minecraft blocks! What if we want to look at the specific type of wood that each block is made of?
 
-We can create a new column in the dataframe that extracts the our wanted data (the specific type of wood) from the first column.  
+We can <a href="https://www.geeksforgeeks.org/adding-new-column-to-existing-dataframe-in-pandas/" target="_blank" rel="noopener noreferrer">create a new column</a> in the dataframe that extracts the our wanted data (the specific type of wood) from the first column. By observing our data, we notice that the material used for the minecraft block is the first word in our string. Since the datatype is a string, we can use <a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.str.html" target="_blank" rel="noopener noreferrer">>.str functions</a> to manipulate the data. 
+
+Since we want only the first word of each block name, we want to find someway to split the data first. We can use the function **str.split()**. The function takes in an argument, which specifies what we are splitting the string by (a space, a period, a letter).
+
+```python
+# Try playing around with the function. What happens for each line?
+df['Name'].str.split("a")
+df['Name'].str.split("")
+df['Name'].str.split(" ")
+```
+
+You may have observed that we want to split our string by a space, which is indicated by the last example above. This should split the data into something that looks like the image below.
+
+![stripped data](/images/dataframe_tutorial/strip.png)
+
+How can we extract the first string? We can index into the first string with the following code:
+
+```python
+df['Name'].str.split(" ").str[0]
+```
+
+Running the code above produces a series of our extracted data! Our final step is to add this series of data into a newly created column. To do that, we we can assign the code above into a newly created column, which we will call "Material".
+
+```python
+df['Material'] = df['Name'].str.split(" ").str[0]
+df
+```
+
+When we run **df** now, we can see that there is a new column with all the data we just extracted. Since we have defined **df** to have this new column, it will continue to remain unless we write a code to remove it permanently. 
+
+###### Dropping Columns {#drop-col}
+Let's add a filler column to practice what we just learned first. 
+
+```python
+# Assign all rows a value of 1 in the column "Dummy".
+df['Dummy'] = 1
+```
+
+Great! Now we have an example of a column that contains unnecessary data for our purpose. Looking at our dataframe, the column "Dummy" does not provide data that presents information we can draw conclusions from. So let's get rid of it!
+
+We can remove columns from our dataframe using the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html" target="_blank" rel="noopener noreferrer">drop()</a> function. Try the code below to see the dataframe generated.
+
+```python
+df.drop(columns="Dummy")
+```
+
+The dataframe we just saw doesn't show the "Dummy" column anymore right? But if we run **df** again...
+
+```python
+df
+```
+
+... we still see the "Dummy" column. Why?
+
+That is because when we dropped the column, we didn't assign it back into the original dataframe variable, df. Just like how we had to assign a newly created column to df, we have to do the same if we want to permanently drop a column. Let's code that out.
+
+```python
+df = df.drop(columns="Dummy")
+df
+```
+
+Now, when we run df, we see that the column "Dummy" has been completely removed from our dataframe.
+
+# Grouping Data {#group}
+Sometimes, we want to be able to see the counts of data that belong to the same group. In this case, let's analyze how many different types of blocks are in each material type. 
+
+We can use the function <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html" target="_blank" rel="noopener noreferrer">groupby()</a> to "group" our data by material type. We would want to input the column name that we want to groupby as the argument, which in this case, would be "Material". Let's also assign this grouped dataframe into a new variable called "df_material".
+
+```python
+# We want to group the data by count
+df_material = df_material.groupby('Material').count() 
+df_material
+```
+
+The code should produce a dataframe that looks like the one below.
+
+![grouped dataframe](/images/dataframe_tutorial/grouped.png)
+
+As you can see, all the columns are now replaced by integers, which represent the count of each block type. Let's <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html" target="_blank" rel="noopener noreferrer">rename</a> one of our columns to "Count" (it doesn't matter which one), and drop all the other ones. Feel free to follow my code exactly, or you can try it on your own! 
+
+```python
+df_material = df_material.rename(columns={"Name" : "Count"})
+# axis=1 specifies that we are dropping columns
+df_material = df_material.drop(['Type','Dummy'], axis=1)
+df_material
+```
+
+The dataframe printed should look like the one below.
+
+![cleaned data](/images/dataframe_tutorial/cleaned_count.png)
+

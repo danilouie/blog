@@ -1,7 +1,7 @@
 +++
 authors = ["Danielle Louie"]
 title = "Working with DataFrames"
-date = "2024-09-12"
+date = "2024-09-16"
 description = "A beginner's guide to working with dataframes and commonly used functions."
 tags = [
     "Pandas"
@@ -9,7 +9,7 @@ tags = [
 categories = [
     "Tutorial", "Python", "DataFrames"
 ]
-series = ["Tutorials"]
+series = ["Tutorials", "DataFrames"]
 +++
 
 ---
@@ -24,7 +24,9 @@ series = ["Tutorials"]
 4. [Columns](#col)
     - [Creating Columns](#create-col)
     - [Dropping Columns](#drop-col)
+    - [Calling Columns](#call-col)
 5. [Grouping Data](#group)
+6. [Arithmetics](#arithmetics)
 
 ---
 
@@ -193,7 +195,7 @@ type(False)
 ```
 
 # Columns {#col}
-Many times, we want to manipulate the columns in dataframe to organize our data. Some examples can involve adding columns of new, important information, or deleting columns to rid unnecessary data. The following section will demonstrate how to create and drop a column.  
+Many times, we want to manipulate the columns in dataframe to organize our data. Some examples can involve adding columns of new, important information, or deleting columns to rid unnecessary data. 
 
 ###### Creating Columns {#create-col}
 Let's take a look at our data table again. That's quite a lot of different types of wooden minecraft blocks! What if we want to look at the specific type of wood that each block is made of?
@@ -261,6 +263,32 @@ df
 
 Now, when we run df, we see that the column "Dummy" has been completely removed from our dataframe.
 
+###### Calling Columns {#call-col}
+Here are some techniques to return columns in a couple of different way. 
+
+Remember how we were able to use **iloc** and **loc** to call a column as a series? We can also perform the same task by writing:
+
+```python
+# Returns a series
+df['Name']
+```
+
+If we simply want to view a column as a dataframe instead of a series, we add another pair of brackets like so:
+
+```python
+# Returns a dataframe
+df[['Name']]
+```
+
+We can also call multiple columns in a dataframe:
+
+```python
+# Returns a dataframe
+df[['Name', 'Material']]
+```
+
+The rule above does not apply for series; remember, series are one-dimensional, and calling multiple columns would result in an error.
+
 # Grouping Data {#group}
 Sometimes, we want to be able to see the counts of data that belong to the same group. In this case, let's analyze how many different types of blocks are in each material type. 
 
@@ -289,3 +317,5 @@ The dataframe printed should look like the one below.
 
 ![cleaned data](/images/dataframe_tutorial/cleaned_count.png)
 
+# Arithmetics {#arithmetics}
+[to be written]

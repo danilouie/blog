@@ -106,3 +106,8 @@ url = "projects/"
 name = "Contact me"
 weight = 5
 url = "contact/"
+
+[sitemap]
+filename = "sitemap.xml"   
+changefreq = "daily"     
+priority = 0.5   

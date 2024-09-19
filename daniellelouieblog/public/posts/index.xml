@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/beginner-dataframes/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/beginner-dataframes/</guid>
-      <description>Outline Link to heading Introduction Reading a Dataframe Viewing Elements Head and Tail iloc and loc Data Types Columns Creating Columns Dropping Columns Grouping Data Introduction Link to heading Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations.</description>
+      <description>Outline Link to heading Introduction Reading a Dataframe Viewing Elements Head and Tail iloc and loc Data Types Columns Creating Columns Dropping Columns Calling Columns Grouping Data Arithmetics Introduction Link to heading Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations.</description>
     </item>
     <item>
       <title>Data Sovereignty Terminology</title>

@@ -27,6 +27,10 @@ series = ["Tutorials", "DataFrames"]
     - [Calling Columns](#call-col)
 5. [Grouping Data](#group)
 6. [Arithmetics](#arithmetics)
+    - [Simple Math](#math)
+    - [Inequalities](#inequalities)
+    - [Math Functions (And More)](#math-func)
+7. [Conclusion](#conclusion)
 
 ---
 
@@ -40,13 +44,10 @@ It is completely normal to be googling functions and their usage, no matter what
 Before following this tutorial, make sure you have Python and a source code editor (such as VSCode or Atom) installed. If you do not have Python, you can look <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a> for installation instructions. 
 
 # Reading a Dataframe {#read-df}
-Let's start our code by importing important **libraries**. Libraries contain prewritten code that serve as tools for tasks that coders often have to reuse. The most important one that we need to import will be Pandas. 
+Let's start our code by importing important **libraries**. Libraries contain prewritten code that serve as tools for tasks that coders often have to reuse. The one that we need to import will be **pandas**. 
 
 ```python
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt 
-import seaborn as sns
 ```
 
 Now, let's <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html" target="_blank" rel="noopener noreferrer">create a dataframe</a>. There are many ways to create a dataframe, as shown by the link above. However, arguably, many dataframes that you will be working with in class or in a job will be imported (usually as a .csv file); this is because dataframes are meant for working with large amounts of data, and coding a dataframe from scratch would be too tedious.
@@ -318,4 +319,87 @@ The dataframe printed should look like the one below.
 ![cleaned data](/images/dataframe_tutorial/cleaned_count.png)
 
 # Arithmetics {#arithmetics}
-[to be written]
+Another way we can manipulate dataframe data is through mathematical procedures. In fact, it is very common to have to create new data (and often new columns) by using the raw data that was previously provided. Below describes  
+
+###### Simple Math {#math}
+We can also carry out mathematical procedures with the data in dataframes! 
+
+For instance, if we wanted to manipulate our counts in **df_material**, we can use the basic mathematical functions we know like below.
+
+```python
+# Try out each of these lines separately to see what happens! 
+ddf_material['Count'] + 5
+
+df_material['Count'] - 5
+
+df_material['Count'] * 5
+
+df_material['Count'] / 5
+```
+
+Let's create a new column to store our calculated values. 
+
+```python
+df_material['Add 5'] = df_material['Count'] + 5
+```
+
+We can even carry out mathematical procedures among multiple columns in our dataframe! Call **df_material** to see the new columns.
+
+```python
+df_material['Sum'] = df_material['Count'] + df_material['Add 5']
+df_material
+```
+
+###### Inequalities {#inequalities}
+What about inequalities and equalities? Checking inequalities and equalities result in dataframes that only contain the rows that hold true for the mathematical statements; this means that it is possible for an empty dataframe to be returned. Inequality and equality statements also work for strings
+
+```python
+# We can check for lesser and greater than
+df_material[df_material['Count'] < 10]
+
+df_material[df_material['Count'] > 10]
+
+# We can also check for "at most" and "at least"
+df_material[df_material['Count'] <= 10]
+
+df_material[df_material['Count'] >= 10]
+
+# To check equality, we need to use two equal signs
+df_material[df_material['Material'] == 'Acacia']
+
+# The following code is checking for what is NOT equal to 'Mangrove'
+df_material[df_material['Material'] != 'Mangrove']
+```
+
+###### Math Functions (And More) {#math}
+There are also some libraries that contain useful mathematical functions for us to use, such as pandas. The functions help us to quickly calculate data without having to write out every mathematical procedure out. Let's take a look at some useful ones in the code below.
+
+While calculating sums, mean, and median are relatively easy, they can be repetitive and tedious. Thankfully, pandas has functions that we can use.
+
+```python
+# Calculate the sum
+sum(df_material['Count'])
+
+# Calculate the average
+df_material['Count'].mean()
+
+# Find the median
+df_median['Count'].median()
+```
+
+We can also see how much <a href="https://pandas.pydata.org/docs/reference/api/pandas.unique.html" target="_blank" rel="noopener noreferrer">unique</a> data we have by using the function **unique()**. Let's use our original dataframe **df** to see what are the unique types of materials for these blocks.
+
+```python
+df['Material'].unique()
+```
+
+Notice how the materials are returned in an array? Calling unique tells us what the unique data are, not how many there are. To see how many there are, we can use the **len()** function.
+
+```python
+len(df['Material'].unique())
+```
+
+This <a href="https://www.geeksforgeeks.org/pandas-functions-in-python/" target="_blank" rel="noopener noreferrer">link</a> provides an extensive list of useful functions (not just mathematical ones) that are commonly used. 
+
+# Conclusion {#conclusion}
+This concludes the first tutorial of working with dataframes. Hopefully, this has provided you with an insight into all the possibilities of working with a dataframe, as well as built your comfortability in exploring beyond what this tutorial has covered. Remember, the best way to familiarize yourself with working with dataframes (and coding in general) is to continuously use it. Be patient with yourself and try everything!

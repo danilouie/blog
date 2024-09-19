@@ -211,9 +211,11 @@
 <ul>
 <li><a href="#create-col" >Creating Columns</a></li>
 <li><a href="#drop-col" >Dropping Columns</a></li>
+<li><a href="#call-col" >Calling Columns</a></li>
 </ul>
 </li>
 <li><a href="#group" >Grouping Data</a></li>
+<li><a href="#arithmetics" >Arithmetics</a></li>
 </ol>
 <hr>
 <h1 id="introduction">
@@ -361,7 +363,7 @@ Before following this tutorial, make sure you have Python and a source code edit
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Many times, we want to manipulate the columns in dataframe to organize our data. Some examples can involve adding columns of new, important information, or deleting columns to rid unnecessary data. The following section will demonstrate how to create and drop a column.</p>
+<p>Many times, we want to manipulate the columns in dataframe to organize our data. Some examples can involve adding columns of new, important information, or deleting columns to rid unnecessary data.</p>
 <h6 id="create-col">
   Creating Columns
   <a class="heading-link" href="#create-col">
@@ -404,6 +406,24 @@ Before following this tutorial, make sure you have Python and a source code edit
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&#34;Dummy&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">df</span>
 </span></span></code></pre></div><p>Now, when we run df, we see that the column &ldquo;Dummy&rdquo; has been completely removed from our dataframe.</p>
+<h6 id="call-col">
+  Calling Columns
+  <a class="heading-link" href="#call-col">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>Here are some techniques to return columns in a couple of different way.</p>
+<p>Remember how we were able to use <strong>iloc</strong> and <strong>loc</strong> to call a column as a series? We can also perform the same task by writing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Returns a series</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><p>If we simply want to view a column as a dataframe instead of a series, we add another pair of brackets like so:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Returns a dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Name&#39;</span><span class="p">]]</span>
+</span></span></code></pre></div><p>We can also call multiple columns in a dataframe:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Returns a dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Material&#39;</span><span class="p">]]</span>
+</span></span></code></pre></div><p>The rule above does not apply for series; remember, series are one-dimensional, and calling multiple columns would result in an error.</p>
 <h1 id="group">
   Grouping Data
   <a class="heading-link" href="#group">
@@ -425,6 +445,14 @@ Before following this tutorial, make sure you have Python and a source code edit
 </span></span><span class="line"><span class="cl"><span class="n">df_material</span>
 </span></span></code></pre></div><p>The dataframe printed should look like the one below.</p>
 <p><img alt="cleaned data" src="/images/dataframe_tutorial/cleaned_count.png"></p>
+<h1 id="arithmetics">
+  Arithmetics
+  <a class="heading-link" href="#arithmetics">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>[to be written]</p>
 
       </div>
 
@@ -458,6 +486,10 @@ Before following this tutorial, make sure you have Python and a source code edit
         
         </ul>
       </nav>
+    
+  
+    
+    
     
   
 </section>

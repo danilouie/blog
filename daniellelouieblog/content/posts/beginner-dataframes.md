@@ -201,7 +201,7 @@ Many times, we want to manipulate the columns in dataframe to organize our data.
 ###### Creating Columns {#create-col}
 Let's take a look at our data table again. That's quite a lot of different types of wooden minecraft blocks! What if we want to look at the specific type of wood that each block is made of?
 
-We can <a href="https://www.geeksforgeeks.org/adding-new-column-to-existing-dataframe-in-pandas/" target="_blank" rel="noopener noreferrer">create a new column</a> in the dataframe that extracts the our wanted data (the specific type of wood) from the first column. By observing our data, we notice that the material used for the minecraft block is the first word in our string. Since the datatype is a string, we can use <a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.str.html" target="_blank" rel="noopener noreferrer">>.str functions</a> to manipulate the data. 
+We can <a href="https://www.geeksforgeeks.org/adding-new-column-to-existing-dataframe-in-pandas/" target="_blank" rel="noopener noreferrer">create a new column</a> in the dataframe that extracts the our wanted data (the specific type of wood) from the first column. By observing our data, we notice that the material used for the minecraft block is the first word in our string. Since the datatype is a string, we can use <a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.str.html" target="_blank" rel="noopener noreferrer">.str functions</a> to manipulate the data. 
 
 Since we want only the first word of each block name, we want to find someway to split the data first. We can use the function **str.split()**. The function takes in an argument, which specifies what we are splitting the string by (a space, a period, a letter).
 

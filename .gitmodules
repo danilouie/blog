@@ -4,3 +4,6 @@
 [submodule "daniellelouieblog/public"]
 	path = daniellelouieblog/public
 	url = https://github.com/danilouie/danilouie.github.io.git
+[submodule "daniellelouieblog/themes/themes/hugo-coder"]
+	path = daniellelouieblog/themes/themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git

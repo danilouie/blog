@@ -1,4 +1,4 @@
-baseURL = 'https://daniellelouie.github.io/'
+baseURL = 'https://danilouie.github.io/'
 languageCode = 'en-us'
 title = 'Home'
 theme = "hugo-coder"

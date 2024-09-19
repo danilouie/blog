@@ -163,7 +163,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              10-minute read
+              13-minute read
             </span>
           </div>
           <div class="authors">
@@ -215,7 +215,14 @@
 </ul>
 </li>
 <li><a href="#group" >Grouping Data</a></li>
-<li><a href="#arithmetics" >Arithmetics</a></li>
+<li><a href="#arithmetics" >Arithmetics</a>
+<ul>
+<li><a href="#math" >Simple Math</a></li>
+<li><a href="#inequalities" >Inequalities</a></li>
+<li><a href="#math-func" >Math Functions (And More)</a></li>
+</ul>
+</li>
+<li><a href="#conclusion" >Conclusion</a></li>
 </ol>
 <hr>
 <h1 id="introduction">
@@ -236,11 +243,8 @@ Before following this tutorial, make sure you have Python and a source code edit
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Let&rsquo;s start our code by importing important <strong>libraries</strong>. Libraries contain prewritten code that serve as tools for tasks that coders often have to reuse. The most important one that we need to import will be Pandas.</p>
+<p>Let&rsquo;s start our code by importing important <strong>libraries</strong>. Libraries contain prewritten code that serve as tools for tasks that coders often have to reuse. The one that we need to import will be <strong>pandas</strong>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 </span></span></code></pre></div><p>Now, let&rsquo;s <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html" target="_blank" rel="noopener noreferrer">create a dataframe</a>. There are many ways to create a dataframe, as shown by the link above. However, arguably, many dataframes that you will be working with in class or in a job will be imported (usually as a .csv file); this is because dataframes are meant for working with large amounts of data, and coding a dataframe from scratch would be too tedious.</p>
 <p>For this tutorial, I have created a <a href="https://github.com/danilouie/blog/blob/main/files/minecraft_wood.csv" target="_blank" rel="noopener noreferrer">downloadedable dataframe</a> for you to practice with! However, feel free to practice coding a simple dataframe if you want to try!</p>
 <p>To open up the csv file as a dataframe in your source code editor, type:</p>
@@ -452,7 +456,82 @@ Before following this tutorial, make sure you have Python and a source code edit
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>[to be written]</p>
+<p>Another way we can manipulate dataframe data is through mathematical procedures. In fact, it is very common to have to create new data (and often new columns) by using the raw data that was previously provided. Below describes</p>
+<h6 id="math">
+  Simple Math
+  <a class="heading-link" href="#math">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>We can also carry out mathematical procedures with the data in dataframes!</p>
+<p>For instance, if we wanted to manipulate our counts in <strong>df_material</strong>, we can use the basic mathematical functions we know like below.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Try out each of these lines separately to see what happens! </span>
+</span></span><span class="line"><span class="cl"><span class="n">ddf_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">5</span>
+</span></span></code></pre></div><p>Let&rsquo;s create a new column to store our calculated values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Add 5&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">5</span>
+</span></span></code></pre></div><p>We can even carry out mathematical procedures among multiple columns in our dataframe! Call <strong>df_material</strong> to see the new columns.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Sum&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Add 5&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span>
+</span></span></code></pre></div><h6 id="inequalities">
+  Inequalities
+  <a class="heading-link" href="#inequalities">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>What about inequalities and equalities? Checking inequalities and equalities result in dataframes that only contain the rows that hold true for the mathematical statements; this means that it is possible for an empty dataframe to be returned. Inequality and equality statements also work for strings</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># We can check for lesser and greater than</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># We can also check for &#34;at most&#34; and &#34;at least&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># To check equality, we need to use two equal signs</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Material&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Acacia&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># The following code is checking for what is NOT equal to &#39;Mangrove&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Material&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;Mangrove&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><h6 id="math">
+  Math Functions (And More)
+  <a class="heading-link" href="#math">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>There are also some libraries that contain useful mathematical functions for us to use, such as pandas. The functions help us to quickly calculate data without having to write out every mathematical procedure out. Let&rsquo;s take a look at some useful ones in the code below.</p>
+<p>While calculating sums, mean, and median are relatively easy, they can be repetitive and tedious. Thankfully, pandas has functions that we can use.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Calculate the sum</span>
+</span></span><span class="line"><span class="cl"><span class="nb">sum</span><span class="p">(</span><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Calculate the average</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_material</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Find the median</span>
+</span></span><span class="line"><span class="cl"><span class="n">df_median</span><span class="p">[</span><span class="s1">&#39;Count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</span></span></code></pre></div><p>We can also see how much <a href="https://pandas.pydata.org/docs/reference/api/pandas.unique.html" target="_blank" rel="noopener noreferrer">unique</a> data we have by using the function <strong>unique()</strong>. Let&rsquo;s use our original dataframe <strong>df</strong> to see what are the unique types of materials for these blocks.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Material&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</span></span></code></pre></div><p>Notice how the materials are returned in an array? Calling unique tells us what the unique data are, not how many there are. To see how many there are, we can use the <strong>len()</strong> function.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Material&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+</span></span></code></pre></div><p>This <a href="https://www.geeksforgeeks.org/pandas-functions-in-python/" target="_blank" rel="noopener noreferrer">link</a> provides an extensive list of useful functions (not just mathematical ones) that are commonly used.</p>
+<h1 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>This concludes the first tutorial of working with dataframes. Hopefully, this has provided you with an insight into all the possibilities of working with a dataframe, as well as built your comfortability in exploring beyond what this tutorial has covered. Remember, the best way to familiarize yourself with working with dataframes (and coding in general) is to continuously use it. Be patient with yourself and try everything!</p>
 
       </div>
 

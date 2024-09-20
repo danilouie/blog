@@ -87,12 +87,6 @@ target = "_blank"
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
-identifier = "home"
-name = "Home"
-weight = 0
-url = "https://danilouie.github.io/"
-
-[[languages.en.menu.main]]
 identifier = "about"
 name = "About"
 weight = 1

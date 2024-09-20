@@ -87,6 +87,12 @@ target = "_blank"
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
+identifier = "home"
+name = "Home"
+weight = 0
+url = "/"
+
+[[languages.en.menu.main]]
 identifier = "about"
 name = "About"
 weight = 1
@@ -104,7 +110,7 @@ url = "projects/"
 
 [[languages.en.menu.main]]
 name = "Contact me"
-weight = 5
+weight = 4
 url = "contact/"
 
 [sitemap]

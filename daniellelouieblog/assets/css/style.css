@@ -9,39 +9,38 @@
     color: #666; /* Adjust the color as needed */
     margin-top: 5px; /* Adjust the margin as needed */
   }
-  
-.prev-post,
-.next-post {
-    width: 48%; /* Adjust width as needed */
-  }
-  
-.prev-post {
-    text-align: left; /* Align "Previous" link to the left */
-  }
-  
-.next-post {
-    text-align: right; /* Align "Next" link to the right */
-  }
-  
-.references {
-    font-size: 0.5em; /* Adjust this value to make the font smaller or larger */
-  }
-
-  .image-caption {
-    font-size: 0.8em; /* Smaller font size */
-    text-align: left; /* Align text to the left */
-    margin-top: 0; /* Remove space between the image and caption */
-    padding-top: 5px; /* Optionally add a small padding for better readability */
+  .widget {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+    overflow: hidden; /* Contain floated elements */
 }
 
-.image-caption strong {
-    font-weight: bold; /* Bold the word */
+.widget-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make entire widget clickable */
+    height: 100%; /* Ensure link covers the whole widget */
 }
 
-.separator {
-    margin-left: 3rem;  /* Increase the space before the separator */
-    margin-right: 3rem; /* Increase the space after the separator */
-
+.widget-content {
+    padding: 20px; /* Padding inside the widget */
 }
 
-/* these currently don't really work */
+.widget-title {
+    font-size: 1.5rem; /* Title font size */
+    margin-bottom: 0.5rem; /* Space below title */
+}
+
+.widget-description {
+    font-size: 1rem; /* Description font size */
+    color: #666; /* Dark gray for description text */
+}
+
+.widget:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    background-color: #f9f9f9; /* Light gray background on hover */
+}

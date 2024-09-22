@@ -5,9 +5,6 @@ date = "2022-12-09"
 tags = ["ArcGIS Pro"]
 +++
 
-**Program:** ArcGIS Pro
-**Authors:** Danielle Louie, Michelle Ngo, Magali Ruer
-
 ---
 
 # Outline

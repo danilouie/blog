@@ -1,8 +1,8 @@
 +++
 title = "Tree Coverage in the City of Los Angeles"
-author = ["Danielle Louie", "Michelle Ngo", "Magali Ruer"]
+authors = ["Danielle Louie", "Michelle Ngo", "Magali Ruer"]
 date = "2022-12-09"
-tags = ["ArcGIS Pro"]
+categories = ["ArcGIS Pro"]
 +++
 
 ---

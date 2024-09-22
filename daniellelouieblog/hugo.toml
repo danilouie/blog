@@ -103,7 +103,7 @@ weight = 3
 url = "projects/"
 
 [[languages.en.menu.main]]
-name = "Contact me"
+name = "Contact/CV"
 weight = 4
 url = "contact/"
 

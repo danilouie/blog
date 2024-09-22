@@ -15,5 +15,3 @@ I am also a Production Manager Intern for <a href="https://climatebreak.org" tar
 
 ## My Website
 This site is a fun, personal project for me to continuously practice my coding skills, present my projects, and share my knowledge with an interested community! If you would like to view my website build more in-depth, feel free to browse through this <a href="https://github.com/danilouie/blog/tree/main/daniellelouieblog" target="_blank" rel="noopener noreferrer">Git Repository</a>.
-
-<!-- ![bottle being hit on head](/images/bottle_meme.jpg) -->

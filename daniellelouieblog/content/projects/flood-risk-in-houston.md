@@ -4,6 +4,7 @@ subtitle = "Analyzing Urban Design Factors and Infrastructure Contributing to Vu
 authors = ["Danielle Louie", "Kobe Bilstad"]
 date = "2024-08-08"
 categories = ["R", "RStudio", "Carto"]
+description = "Discover how data visualization and spatial analysis are used to assess flood risk in Houston, highlighting vulnerable areas and informing better urban planning decisions."
 +++
 
 ---

@@ -43,7 +43,7 @@ August 2021 - December 2021
 
 ### Technical Skills
 **Programming Languages**: Python, Java, MATLAB, SQL, R
-**Tools**: Git, NumPy, Pandas, Matplotlib, IntelliJ IDE, RStudio, VSCode, Jupyter, CAD Solidworks, ArcGIS Pro, Microsoft Office, Google Suite
+**Tools**: Git/GitHub, IntelliJ IDE, RStudio, VSCode, Jupyter Notebook/Lab, CAD Solidworks, ArcGIS Pro, Microsoft Office, Google Suite, Adobe Suite
 
 ---
 

@@ -1,0 +1,31 @@
+{{ define "content" }}
+  <section class="container list">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ title (i18n (lower .Title)) | default .Title }}
+        </a>
+      </h1>
+    </header>
+    {{ .Content }}
+    <div class="row">
+      {{- range .Paginator.Pages }}
+      <div class="col-md-4">
+        <div class="project-widget mb-4">
+          <div class="project-box" onclick="location.href='{{ .Permalink }}'">
+            <!-- Display the project image -->
+            {{ if .Params.image }}
+              <img src="{{ .Params.image }}" alt="{{ .Title }}" class="widget-image"/>
+            {{ end }}
+            <!-- Project description and title inside the widget -->
+            <div class="widget-content">
+              <h3 class="widget-title">{{ .Title }}</h3>
+              <p class="widget-description">{{ .Params.description | default "No description available." }}</p>
+            </div>
+          </div>
+        </div>        
+      {{- end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </section>
+{{ end }}

@@ -4,6 +4,7 @@ subtitle = "Analyzing Urban Design Factors and Infrastructure Contributing to Vu
 authors = ["Danielle Louie", "Kobe Bilstad"]
 date = "2024-08-08"
 categories = ["R", "RStudio", "Carto"]
+description = "A study into how specific factors in Houston's urban design exacerbates flood risks."
 +++
 
 ---

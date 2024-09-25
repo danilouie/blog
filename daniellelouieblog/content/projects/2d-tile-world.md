@@ -4,7 +4,7 @@ subtitle = " "
 authors = ["Danielle Louie", "Michelle Ngo"]
 date = "2023-11-01"
 categories = ["Java", "IntelliJ"]
-eexternalLink = "https://github.com/danilouie/CS61B-Projects/tree/main/proj3"
+description = "Learn about how I created 2D tile-based, interactive game using Java."
 +++
 
 Here is the [Project 3 Git Link](https://github.com/danilouie/CS61B-Projects/tree/main/proj3). 

@@ -11459,4 +11459,24 @@ figure {
 .chroma .w {
   color: #bbbbbb; }
 
+body.colorscheme-light .project-box {
+  border: 2px solid #c1c1c1;
+  padding: 15px;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #f0f0f0; }
+  body.colorscheme-light .project-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.161); }
+
+body.colorscheme-light .project-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px; }
+
+body.colorscheme-light .project-box p {
+  font-size: 2rem;
+  /* description size */
+  color: #666; }
+
 /*# sourceMappingURL=coder.css.map */

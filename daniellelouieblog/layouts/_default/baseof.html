@@ -4,9 +4,6 @@
 <head>
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-  {{ $lightStyles := resources.Get "scss/box-list.scss" | resources.ToCSS }}
-  {{ $darkStyles := resources.Get "scss/box-list-dark.scss" | resources.ToCSS }}
-
   {{ partial "head.html" . }}
 </head>
 
@@ -17,12 +14,6 @@
   {{ $csClass = "colorscheme-auto" }} <!-- Set to auto mode -->
 {{ end }}
 
-<!-- Link stylesheet based on color scheme -->
-{{ if eq $csClass "colorscheme-dark" }}
-  <link rel="stylesheet" href="{{ $darkStyles.Permalink }}" id="dark-mode-css">
-{{ else }}
-  <link rel="stylesheet" href="{{ $lightStyles.Permalink }}" id="light-mode-css">
-{{ end }}
 
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
   {{ partial "float" . }}

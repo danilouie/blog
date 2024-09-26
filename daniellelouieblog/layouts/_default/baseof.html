@@ -9,9 +9,9 @@
 
 {{ $csClass := "colorscheme-light" }} <!-- Default to light mode -->
 {{ if eq .Site.Params.colorScheme "dark" }}
-  {{ $csClass = "colorscheme-dark" }} <!-- Set to dark mode -->
+{{ $csClass = "colorscheme-dark" }} <!-- Set to dark mode -->
 {{ else if eq .Site.Params.colorScheme "auto" }}
-  {{ $csClass = "colorscheme-auto" }} <!-- Set to auto mode -->
+{{ $csClass = "colorscheme-auto" }} <!-- Set to auto mode -->
 {{ end }}
 
 

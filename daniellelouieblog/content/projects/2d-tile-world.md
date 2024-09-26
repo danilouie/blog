@@ -4,8 +4,12 @@ subtitle = " "
 authors = ["Danielle Louie", "Michelle Ngo"]
 date = "2023-11-01"
 categories = ["Java", "IntelliJ"]
+<<<<<<< HEAD
 description = "Learn about terrain generation, user interactivity, and the use of grid systems to build a dynamic 2D tile-based world."
 externalLink = "https://github.com/danilouie/CS61B-Projects/tree/main/proj3"
+=======
+description = "Learn about how I created 2D tile-based, interactive game using Java."
+>>>>>>> 54cdd0556f44ee18333d54936ce28371a912b810
 +++
 
 Here is the [Project 3 Git Link](https://github.com/danilouie/CS61B-Projects/tree/main/proj3). 

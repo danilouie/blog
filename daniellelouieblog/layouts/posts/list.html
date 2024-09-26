@@ -1,4 +1,4 @@
-s{{ define "title" }}
+{{ define "title" }}
   {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}

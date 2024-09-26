@@ -3,11 +3,7 @@ title = "Tree Coverage in the City of Los Angeles"
 authors = ["Danielle Louie", "Michelle Ngo", "Magali Ruer"]
 date = "2022-12-09"
 categories = ["ArcGIS Pro"]
-<<<<<<< HEAD
 description = "Explore how spatial data is leveraged to analyze tree coverage in Los Angeles, exploring its impact on urban heat islands and sustainability efforts."
-=======
-description = "A geospatial analysis on the impacts of trees in Los Angeles."
->>>>>>> 54cdd0556f44ee18333d54936ce28371a912b810
 +++
 
 ---

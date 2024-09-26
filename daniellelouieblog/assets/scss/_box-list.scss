@@ -1,0 +1,25 @@
+body.colorscheme-light {    
+    .project-box {
+        border: 2px solid #c1c1c1;
+        padding: 15px;
+        margin-bottom: 25px;
+        transition: box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+        border-radius: 15px;
+        background-color: #f0f0f0;
+
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.161);
+        }
+    }
+
+    .project-box h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .project-box p {
+        font-size: 1.75rem; /* description size */
+        color: #666;
+    }
+}

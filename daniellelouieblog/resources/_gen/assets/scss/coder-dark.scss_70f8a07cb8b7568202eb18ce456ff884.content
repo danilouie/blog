@@ -832,4 +832,23 @@ body.colorscheme-dark {
     body.colorscheme-auto .chroma .w {
       color: #6e7681; } }
 
+body.colorscheme-dark .project-box {
+  border: 2px solid #faeeee;
+  padding: 15px;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #272727; }
+  body.colorscheme-dark .project-box:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); }
+
+body.colorscheme-dark .project-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px; }
+
+body.colorscheme-dark .project-box p {
+  font-size: 1.75rem;
+  color: #c3c3c3; }
+
 /*# sourceMappingURL=coder-dark.css.map */

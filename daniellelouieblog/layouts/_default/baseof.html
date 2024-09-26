@@ -3,6 +3,12 @@
 
 <head>
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+<<<<<<< HEAD
+=======
+  
+  {{ $styles := resources.Get "scss/custom.scss" | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+>>>>>>> 54cdd0556f44ee18333d54936ce28371a912b810
 
   {{ partial "head.html" . }}
 </head>

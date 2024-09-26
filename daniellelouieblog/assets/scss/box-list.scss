@@ -1,12 +1,14 @@
 .project-box {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
+    border: 2px solid #c1c1c1;
+    padding: 15px;
+    margin-bottom: 25px;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
+    border-radius: 15px;
+    background-color: #f0f0f0;
 
     &:hover {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.161);
     }
 }
 
@@ -16,6 +18,7 @@
 }
 
 .project-box p {
-    font-size: 1rem;
+    font-size: 2rem; /* description size */
     color: #666;
 }
+

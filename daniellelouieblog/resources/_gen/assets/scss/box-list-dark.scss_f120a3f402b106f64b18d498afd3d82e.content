@@ -1,13 +1,13 @@
 .project-box {
-  border: 2px solid #c1c1c1;
+  border: 2px solid #faeeee;
   padding: 15px;
   margin-bottom: 25px;
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
   border-radius: 15px;
-  background-color: #f0f0f0; }
+  background-color: #272727; }
   .project-box:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.161); }
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); }
 
 .project-box h2 {
   font-size: 1.5rem;
@@ -15,5 +15,4 @@
 
 .project-box p {
   font-size: 2rem;
-  /* description size */
-  color: #666; }
+  color: #717070; }

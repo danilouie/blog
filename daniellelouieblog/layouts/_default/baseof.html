@@ -4,17 +4,24 @@
 <head>
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-  {{ $styles := resources.Get "scss/box-list.scss" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+  {{ $lightStyles := resources.Get "scss/box-list.scss" | resources.ToCSS }}
+  {{ $darkStyles := resources.Get "scss/box-list-dark.scss" | resources.ToCSS }}
 
   {{ partial "head.html" . }}
 </head>
 
-{{ $csClass := "colorscheme-light" }}
+{{ $csClass := "colorscheme-light" }} <!-- Default to light mode -->
 {{ if eq .Site.Params.colorScheme "dark" }}
-{{ $csClass = "colorscheme-dark" }}
+  {{ $csClass = "colorscheme-dark" }} <!-- Set to dark mode -->
 {{ else if eq .Site.Params.colorScheme "auto" }}
-{{ $csClass = "colorscheme-auto" }}
+  {{ $csClass = "colorscheme-auto" }} <!-- Set to auto mode -->
+{{ end }}
+
+<!-- Link stylesheet based on color scheme -->
+{{ if eq $csClass "colorscheme-dark" }}
+  <link rel="stylesheet" href="{{ $darkStyles.Permalink }}" id="dark-mode-css">
+{{ else }}
+  <link rel="stylesheet" href="{{ $lightStyles.Permalink }}" id="light-mode-css">
 {{ end }}
 
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">

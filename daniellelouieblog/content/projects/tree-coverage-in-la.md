@@ -30,15 +30,15 @@ While conducting our research, we each developed **Analysis Maps** to draw out t
 # Maps {#maps}
 A total of three maps were made: Suitability Analysis Map, Library Service Areas and Vulnerability Map, and an NDVI/Ecostress Map.
 
-##### *<u> Suitability Analysis Map (By Danielle Louie)</u>* {##suitability-analysis}
+###### *<u> Suitability Analysis Map (By Danielle Louie)</u>* {##suitability-analysis}
 The Suitability Analysis Map identified three opportunities and constraints in Los Angeles for planting trees. Opportunities were viewed as characteristics of areas that were in need of trees and were able to sustain them; this project focused on areas with high concentrations of liquefication, air pollution, and existing hydrology. On the other hand, constraints were characteristics that decreased the need for trees or were inhabitable to plant them; we focused on existing open space and parks, hazardous waste, and methane producing landfills. 
 
 Each category had its data weighed, overlaid, and then combined into one main map that showed the ranges from most to least suitable based on the combined weights of opportunity and constraints in Los Angeles.
 
-##### *<u> Library Service Areas and Vulnerability (By Michelle Ngo) </u>* {#vulnerability}
+###### *<u> Library Service Areas and Vulnerability (By Michelle Ngo) </u>* {#vulnerability}
 This Network Analysis Map was used to identify areas in the City of Los Angeles that were in need of shade equity. Areas that faced extreme, high temperatures, had high levels of unsheltered populations, and were distant from libraries were identified as more vulnerable communities. The most vulnerable communities can be represented by the darkest shade of red mapped.
 
-##### *<u> Normalized Difference Vegetation Index (NDVI) (By Magali Ruer)</u>* {#ndvi}
+###### *<u> Normalized Difference Vegetation Index (NDVI) (By Magali Ruer)</u>* {#ndvi}
 The NDVI/Ecostress Map uses a "classify" method to display the varying levels of vegetation in Los Angeles. Our project provided both a macro and micro perspective to show the overall differences in vegetation levels, as well as identify key areas that are in need of tree plantation.
 
 # Conclusion {#conclusion}

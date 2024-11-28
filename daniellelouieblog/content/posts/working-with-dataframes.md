@@ -4,10 +4,10 @@ title = "Working with DataFrames"
 date = "2024-09-16"
 description = "A beginner's guide to working with dataframes and commonly used functions."
 tags = [
-    "Pandas"
+    "Pandas", "DataFrames"
 ]
 categories = [
-    "Tutorial", "Python", "DataFrames"
+    "Tutorial", "Python" , "Coding"
 ]
 series = ["Tutorials", "DataFrames"]
 +++

@@ -7,7 +7,7 @@ tags = [
     "Pandas", "Interactivity", "Checkboxes"
 ]
 categories = [
-    "Tutorial", "Python", "Visualizations"
+    "Tutorial", "Python", "Visualizations", "Coding"
 ]
 series = ["Tutorials"]
 +++

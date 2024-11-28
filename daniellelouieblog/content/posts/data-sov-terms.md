@@ -4,10 +4,10 @@ title = "Data Sovereignty Terminology"
 date = "2024-09-11"
 description = "A compilation of important terms to better understand data sovereignty and our responsibilities in using data."
 tags = [
-    "Data Sovereignty", "Indigenous"
+    "Data Sovereignty"
 ]
 categories = [
-    "Terminology"
+    "Terminology", "Indigenous"
 ]
 series = ["Terminology"]
 +++

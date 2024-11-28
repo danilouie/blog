@@ -48,7 +48,7 @@ import ipywidgets as widgets
 ```
 
 # Example DataFrame {#ex-df}
-Let's create an example DataFrame for our visualization. Checkboxes are especially helpful for large DataFrames that contain a lot of categories. With interactive checkboxes, we can improve the visibility of our plot by controlling the amount of data that we see (based on their categories); we can also select different data to visualize comparisons for analysis. You may use the example DataFrame I created below, build your own, or implement it to your existing code. 
+Let's create an example DataFrame for our visualization. Checkboxes are especially helpful for large DataFrames that contain a lot of categories. With interactive checkboxes, we can improve the visibility of our plot by controlling the amount of data that we see (based on their categories); we can also select different data to visualize comparisons for analysis. You may use the example DataFrame I created below, build your own, or implement it into your existing code. 
 
 ```python
 # Example DataFrame with Bird Species
@@ -58,7 +58,7 @@ df = pd.DataFrame(random_birds, columns=['Bird Species'])
 df
 ```
 # Initiating Interactivity {#initiate}
-Next, let's write dive into the main part of this tutorial: building interactivity. 
+Next, let's dive into the main part of this tutorial: building interactivity. 
 
 Let's first initiate the plot interactivity in a new code cell with:
 

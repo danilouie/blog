@@ -7,7 +7,7 @@ description = "Explore how we designed, modeled, and tested a wind turbine to un
 +++
 
 ---
-# WIP
+
 # Outline
 
 1. [Project Summary](#project-summary)

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Checkboxes on Home</title>
-    <link>https://danilouie.github.io/tags/checkboxes/</link>
+    <link>http://localhost:1313/tags/checkboxes/</link>
     <description>Recent content in Checkboxes on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/tags/checkboxes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/checkboxes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Interactive Visualizations: Checkboxes</title>
-      <link>https://danilouie.github.io/posts/interactive-viz-cb/</link>
+      <link>http://localhost:1313/posts/interactive-viz-cb/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/interactive-viz-cb/</guid>
+      <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
       <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading Welcome to my tutorial series on building interactive visualizations! This series was inspired by my own experiences, and I wanted to be able to compile my knowledge in a shareable platform as a means to continue educating myself and provide an accessible resource for others.</description>
     </item>
   </channel>

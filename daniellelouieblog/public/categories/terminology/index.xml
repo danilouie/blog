@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terminology on Home</title>
-    <link>https://danilouie.github.io/categories/terminology/</link>
+    <link>http://localhost:1313/categories/terminology/</link>
     <description>Recent content in Terminology on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/categories/terminology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/terminology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Sovereignty Terminology</title>
-      <link>https://danilouie.github.io/posts/data-sov-terms/</link>
+      <link>http://localhost:1313/posts/data-sov-terms/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/data-sov-terms/</guid>
+      <guid>http://localhost:1313/posts/data-sov-terms/</guid>
       <description>Outline Link to heading Introduction General Terms Indigenous Stewardship Introduction Link to heading As an Undergraduate Data Science Intern at DSE and a member of the Indigenous Environmental Stewardship team, I have learned extensively about the role and potential of technology, particularly data, in transforming environmental efforts. The growth of AI and machine learning presents numerous opportunities for improving efficiency and optimization of workflow, allowing for greater human efforts to be placed in developing and designing solutions rather than in repetitive and tedious data cleaning or classification.</description>
     </item>
   </channel>

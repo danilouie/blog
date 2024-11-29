@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Home</title>
-    <link>https://danilouie.github.io/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Danielle Louie</title>
-      <link>https://danilouie.github.io/authors/danielle-louie/</link>
+      <link>http://localhost:1313/authors/danielle-louie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/danielle-louie/</guid>
+      <guid>http://localhost:1313/authors/danielle-louie/</guid>
       <description></description>
     </item>
     <item>
       <title>Kobe Bilstad</title>
-      <link>https://danilouie.github.io/authors/kobe-bilstad/</link>
+      <link>http://localhost:1313/authors/kobe-bilstad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/kobe-bilstad/</guid>
+      <guid>http://localhost:1313/authors/kobe-bilstad/</guid>
       <description></description>
     </item>
     <item>
       <title>Michelle Ngo</title>
-      <link>https://danilouie.github.io/authors/michelle-ngo/</link>
+      <link>http://localhost:1313/authors/michelle-ngo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/michelle-ngo/</guid>
+      <guid>http://localhost:1313/authors/michelle-ngo/</guid>
       <description></description>
     </item>
     <item>
       <title>Aashirth Beesabathuni</title>
-      <link>https://danilouie.github.io/authors/aashirth-beesabathuni/</link>
+      <link>http://localhost:1313/authors/aashirth-beesabathuni/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/aashirth-beesabathuni/</guid>
+      <guid>http://localhost:1313/authors/aashirth-beesabathuni/</guid>
       <description></description>
     </item>
     <item>
       <title>Ashna Valia</title>
-      <link>https://danilouie.github.io/authors/ashna-valia/</link>
+      <link>http://localhost:1313/authors/ashna-valia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/ashna-valia/</guid>
+      <guid>http://localhost:1313/authors/ashna-valia/</guid>
       <description></description>
     </item>
     <item>
       <title>Dylan Sacks</title>
-      <link>https://danilouie.github.io/authors/dylan-sacks/</link>
+      <link>http://localhost:1313/authors/dylan-sacks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/dylan-sacks/</guid>
+      <guid>http://localhost:1313/authors/dylan-sacks/</guid>
       <description></description>
     </item>
     <item>
       <title>Elina Morishita</title>
-      <link>https://danilouie.github.io/authors/elina-morishita/</link>
+      <link>http://localhost:1313/authors/elina-morishita/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/elina-morishita/</guid>
+      <guid>http://localhost:1313/authors/elina-morishita/</guid>
       <description></description>
     </item>
     <item>
       <title>Magali Ruer</title>
-      <link>https://danilouie.github.io/authors/magali-ruer/</link>
+      <link>http://localhost:1313/authors/magali-ruer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/authors/magali-ruer/</guid>
+      <guid>http://localhost:1313/authors/magali-ruer/</guid>
       <description></description>
     </item>
   </channel>

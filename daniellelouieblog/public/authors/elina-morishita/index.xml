@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elina Morishita on Home</title>
-    <link>https://danilouie.github.io/authors/elina-morishita/</link>
+    <link>http://localhost:1313/authors/elina-morishita/</link>
     <description>Recent content in Elina Morishita on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/authors/elina-morishita/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/elina-morishita/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Designing a Wind Turbine</title>
-      <link>https://danilouie.github.io/projects/wind-turbine/</link>
+      <link>http://localhost:1313/projects/wind-turbine/</link>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/projects/wind-turbine/</guid>
+      <guid>http://localhost:1313/projects/wind-turbine/</guid>
       <description>Outline Link to heading Project Summary Introduction Theory Design Blade Design Tower Design Finite Element Analysis (FEA) Simulation Testing and Results Testing Process: Power Testing Process: Stiffness Data Tables Plots Efficiency CAD Drawings 3D Assembly Drawing of the Wind Turbine Exploded View of the Tower 2D Drawing of the Tower with Overall Dimensions Conclusion Recommendation for Future Work References Appendix Project Summary Link to heading Recently, there has been a growing interest in the development and utilization of renewable energy sources such as wind energy.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IntelliJ on Home</title>
-    <link>https://danilouie.github.io/categories/intellij/</link>
+    <link>http://localhost:1313/categories/intellij/</link>
     <description>Recent content in IntelliJ on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/categories/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/intellij/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2D Tile-Based World Exploration Engine</title>
-      <link>https://danilouie.github.io/projects/2d-tile-world/</link>
+      <link>http://localhost:1313/projects/2d-tile-world/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/projects/2d-tile-world/</guid>
+      <guid>http://localhost:1313/projects/2d-tile-world/</guid>
       <description>Here is the Project 3 Git Link.&#xA;Outline Link to heading Overview How it Works Game Play Video Tutorial Coding Process Takeaways Overview Link to heading The objective of this project was to build an interactive &amp;ldquo;game&amp;rdquo; with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles.</description>
     </item>
   </channel>

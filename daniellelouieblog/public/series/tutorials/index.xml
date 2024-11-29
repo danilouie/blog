@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials on Home</title>
-    <link>https://danilouie.github.io/series/tutorials/</link>
+    <link>http://localhost:1313/series/tutorials/</link>
     <description>Recent content in Tutorials on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/series/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/series/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with DataFrames</title>
-      <link>https://danilouie.github.io/posts/working-with-dataframes/</link>
+      <link>http://localhost:1313/posts/working-with-dataframes/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/working-with-dataframes/</guid>
+      <guid>http://localhost:1313/posts/working-with-dataframes/</guid>
       <description>Outline Link to heading Introduction Reading a Dataframe Viewing Elements Head and Tail iloc and loc Data Types Columns Creating Columns Dropping Columns Calling Columns Grouping Data Arithmetics Simple Math Inequalities Math Functions (And More) Conclusion Introduction Link to heading Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations.</description>
     </item>
     <item>
       <title>Interactive Visualizations: Checkboxes</title>
-      <link>https://danilouie.github.io/posts/interactive-viz-cb/</link>
+      <link>http://localhost:1313/posts/interactive-viz-cb/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/interactive-viz-cb/</guid>
+      <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
       <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading Welcome to my tutorial series on building interactive visualizations! This series was inspired by my own experiences, and I wanted to be able to compile my knowledge in a shareable platform as a means to continue educating myself and provide an accessible resource for others.</description>
     </item>
   </channel>

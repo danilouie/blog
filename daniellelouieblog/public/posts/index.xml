@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Home</title>
-    <link>https://danilouie.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with DataFrames</title>
-      <link>https://danilouie.github.io/posts/working-with-dataframes/</link>
+      <link>http://localhost:1313/posts/working-with-dataframes/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/working-with-dataframes/</guid>
+      <guid>http://localhost:1313/posts/working-with-dataframes/</guid>
       <description>Outline Link to heading Introduction Reading a Dataframe Viewing Elements Head and Tail iloc and loc Data Types Columns Creating Columns Dropping Columns Calling Columns Grouping Data Arithmetics Simple Math Inequalities Math Functions (And More) Conclusion Introduction Link to heading Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations.</description>
     </item>
     <item>
       <title>Data Sovereignty Terminology</title>
-      <link>https://danilouie.github.io/posts/data-sov-terms/</link>
+      <link>http://localhost:1313/posts/data-sov-terms/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/data-sov-terms/</guid>
+      <guid>http://localhost:1313/posts/data-sov-terms/</guid>
       <description>Outline Link to heading Introduction General Terms Indigenous Stewardship Introduction Link to heading As an Undergraduate Data Science Intern at DSE and a member of the Indigenous Environmental Stewardship team, I have learned extensively about the role and potential of technology, particularly data, in transforming environmental efforts. The growth of AI and machine learning presents numerous opportunities for improving efficiency and optimization of workflow, allowing for greater human efforts to be placed in developing and designing solutions rather than in repetitive and tedious data cleaning or classification.</description>
     </item>
     <item>
       <title>Interactive Visualizations: Checkboxes</title>
-      <link>https://danilouie.github.io/posts/interactive-viz-cb/</link>
+      <link>http://localhost:1313/posts/interactive-viz-cb/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/interactive-viz-cb/</guid>
+      <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
       <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading Welcome to my tutorial series on building interactive visualizations! This series was inspired by my own experiences, and I wanted to be able to compile my knowledge in a shareable platform as a means to continue educating myself and provide an accessible resource for others.</description>
     </item>
   </channel>

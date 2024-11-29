@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Home</title>
-    <link>https://danilouie.github.io/series/</link>
+    <link>http://localhost:1313/series/</link>
     <description>Recent content in Series on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DataFrames</title>
-      <link>https://danilouie.github.io/series/dataframes/</link>
+      <link>http://localhost:1313/series/dataframes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/series/dataframes/</guid>
+      <guid>http://localhost:1313/series/dataframes/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorials</title>
-      <link>https://danilouie.github.io/series/tutorials/</link>
+      <link>http://localhost:1313/series/tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/series/tutorials/</guid>
+      <guid>http://localhost:1313/series/tutorials/</guid>
       <description></description>
     </item>
     <item>
       <title>Terminology</title>
-      <link>https://danilouie.github.io/series/terminology/</link>
+      <link>http://localhost:1313/series/terminology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/series/terminology/</guid>
+      <guid>http://localhost:1313/series/terminology/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DataFrames on Home</title>
-    <link>https://danilouie.github.io/series/dataframes/</link>
+    <link>http://localhost:1313/series/dataframes/</link>
     <description>Recent content in DataFrames on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/series/dataframes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/series/dataframes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with DataFrames</title>
-      <link>https://danilouie.github.io/posts/working-with-dataframes/</link>
+      <link>http://localhost:1313/posts/working-with-dataframes/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/working-with-dataframes/</guid>
+      <guid>http://localhost:1313/posts/working-with-dataframes/</guid>
       <description>Outline Link to heading Introduction Reading a Dataframe Viewing Elements Head and Tail iloc and loc Data Types Columns Creating Columns Dropping Columns Calling Columns Grouping Data Arithmetics Simple Math Inequalities Math Functions (And More) Conclusion Introduction Link to heading Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations.</description>
     </item>
   </channel>

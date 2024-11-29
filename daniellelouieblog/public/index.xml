@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home</title>
-    <link>https://danilouie.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://danilouie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with DataFrames</title>
-      <link>https://danilouie.github.io/posts/working-with-dataframes/</link>
+      <link>http://localhost:1313/posts/working-with-dataframes/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/working-with-dataframes/</guid>
+      <guid>http://localhost:1313/posts/working-with-dataframes/</guid>
       <description>Outline Link to heading Introduction Reading a Dataframe Viewing Elements Head and Tail iloc and loc Data Types Columns Creating Columns Dropping Columns Calling Columns Grouping Data Arithmetics Simple Math Inequalities Math Functions (And More) Conclusion Introduction Link to heading Dataframes, data structures that are very similar to tables, are key elements in data science. They are extremely useful for organizing information, and many instances of data science use dataframes to clean and organize data, manipulate tabular data, and even to produce visualizations.</description>
     </item>
     <item>
       <title>Data Sovereignty Terminology</title>
-      <link>https://danilouie.github.io/posts/data-sov-terms/</link>
+      <link>http://localhost:1313/posts/data-sov-terms/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/data-sov-terms/</guid>
+      <guid>http://localhost:1313/posts/data-sov-terms/</guid>
       <description>Outline Link to heading Introduction General Terms Indigenous Stewardship Introduction Link to heading As an Undergraduate Data Science Intern at DSE and a member of the Indigenous Environmental Stewardship team, I have learned extensively about the role and potential of technology, particularly data, in transforming environmental efforts. The growth of AI and machine learning presents numerous opportunities for improving efficiency and optimization of workflow, allowing for greater human efforts to be placed in developing and designing solutions rather than in repetitive and tedious data cleaning or classification.</description>
     </item>
     <item>
       <title>Interactive Visualizations: Checkboxes</title>
-      <link>https://danilouie.github.io/posts/interactive-viz-cb/</link>
+      <link>http://localhost:1313/posts/interactive-viz-cb/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/posts/interactive-viz-cb/</guid>
+      <guid>http://localhost:1313/posts/interactive-viz-cb/</guid>
       <description>Outline Link to heading Introduction Library Imports Example DataFrame Initiating Interactivity Updating the Plot Creating the Plot Displaying the Widgets Final Visualization Complete Code Takeaways Introduction Link to heading Welcome to my tutorial series on building interactive visualizations! This series was inspired by my own experiences, and I wanted to be able to compile my knowledge in a shareable platform as a means to continue educating myself and provide an accessible resource for others.</description>
     </item>
     <item>
       <title>Flood Risk in Houston</title>
-      <link>https://danilouie.github.io/projects/flood-risk-in-houston/</link>
+      <link>http://localhost:1313/projects/flood-risk-in-houston/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/projects/flood-risk-in-houston/</guid>
+      <guid>http://localhost:1313/projects/flood-risk-in-houston/</guid>
       <description>Outline Link to heading Abstract Introduction Literature Review Methods Results Discussion Conclusion References Abstract Link to heading As climate change increases the intensity of storms, cities must improve their urban infrastructure to adapt to severe environmental disasters. The present study investigated six factors in Houston’s urban design to understand the city’s vulnerability to flooding: precipitation patterns, storm sewer systems, pavements, land use, topography, and socioeconomic demographics. When comparing the findings for each factor, we found that low-income Hispanic, White, and African American communities were more likely to face flood risks; these communities had higher numbers living in industrial and commercial regions along the coast, which are prone to severe flooding but face ineffective storm drainage due to prominent infrastructure made from impervious surfaces (concrete, asphalt, etc.</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://danilouie.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sat, 15 Jun 2024 09:49:16 -0700</pubDate>
-      <guid>https://danilouie.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>About Me Link to heading Hi! I&amp;rsquo;m Danielle, a fourth-year undergraduate at UC Berkeley double-majoring in Sustainable Environmental Design and Data Science. I am passionate about utilizing technology to model and develop sustainable solutions for our environment. Throughout my student career, I have gained valuable experience in data processing and analysis, app developments and deployment, GIS mapping, 3D prototyping, sustainable research.&#xA;Active Involvement Link to heading Currently, I am a Data Scientist intern at the Eric and Wendy Schmidt Center for Data Science and Environment (DSE).</description>
     </item>
     <item>
       <title>2D Tile-Based World Exploration Engine</title>
-      <link>https://danilouie.github.io/projects/2d-tile-world/</link>
+      <link>http://localhost:1313/projects/2d-tile-world/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/projects/2d-tile-world/</guid>
+      <guid>http://localhost:1313/projects/2d-tile-world/</guid>
       <description>Here is the Project 3 Git Link.&#xA;Outline Link to heading Overview How it Works Game Play Video Tutorial Coding Process Takeaways Overview Link to heading The objective of this project was to build an interactive &amp;ldquo;game&amp;rdquo; with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles.</description>
     </item>
     <item>
       <title>Designing a Wind Turbine</title>
-      <link>https://danilouie.github.io/projects/wind-turbine/</link>
+      <link>http://localhost:1313/projects/wind-turbine/</link>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/projects/wind-turbine/</guid>
+      <guid>http://localhost:1313/projects/wind-turbine/</guid>
       <description>Outline Link to heading Project Summary Introduction Theory Design Blade Design Tower Design Finite Element Analysis (FEA) Simulation Testing and Results Testing Process: Power Testing Process: Stiffness Data Tables Plots Efficiency CAD Drawings 3D Assembly Drawing of the Wind Turbine Exploded View of the Tower 2D Drawing of the Tower with Overall Dimensions Conclusion Recommendation for Future Work References Appendix Project Summary Link to heading Recently, there has been a growing interest in the development and utilization of renewable energy sources such as wind energy.</description>
     </item>
     <item>
       <title>Tree Coverage in the City of Los Angeles</title>
-      <link>https://danilouie.github.io/projects/tree-coverage-in-la/</link>
+      <link>http://localhost:1313/projects/tree-coverage-in-la/</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/projects/tree-coverage-in-la/</guid>
+      <guid>http://localhost:1313/projects/tree-coverage-in-la/</guid>
       <description>Outline Link to heading Overview Method Maps Suitability Analysis Vulnerability NDVI Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.</description>
     </item>
     <item>
       <title>Danielle Louie</title>
-      <link>https://danilouie.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://danilouie.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>Feel free to reach out through LinkedIn or email. I look forward to hearing from you!&#xA;Email: daniellelouie.07@gmail.com | danielle_louie@berkeley.edu&#xA;Experience Link to heading Undergraduate Data Scientist Intern for Indigenous Environmental Stewardship Eric and Wendy Schmidt Data Science and Environment (DSE) January 2024 - Present | Link&#xA;Building an app to streamline identification of wildlife (biodiversity monitoring) on Indigenous lands Documenting technical processes development and deployment pipeline Constructing and troubleshooting software executables using virtual environments via VSCode and GitHub Developing and presenting comprehensive workflow pipelines to partners Curating and refining datasets for modeling and visualization Contributing to the discourse on data sovereignty and ethical considerations Production Intern Center for Law, Energy, and the Environment at Berkeley Law August 2023 - Present | Link</description>
     </item>
   </channel>

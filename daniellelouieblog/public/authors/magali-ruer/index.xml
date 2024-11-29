@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magali Ruer on Home</title>
+    <link>https://danilouie.github.io/authors/magali-ruer/</link>
+    <description>Recent content in Magali Ruer on Home</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://danilouie.github.io/authors/magali-ruer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tree Coverage in the City of Los Angeles</title>
+      <link>https://danilouie.github.io/projects/tree-coverage-in-la/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://danilouie.github.io/projects/tree-coverage-in-la/</guid>
+      <description>Outline Link to heading Overview Method Maps Suitability Analysis Vulnerability NDVI Conclusion Poster Sources Overview Link to heading The objective of this project was to determine areas in Los Angeles in need of tree coverage. We simulated a presentation of our report as though we were addressing the Los Angeles City Planning Commission. In conclusion, we found that Los Angeles was highly suitable for planting trees, and additionally, it was also in need of trees (for their shade) to ensure a sustainable environment.</description>
+    </item>
+  </channel>
+</rss>

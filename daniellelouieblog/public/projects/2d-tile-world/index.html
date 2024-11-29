@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  2D Tile-Based World Exploration Engine · Home
+</title>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Danielle Louie">
+<meta name="description" content="Learn about terrain generation, user interactivity, and the use of grid systems to build a dynamic 2D tile-based world.">
+<meta name="keywords" content="blog,developer,personal">
+<meta name="fediverse:creator" content="" />
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2D Tile-Based World Exploration Engine">
+  <meta name="twitter:description" content="Learn about terrain generation, user interactivity, and the use of grid systems to build a dynamic 2D tile-based world.">
+
+<meta property="og:url" content="https://danilouie.github.io/projects/2d-tile-world/">
+  <meta property="og:site_name" content="Home">
+  <meta property="og:title" content="2D Tile-Based World Exploration Engine">
+  <meta property="og:description" content="Learn about terrain generation, user interactivity, and the use of grid systems to build a dynamic 2D tile-based world.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2023-11-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-11-01T00:00:00+00:00">
+
+
+
+
+<link rel="canonical" href="https://danilouie.github.io/projects/2d-tile-world/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.0fa6c35edf1b07a4654148ca9381839210bc54dc2e8cf93e83d7cf267ed4f8fa.css" integrity="sha256-D6bDXt8bB6RlQUjKk4GDkhC8VNwujPk&#43;g9fPJn7U&#43;Po=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bc03a975d4b871a4d182340cea6e28a6dc4767bcdff52318cc7616095c739163.css" integrity="sha256-vAOpddS4caTRgjQM6m4optxHZ7zf9SMYzHYWCVxzkWM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+ 
+
+ 
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://danilouie.github.io/">
+      Home
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Tutorials</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact/CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container project">
+    <article>
+      <header>
+        <div class="project-title">
+          <h1 class="title">
+            <a class="title-link" href="https://danilouie.github.io/projects/2d-tile-world/">
+              2D Tile-Based World Exploration Engine
+            </a>  
+          </h1>
+        
+          <div class="project-subtitle">
+            
+              <h2 class="subtitle">
+                 
+              </h2>
+            
+          </div>
+           
+        </div>
+        <div class="project-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-11-01T00:00:00Z">
+                November 1, 2023
+              </time>
+            </span>
+            <span class="separator"> | </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/danielle-louie/">Danielle Louie</a>
+      <span class="separator">•</span>
+    <a href="/authors/michelle-ngo/">Michelle Ngo</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/java/">Java</a>
+      <span class="separator">•</span>
+    <a href="/categories/intellij/">IntelliJ</a></div>
+
+          
+        </div>
+      </header>
+
+      <div class="project-content">
+        
+        <p>Here is the <a href="https://github.com/danilouie/CS61B-Projects/tree/main/proj3"  class="external-link" target="_blank" rel="noopener">Project 3 Git Link</a>.</p>
+<hr>
+<h1 id="outline">
+  Outline
+  <a class="heading-link" href="#outline">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ol>
+<li><a href="#overview" >Overview</a></li>
+<li><a href="#how-it-works" >How it Works</a></li>
+<li><a href="#game-play" >Game Play</a></li>
+<li><a href="#video-tutorial" >Video Tutorial</a></li>
+<li><a href="#coding-process" >Coding Process</a></li>
+<li><a href="#takeaways" >Takeaways</a></li>
+</ol>
+<hr>
+<h1 id="overview">
+  Overview
+  <a class="heading-link" href="#overview">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>The objective of this project was to build an interactive &ldquo;game&rdquo; with randomly generated, explorable dungeon maps based on a 2D grid of tiles. You have probably come across games that use this map style, such as Pokémon, Fire Emblem, or Stardew Valley! These games typically use graphical tiles to create a more colorful and lively game experience, but for this project, my partner and I utilized text based tiles.</p>
+<h2 id="how-it-works">
+  How it Works
+  <a class="heading-link" href="#how-it-works">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>For this project, my partner and I developed a dynamic main menu with functionality for generating random dungeon maps based off of user-input seeds. We implemented features for loading saved maps and facilitating a seamless exit from the game. We also incorporated interactive keypress controls and mouse functionality for movement, toggling map tools, and information display, which enhanced user engagement and overall gameplay experience.</p>
+<h2 id="game-play">
+  Game Play
+  <a class="heading-link" href="#game-play">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The end-game condition is simple: water all the &ldquo;grass&rdquo; tiles into &ldquo;flower&rdquo; tiles to unlock the final door. Each map starts with 20 grass tiles and a &ldquo;locked&rdquo; door in randomly generated locations. The game ends once the all the grass tiles have grown into flowers, and the avatar travels onto the tile containing the now unlocked door.</p>
+<h2 id="video-tutorial">
+  Video Tutorial
+  <a class="heading-link" href="#video-tutorial">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Below is a short tutorial of an example game play.</p>
+<video controls width="100%">
+  <source src="/video/cs61b_tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h2 id="coding-process">
+  Coding Process
+  <a class="heading-link" href="#coding-process">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h4 id="world-generation">
+  World Generation
+  <a class="heading-link" href="#world-generation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The first goal in this project was world generation. The main objective of the map was that it had to be able to generate random rooms and hallways (with no dead ends), with every element reachable for exploration. In addition, the explorable parts of the map had to take up The map generation was prompted by a seed that the user would input, and the same seed should be able to generate the same map.</p>
+<p><img alt="map example" src="/images/cs61b/map.png"></p>
+<p>My partner and I first focused on making sure that we were able to generate random rooms consistently (making sure that they were different for different seeds, and exactly the same for the same seeds). We then made sure that each rooms would generate two &ldquo;doors&rdquo;, which were indicators for where a hallway could connect to.</p>
+<p><img alt="room example" src="/images/cs61b/rooms.png"></p>
+<p>Our last step in world generation was to create the hallways. Similar to the room generation, we coded for hallways to randomly generate (within a width of 1 tile). The code involved ensuring that all the &ldquo;doors&rdquo; for each room were connected; simultaneously, we prevented doors of the same room to be connected, as well ensuring that all rooms were connected as one overall map.</p>
+<p><img alt="hallway example" src="/images/cs61b/hallways.png"></p>
+<h4 id="main-menu">
+  Main Menu
+  <a class="heading-link" href="#main-menu">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Once the dungeons consistently generating, the next step was to create a Main Menu. The Main Menu would present three options to the user at the beginning of the game:</p>
+<ul>
+<li>Creating a new world, which the user would then be prompted to provide a seed.</li>
+<li>Loading a previously saved game.</li>
+<li>Quitting the game immediately.</li>
+</ul>
+<p>My partner and I found that this was the most difficult part of this second step. Tackling this problem required building a system that would continously draw the most recent map (if prompted to save), check if there was a previously saved world, and then if prompted in the Main Menu, would load the world exactly as it was last left.</p>
+<p><img alt="main menu" src="/images/cs61b/main_menu.png"></p>
+<p>The last step was the most fun as it involved building interactivity between the user and the game. The main objectives were:</p>
+<ul>
+<li>Enabling movement of an avatar using &ldquo;WASD&rdquo; keyboard controls.</li>
+<li>Identification of tile type based on where the mouse was hovering.</li>
+<li>A clock that displayed the current date and time.</li>
+</ul>
+<p>Out of selection of multiple features to incorporate in this game, my partner and I chose two:</p>
+<ul>
+<li>Triggering lights to turn on based on keyboard controls (we used the letter &ldquo;T&rdquo;).</li>
+<li>Narrowing or widening the user&rsquo;s view of the map around the avatar based on keyboard controls (we used the letter &ldquo;G&rdquo;).</li>
+</ul>
+<p>In addition, we coded the game to use the keyboard control, &ldquo;Y&rdquo;, to allow the user to water grass tiles to flower tiles if the avatar was within 1 tile of the grass tiles. The counters for the grass and flowers at the middle, top of the game consistently reflected the game progress.</p>
+<p><img alt="playable world" src="/images/cs61b/playable_map.png"></p>
+<h2 id="takeaways">
+  Takeaways
+  <a class="heading-link" href="#takeaways">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>For projects that are as extensive as this, a <strong>Design Document</strong> is an extremely helpful way to build a framework for different objectives and keep track of your current progress. Before diving headfirst into coding, my partner and I first detailed out each objective of our project, as well as the steps that we were planning to take to accomplish these tasks. We even created a checklist to help us easily identify our progress in the midst of the comprehensive planning. In addition to being a helpful guide for our project, the Design Document also served as an effective tool for communication. In order to ensure that we were both on the same page, we each assumed responsibility to consistently update the document, allowing the document to actively reflect our progress and keep the both of us on the same page about each other&rsquo;s work. It also proved to be beneficial for debugging purposes.</p>
+<hr>
+<h1 id="acknowledgements">
+  Acknowledgements
+  <a class="heading-link" href="#acknowledgements">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>This project was conducted with Michelle Ngo during the 2023 Fall Semester of CS61B at UC Berkeley through the College of Computing, Data Science, and Society. Feel free to browse through this <a href="https://fa23.datastructur.es/materials/proj/proj3/" target="_blank" rel="noopener noreferrer">website</a> for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this <a href="https://github.com/danilouie/CS61B-Projects" target="_blank" rel="noopener noreferrer">Git Repository</a>.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+
+        <div class="navigation-links">
+          <div class="prev-project">
+            
+            
+              <a href="https://danilouie.github.io/projects/wind-turbine/">Previous: Designing a Wind Turbine</a>
+            
+          </div>
+          <div class="next-project">
+            
+            
+              <a href="https://danilouie.github.io/projects/flood-risk-in-houston/">Next: Flood Risk in Houston</a>
+            
+          </div>
+        </div>
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Danielle Louie 
+    
+    
+    
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

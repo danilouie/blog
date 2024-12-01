@@ -64,3 +64,5 @@ Based on the three maps created, we identified that the middle to northern parts
 
 # Acknowledgements
 This project was conducted with Michelle Ngo and Magali Ruer during the 2022 Fall Semester of GEOGC188 at UC Berkeley through the College of Environmental Design.
+
+---

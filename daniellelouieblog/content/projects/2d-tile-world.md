@@ -87,3 +87,5 @@ For projects that are as extensive as this, a **Design Document** is an extremel
 
 # Acknowledgements
 This project was conducted with Michelle Ngo during the 2023 Fall Semester of CS61B at UC Berkeley through the College of Computing, Data Science, and Society. Feel free to browse through this <a href="https://fa23.datastructur.es/materials/proj/proj3/" target="_blank" rel="noopener noreferrer">website</a> for an in-depth scope of the project requirements. If you are interested in other projects that I have built for this course, feel free to browse this <a href="https://github.com/danilouie/CS61B-Projects" target="_blank" rel="noopener noreferrer">Git Repository</a>.
+
+---

@@ -303,3 +303,5 @@ Based on perhaps testing those different lateral lattice structures, it would be
 
 # Acknowledgements
 This project was conducted with Dylan Sacks, Elina Morishita, Aashirth Beesabathuni, and Ashna Valia during the 2023 Spring Semester of ENGIN 26 at UC Berkeley through the College of Engineering.
+
+---

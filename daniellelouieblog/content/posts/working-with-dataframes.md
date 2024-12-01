@@ -403,3 +403,5 @@ This <a href="https://www.geeksforgeeks.org/pandas-functions-in-python/" target=
 
 # Conclusion {#conclusion}
 This concludes the first tutorial of working with dataframes. Hopefully, this has provided you with an insight into all the possibilities of working with a dataframe, as well as built your comfortability in exploring beyond what this tutorial has covered. Remember, the best way to familiarize yourself with working with dataframes (and coding in general) is to continuously use it. Be patient with yourself and try everything!
+
+---

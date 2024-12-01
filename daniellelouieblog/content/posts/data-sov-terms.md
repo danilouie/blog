@@ -71,5 +71,4 @@ This blog is meant to share vocabulary that I have learned over the course of my
 **Traditional Ecological Knowledge (TEK)**: knowledge and practices about sustainability, environmentalism, restoration, kinship, and the connection between humans and nature that have been passed down for generations by Indigenous communities.
 - Also known as Indigenous Local Knowledge (ILK) and Indigenous Traditional Knowledge (ITK).
 
-
-
+---

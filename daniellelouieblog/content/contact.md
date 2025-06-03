@@ -11,7 +11,7 @@ Email: daniellelouie.07@gmail.com | danielle_louie@berkeley.edu
 
 ### Experience
 **Lead Undergraduate Data Scientist Intern for Indigenous Environmental Stewardship**
-<a href="https://dse.berkeley.edu/programs/co-design-technology-tribal-environmental-stewardship" target="_blank" rel="noopener noreferrer">*Eric and Wendy Schmidt Data Science and Environment (DSE)*</a>
+<a href="https://dse.berkeley.edu/programs/co-design-environmental-stewardship" target="_blank" rel="noopener noreferrer">*Eric and Wendy Schmidt Data Science and Environment (DSE)*</a>
 January 2024 - Present
 * Building an app to streamline identification of wildlife (biodiversity monitoring) on Indigenous lands via Python
 * Documenting technical processes development and deployment pipeline

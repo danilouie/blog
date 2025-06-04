@@ -6,7 +6,7 @@ draft = false
 
 ## About Me
 
-Hi! I'm Danielle, a fourth-year undergraduate at UC Berkeley double-majoring in Sustainable Environmental Design and Data Science. I am passionate about utilizing technology to model and develop sustainable solutions for our environment. Throughout my student career, I have gained valuable experience in data processing and analysis, app developments and deployment, GIS mapping, 3D prototyping, sustainable research.
+Hi! I'm Danielle, a graduate student at USC pursuing an M.S. in Applied Data Science. I recently graduated from UC Berkeley with a B.A. in Data Science and B.A. in Sustainable Environmental Design. I am passionate about utilizing machine learning to design sustainable solutions for our environment. Throughout my student career, I have gained valuable experience in data processing and analysis, app developments and deployment, GIS mapping, 3D prototyping, and sustainable research.
 
 ## Active Involvement
 Currently, I am a Data Scientist intern at the Eric and Wendy Schmidt Center for Data Science and Environment (DSE). As a part of the <a href="https://dse.berkeley.edu/programs/co-design-environmental-stewardship" target="_blank" rel="noopener noreferrer">Indigenous Environmental Stewardship</a> team, I build executables, curate interactive visualizations, and define boundaries for data sovereignty.

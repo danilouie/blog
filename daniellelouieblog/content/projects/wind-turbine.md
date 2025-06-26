@@ -3,7 +3,7 @@ title = "Designing a Wind Turbine"
 authors = ["Danielle Louie", "Dylan Sacks", "Elina Morishita", "Aashirth Beesabathuni", "Ashna Valia"]
 date = "2023-05-23"
 categories = ["CAD", "Solidworks", "3D Printing"]
-description = "Explore how we designed, modeled, and tested a wind turbine to understand the intricacies behind renewable energy generation and sustainable infrastructure."
+description = "Explore the process to design, model, and test a wind turbine to understand the intricacies behind renewable energy generation and sustainable infrastructure."
 +++
 
 ---

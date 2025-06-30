@@ -27,10 +27,10 @@ In the upper middle, I created a radar chart to show California's **Renewable En
 
 The line graph depicts the trend in **Petroleum and Natural Gas Consumption** in million BTU from 1960 to 2022. The line graph shows a slight spike around the 1970s and 1980s, and then both fossil fuel sources begin to decrease steadily. 
 
-Finally, on the very right, an interactive, ranked bar chart shows California's standing in three unique categories: **Total Energy Consumption**, **Real GDP**, and **Energy Consumption per Real GDP**.
+Finally, on the very right, an interactive, ranked bar chart shows California's standing in three unique categories: **Total Energy Consumption**, **Real GDP**, and **Energy Consumption per Real GDP**. California's bar is highlighted in red to make it more apparent among the 50 others shown (including the District of Columbia as its own category). 
 
 # Takeaways {#takeaways}
-
+Overall, this was a very educational experience about building informative, interactive visualizations from scratch. I went through a lot of sketches with pen and paper, from arrangement of different elements, color choices, and the narrative that a user would experience. Of course, there are many improvements that I could bring to this final creation that could improve accessibility and information availability, which I am learning to incorporate in other similar projects. I am extremely grateful to have had this opportunity to explore a design process from start to finish, and I am looking forward to seeing what other creations I can bring!
 
 ---
 

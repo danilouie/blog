@@ -2,6 +2,7 @@
 title = "Interactive Eyeball"
 subtitle = " "
 authors = ["Danielle Louie"]
+draft = true
 date = "2025-03-10"
 categories = ["Python", "Sketchingpy"]
 description = "Learn how to create an interactive visualization of an eyeball from scratch!"
